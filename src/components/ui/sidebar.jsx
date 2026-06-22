@@ -2,9 +2,14 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { useAuth } from "@/context/AuthContext";
 
 export default function SideBar() {
   const currentPath = usePathname();
+  const { user, logout, loading } = useAuth();
+
+  // Hindari hydration mismatch: jangan render apa pun sampai client siap
+  if (loading) return null;
 
   const sides = [
     {
@@ -71,19 +76,57 @@ export default function SideBar() {
         </svg>
       ),
     },
+    {
+      id: 5,
+      menu: "Cek Nota",
+      path: "/checker",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+        </svg>
+      ),
+    },
   ];
+
+  // Filter menu berdasarkan role
+  const visibleSides =
+    user?.role === "admin"
+      ? sides
+      : sides.filter(
+          (item) => item.path === "/list" || item.path === "/checker",
+        );
+
+  // Inisial untuk avatar (2 huruf pertama nama)
+  const initials = user?.nama
+    ? user.nama
+        .split(" ")
+        .map((word) => word[0])
+        .join("")
+        .substring(0, 2)
+        .toUpperCase()
+    : user?.username?.substring(0, 2).toUpperCase() || "??";
 
   return (
     <div className="w-[280px] min-h-screen flex flex-col justify-between text-white bg-[#130b24] border-r border-[#2e004f]/50">
       <div className="top-section px-6 py-10">
         <div className="flex w-full justify-center mb-8">
-          <Image
-            src="/Logo.png"
-            width={100}
-            height={100}
-            alt="Logo SPIL"
-            className="w-[70%]"
-          ></Image>
+          <Link href="/dashboard" className="w-[70%] flex">
+            <Image
+              src="/Logo.png"
+              width={100}
+              height={100}
+              alt="Logo SPIL"
+              className="w-full"
+              loading="eager"
+            ></Image>
+          </Link>
         </div>
         <div className="header flex flex-col mb-12 gap-1 relative">
           <div className="absolute -inset-4 bg-[#2e004f] blur-2xl opacity-20 -z-10 rounded-full"></div>
@@ -98,7 +141,7 @@ export default function SideBar() {
         </div>
 
         <div className="main flex flex-col gap-2">
-          {sides.map((item) => {
+          {visibleSides.map((item) => {
             const isActive = currentPath.includes(item.path);
 
             return (
@@ -132,6 +175,40 @@ export default function SideBar() {
           })}
         </div>
       </div>
+
+      {/* Bagian bawah: info user + logout */}
+      {user && (
+        <div className="px-6 pb-6 flex flex-col gap-3">
+          {/* Info pengguna */}
+          <div className="flex items-center gap-3 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
+            <div className="flex flex-col overflow-hidden">
+              <span className="text-sm font-medium text-white truncate">
+                {user.nama}
+              </span>
+              <span className="text-xs text-gray-400 capitalize">
+                {user.role}
+              </span>
+            </div>
+          </div>
+
+          {/* Tombol Logout */}
+          <button
+            onClick={logout}
+            className="flex items-center gap-3 w-full px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 rounded-xl transition-all"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <path d="M112,216a8,8,0,0,1-8,8H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h56a8,8,0,0,1,0,16H48V208h56A8,8,0,0,1,112,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L196.69,120H104a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,221.66,122.34Z"></path>
+            </svg>
+            <span className="text-sm font-medium">Logout</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,0 +1,42 @@
+[
+  {
+    "Nomor": 1,
+    "Item Tagihan": "Tali – Temali",
+    "Vol Tagihan": 1.0,
+    "Satuan Tagihan": "Kapal",
+    "H. Satuan Tagihan": "Rp 0",
+    "Total Tagihan": "Rp 0",
+    "Item Pricelist": "❌ NOT FOUND",
+    "Satuan Std": "-",
+    "Vol Efektif": "-",
+    "H. Satuan Std": "-",
+    "Total Std": "-",
+    "Status Harga": "❓ NEED REVIEW",
+    "Selisih": "-",
+    "Status Volume": "❓ UNKNOWN",
+    "Confidence": "0%",
+    "Tier": "NONE",
+    "Flag": "⚠️ MANUAL REVIEW",
+    "Alasan": ""
+  },
+  {
+    "Nomor": 2,
+    "Item Tagihan": "Kapal diposisikan diujung slipway sebelum dan sesudah docking",
+    "Vol Tagihan": 1.0,
+    "Satuan Tagihan": "Kapal",
+    "H. Satuan Tagihan": "Rp 0",
+    "Total Tagihan": "Rp 0",
+    "Item Pricelist": "Kapal Diposisikan di Ujung Slipway - 5001 - 7000 GT",
+    "Satuan Std": "/ Hari",
+    "Vol Efektif": 1.0,
+    "H. Satuan Std": "Rp 864,300",
+    "Total Std": "Rp 864,300",
+    "Status Harga": "📉 UNDERPRICE",
+    "Selisih": "Rp -864,300",
+    "Status Volume": "✅ Vol OK",
+    "Confidence": "46%",
+    "Tier": "TIER 5: Groq LLM RAG",
+    "Flag": "✅ OK",
+    "Alasan": "GT 5526 berada dalam rentang 5001-7000 GT"
+  }
+]

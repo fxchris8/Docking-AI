@@ -1,0 +1,4880 @@
+{
+  "harga_layanan": [
+    {
+      "kategori": "GENERAL SERVICES",
+      "total_kategori": 343374848,
+      "items": [
+        {
+          "nomor": "00.01",
+          "nama": "Tali – Temali",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Diberikan asistensi tali temali saat kapal diujung slipway",
+            "Diberikan asistensi tali temali selama proses docking/undocking"
+          ],
+          "metadata": {
+            "original_row": 32
+          }
+        },
+        {
+          "nomor": "00.02",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Kapal diposisikan diujung slipway sebelum dan sesudah docking"
+          ],
+          "metadata": {
+            "original_row": 36
+          }
+        },
+        {
+          "nomor": "00.02.01.01",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking - Sebelum docking",
+          "volume": 1,
+          "satuan": "Hari",
+          "harga_satuan": 864300,
+          "harga_total": 864300,
+          "catatan": [
+            "Start 2024-04-21 00:00:00 s/d 2024-04-21 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 39
+          }
+        },
+        {
+          "nomor": "00.02.01.02",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking - Sesudah docking",
+          "volume": 2,
+          "satuan": "Hari",
+          "harga_satuan": 864300,
+          "harga_total": 1728600,
+          "catatan": [
+            "Start 2024-05-07 00:00:00 s/d 2024-05-08 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 41
+          }
+        },
+        {
+          "nomor": "00.03.01",
+          "nama": "Asistensi Tug Boat Untuk Docking Undocking - Asistensi Tug Boat untuk docking",
+          "volume": 4,
+          "satuan": "Jam",
+          "harga_satuan": 7566000,
+          "harga_total": 30264000,
+          "catatan": [
+            "Tugboat Alfa",
+            "Tugboat Gamma"
+          ],
+          "metadata": {
+            "original_row": 44
+          }
+        },
+        {
+          "nomor": "00.03.02",
+          "nama": "Asistensi Tug Boat Untuk Docking Undocking - Asistensi Tug Boat untuk undocking",
+          "volume": 4,
+          "satuan": "Jam",
+          "harga_satuan": 7566000,
+          "harga_total": 30264000,
+          "catatan": [
+            "Tugboat Alfa",
+            "Tugboat Gamma"
+          ],
+          "metadata": {
+            "original_row": 47
+          }
+        },
+        {
+          "nomor": "00.04",
+          "nama": "Asistensi Pilotage Untuk Docking Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Asistensi pilot untuk memposisikan kapal diujung slipway sebelum docking",
+            "Asistensi pilot untuk memposisikan kapal diujung slipway setelah docking"
+          ],
+          "metadata": {
+            "original_row": 51
+          }
+        },
+        {
+          "nomor": "00.05.01",
+          "nama": "Asistensi Naik atau Turun Dock - Asistensi Docking/Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 6800000,
+          "harga_total": 6800000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 56
+          }
+        },
+        {
+          "nomor": "00.06.01",
+          "nama": "Docking dan Undocking - Docking dan Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 19203000,
+          "harga_total": 19203000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 59
+          }
+        },
+        {
+          "nomor": "00.07.01",
+          "nama": "Pengaturan Dock Block - Pengaturan balok lunas (keel block dan side block) saat kapal diatas dock",
+          "volume": 105,
+          "satuan": "Balok",
+          "harga_satuan": 42000,
+          "harga_total": 4410000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 62
+          }
+        },
+        {
+          "nomor": "00.08.01",
+          "nama": "Docking per hari - Docking per hari",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 2881000,
+          "harga_total": 46096000,
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 66
+          }
+        },
+        {
+          "nomor": "00.09",
+          "nama": "Docking Report",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 4001000,
+          "harga_total": 4001000,
+          "catatan": [
+            "Dibuatkan docking report"
+          ],
+          "metadata": {
+            "original_row": 68
+          }
+        },
+        {
+          "nomor": "00.10.01.01",
+          "nama": "Bak Sampah - Fasilitas pembuangan sampah per hari - Diatas Dock",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 201000,
+          "harga_total": 3216000,
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 77
+          }
+        },
+        {
+          "nomor": "00.11",
+          "nama": "Aliran Listrik",
+          "volume": 1,
+          "satuan": "Kali",
+          "harga_satuan": 288000,
+          "harga_total": 288000,
+          "catatan": [
+            "Penyambungan dan pelepasan aliran listrik",
+            "Supply aliran listrik selama kapal diatas dock (380v, 10.37 Amp, 50 Hz)",
+            "Diatas Dock"
+          ],
+          "metadata": {
+            "original_row": 79
+          }
+        },
+        {
+          "nomor": "00.11.01.01",
+          "nama": "Aliran Listrik - Supply aliran listrik selama kapal diatas dock (380v, 10.37 Amp, 50 Hz) - Diatas Dock",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 692208,
+          "harga_total": 11075328,
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 83
+          }
+        },
+        {
+          "nomor": "00.12.01.01",
+          "nama": "Pemadam Kebakaran - Penjaga kebakaran satu orang satu slang selama kapal diatas dock",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 87
+          }
+        },
+        {
+          "nomor": "00.12.02",
+          "nama": "Pemadam Kebakaran - Diberikan fasilitas fire line selama kapal docking",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 89
+          }
+        },
+        {
+          "nomor": "00.12.02.02",
+          "nama": "Pemadam Kebakaran - Diberikan fasilitas fire line selama kapal docking - Penyambungan dan pelepasan selang pemadam",
+          "volume": 1,
+          "satuan": "Kali",
+          "harga_satuan": 201000,
+          "harga_total": 201000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 91
+          }
+        },
+        {
+          "nomor": "00.13.01.01",
+          "nama": "Fasilitas MCK - Diberikan fasilitas MCK selama docking",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 200000,
+          "harga_total": 3200000,
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 95
+          }
+        },
+        {
+          "nomor": "00.14.01",
+          "nama": "Fasilitas Labuh - Kapal berlabuh diperairan DPL sebelum dan sesudah docking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Kapal GT 2501 – 3500",
+            "Sebelum docking",
+            "Start 2024-04-17 00:00:00 s/d 2024-04-21 00:00:00",
+            "Sesudah docking",
+            "Start 2024-05-08 00:00:00 s/d 2024-05-09 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 98
+          }
+        },
+        {
+          "nomor": "00.15.01.01",
+          "nama": "Penjaga Keamanan (Docking atau Floating) - Asistensi penjaga keamanan - Diatas Dock",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 108
+          }
+        },
+        {
+          "nomor": "00.16.01",
+          "nama": "Asistensi Gangway - Diberikan asistensi gangway untuk akses naik turun selama docking",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 111
+          }
+        },
+        {
+          "nomor": "00.16",
+          "nama": "Sea Trial",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 5000000,
+          "harga_total": 5000000,
+          "catatan": [
+            "Diberikan asistensi sea trial pada kapal",
+            "Manpower 4 orang x 1 Hari"
+          ],
+          "metadata": {
+            "original_row": 114
+          }
+        },
+        {
+          "nomor": "00.17.01",
+          "nama": "Gas free - Dilaksanakan pemeriksaan bebas gas beracun dengan detail sebagai berikut :",
+          "volume": 26,
+          "satuan": "Tangki",
+          "harga_satuan": 481000,
+          "harga_total": 12506000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 121
+          }
+        },
+        {
+          "nomor": "00.18.01",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Asitensi stagging di luar ruangan",
+            "Untuk asistensi pekerjaan propulsi (mekanik)",
+            "Untuk asistensi pekerjaan di lambung",
+            "Untuk asistensi pekerjaan Cleaning"
+          ],
+          "metadata": {
+            "original_row": 123
+          }
+        },
+        {
+          "nomor": "00.18.01.01",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Asitensi stagging di luar ruangan",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Untuk asistensi pekerjaan propulsi (mekanik)",
+            "Tower scaffolding P 3 x L 3 x T 6 m (Pekerjaan bongkar rudder blade)",
+            "Tower scaffolding P 2 x L 1 x T 2 m (Pekerjaan bongkar propeller)",
+            "Untuk asistensi pekerjaan di lambung",
+            "Hanging scaffolding P 5 x L 1 x T 1 m (Side shell kanan)",
+            "Hanging scaffolding P 3 x L 1 x T 5 m (Side shell kiri)",
+            "Tower scaffolding P 4 x L 2 x T 12 m (Replate bullwalk depan)",
+            "Tower scaffolding P 4 x L 2 x T 6 m (Replate bullwalk depan)",
+            "P 4 x L 2 x T 8 m (Replate lambung kanan depan)",
+            "Untuk asistensi pekerjaan Cleaning",
+            "Tower scaffolding P 3 x L 3 x T 8 m (Pekerjaan chiping palkah )"
+          ],
+          "metadata": {
+            "original_row": 124
+          }
+        },
+        {
+          "nomor": "00.18.01.01-1",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Tower scaffolding",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 4860000,
+          "catatan": [
+            "P 3 x L 3 x T 6 m",
+            "(Pekerjaan bongkar rudder blade)"
+          ],
+          "metadata": {
+            "original_row": 126
+          }
+        },
+        {
+          "nomor": "00.18.01.01-2",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Tower scaffolding",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 360000,
+          "catatan": [
+            "P 2 x L 1 x T 2 m",
+            "(Pekerjaan bongkar propeller)"
+          ],
+          "metadata": {
+            "original_row": 127
+          }
+        },
+        {
+          "nomor": "00.18.01.01-3",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Hanging scaffolding",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 225000,
+          "catatan": [
+            "P 5 x L 1 x T 1 m",
+            "(Side shell kanan)"
+          ],
+          "metadata": {
+            "original_row": 130
+          }
+        },
+        {
+          "nomor": "00.18.01.01-4",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Hanging scaffolding",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 675000,
+          "catatan": [
+            "P 3 x L 1 x T 5 m",
+            "(Side shell kiri)"
+          ],
+          "metadata": {
+            "original_row": 131
+          }
+        },
+        {
+          "nomor": "00.18.01.01-5",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Tower scaffolding",
+          "volume": 6,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 25920000,
+          "catatan": [
+            "P 4 x L 2 x T 12 m",
+            "(Replate bullwalk depan)"
+          ],
+          "metadata": {
+            "original_row": 132
+          }
+        },
+        {
+          "nomor": "00.18.01.01-6",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Tower scaffolding",
+          "volume": 4,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 8640000,
+          "catatan": [
+            "P 4 x L 2 x T 6 m",
+            "(Replate bullwalk depan)"
+          ],
+          "metadata": {
+            "original_row": 133
+          }
+        },
+        {
+          "nomor": "00.18.01.01-7",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Tower scaffolding",
+          "volume": 4,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 11520000,
+          "catatan": [
+            "P 4 x L 2 x T 8 m",
+            "(Replate lambung kanan depan)"
+          ],
+          "metadata": {
+            "original_row": 134
+          }
+        },
+        {
+          "nomor": "00.18.01.01-8",
+          "nama": "Scaffolding - Diberikan asistensi scaffolding - Tower scaffolding",
+          "volume": 3,
+          "satuan": "Unit",
+          "harga_satuan": 45000,
+          "harga_total": 9720000,
+          "catatan": [
+            "P 3 x L 3 x T 8 m",
+            "(Pekerjaan chiping palkah )"
+          ],
+          "metadata": {
+            "original_row": 137
+          }
+        },
+        {
+          "nomor": "00.19",
+          "nama": "Fasilitas Air Tawar Setelah Undocking",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Supply air tawar dari darat",
+            "Pasang dan lepas selang atau pipa air satu kali sambungan"
+          ],
+          "metadata": {
+            "original_row": 139
+          }
+        },
+        {
+          "nomor": "00.18.01",
+          "nama": "Fasilitas Air Tawar Setelah Undocking - Supply air tawar dari darat",
+          "volume": 150,
+          "satuan": "Ton",
+          "harga_satuan": 41000,
+          "harga_total": 6150000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 140
+          }
+        },
+        {
+          "nomor": "00.19.01",
+          "nama": "Fasilitas Air Tawar Setelah Undocking - Pasang dan lepas selang atau pipa air satu kali sambungan",
+          "volume": 1,
+          "satuan": "Kali",
+          "harga_satuan": 201000,
+          "harga_total": 201000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 141
+          }
+        },
+        {
+          "nomor": "00.20.01",
+          "nama": "CLEANING - Cleaning HSD Service AE",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out manual",
+            "Telah dilaksankan penimbaan sludge secara manual",
+            "Telah dilakukan cleaning HSD service  dengan ukuran",
+            "Dilakukan lapping setelah cleaning",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 149
+          }
+        },
+        {
+          "nomor": "00.20.01-1",
+          "nama": "CLEANING - Cleaning HSD Service AE - Telah dilakukan pumping out manual",
+          "volume": 0.2,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 60000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 150
+          }
+        },
+        {
+          "nomor": "00.20.01-2",
+          "nama": "CLEANING - Cleaning HSD Service AE - Telah dilaksankan penimbaan sludge secara manual",
+          "volume": 0.2,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 151
+          }
+        },
+        {
+          "nomor": "00.20.01-3",
+          "nama": "CLEANING - Cleaning HSD Service AE - Telah dilakukan cleaning HSD service  dengan ukuran",
+          "volume": 20,
+          "satuan": "M³",
+          "harga_satuan": 34000,
+          "harga_total": 680000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 152
+          }
+        },
+        {
+          "nomor": "00.20.01-4",
+          "nama": "CLEANING - Cleaning HSD Service AE - Dilakukan lapping setelah cleaning",
+          "volume": 1,
+          "satuan": "Tanki",
+          "harga_satuan": 340000,
+          "harga_total": 340000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 153
+          }
+        },
+        {
+          "nomor": "00.20.01-5",
+          "nama": "CLEANING - Cleaning HSD Service AE - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 154
+          }
+        },
+        {
+          "nomor": "00.20.02",
+          "nama": "CLEANING - Cleaning HSD Service ME",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out manual",
+            "Telah dilaksankan penimbaan sludge secara manual",
+            "Telah dilakukan cleaning HSD service  dengan ukuran",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 156
+          }
+        },
+        {
+          "nomor": "00.20.02-1",
+          "nama": "CLEANING - Cleaning HSD Service ME - Telah dilakukan pumping out manual",
+          "volume": 0.2,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 60000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 157
+          }
+        },
+        {
+          "nomor": "00.20.02-2",
+          "nama": "CLEANING - Cleaning HSD Service ME - Telah dilaksankan penimbaan sludge secara manual",
+          "volume": 0.2,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 158
+          }
+        },
+        {
+          "nomor": "00.20.02-3",
+          "nama": "CLEANING - Cleaning HSD Service ME - Telah dilakukan cleaning HSD service  dengan ukuran",
+          "volume": 20,
+          "satuan": "M³",
+          "harga_satuan": 34000,
+          "harga_total": 680000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 159
+          }
+        },
+        {
+          "nomor": "00.20.02-4",
+          "nama": "CLEANING - Cleaning HSD Service ME - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 160
+          }
+        },
+        {
+          "nomor": "00.20.03",
+          "nama": "CLEANING - Cleaning FO Settling",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out manual",
+            "Telah dilakukan cleaning FO settling tank dengan ukuran",
+            "Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+            "Telah dilakukan pembuangan limbah lumpur campur minyak / limbah B3",
+            "Dilaksanakan bongkar pasang manhole x 1 Units",
+            "Recleaning Fo settling tank",
+            "Penimbaan sampah hasil recleaning"
+          ],
+          "metadata": {
+            "original_row": 162
+          }
+        },
+        {
+          "nomor": "00.20.03-1",
+          "nama": "CLEANING - Cleaning FO Settling - Telah dilakukan pumping out manual",
+          "volume": 11,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 660000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 163
+          }
+        },
+        {
+          "nomor": "00.20.03-2",
+          "nama": "CLEANING - Cleaning FO Settling - Telah dilakukan cleaning FO settling tank dengan ukuran",
+          "volume": 64.12,
+          "satuan": "M³",
+          "harga_satuan": 34000,
+          "harga_total": 2180080,
+          "catatan": [],
+          "metadata": {
+            "original_row": 164
+          }
+        },
+        {
+          "nomor": "00.20.03-3",
+          "nama": "CLEANING - Cleaning FO Settling - Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+          "volume": 0.6,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 165
+          }
+        },
+        {
+          "nomor": "00.20.03-4",
+          "nama": "CLEANING - Cleaning FO Settling - Telah dilakukan pembuangan limbah lumpur campur minyak / limbah B3",
+          "volume": 1.6,
+          "satuan": "Ton",
+          "harga_satuan": 1000000,
+          "harga_total": 1600000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 166
+          }
+        },
+        {
+          "nomor": "00.20.03-5",
+          "nama": "CLEANING - Cleaning FO Settling - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 167
+          }
+        },
+        {
+          "nomor": "00.20.03-6",
+          "nama": "CLEANING - Cleaning FO Settling - Recleaning Fo settling tank",
+          "volume": 64.12,
+          "satuan": "M³",
+          "harga_satuan": 17000,
+          "harga_total": 1090040,
+          "catatan": [],
+          "metadata": {
+            "original_row": 168
+          }
+        },
+        {
+          "nomor": "00.20.03-7",
+          "nama": "CLEANING - Cleaning FO Settling - Penimbaan sampah hasil recleaning",
+          "volume": 2,
+          "satuan": "Kaleng",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 169
+          }
+        },
+        {
+          "nomor": "00.20.04",
+          "nama": "CLEANING - Cleaning FO Service",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out manual",
+            "Telah dilakukan cleaning FO service tank dengan ukuran",
+            "Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+            "Dilakukan lapping setelah cleaning",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 171
+          }
+        },
+        {
+          "nomor": "00.20.04-1",
+          "nama": "CLEANING - Cleaning FO Service - Telah dilakukan pumping out manual",
+          "volume": 0.2,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 60000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 172
+          }
+        },
+        {
+          "nomor": "00.20.04-2",
+          "nama": "CLEANING - Cleaning FO Service - Telah dilakukan cleaning FO service tank dengan ukuran",
+          "volume": 20,
+          "satuan": "M³",
+          "harga_satuan": 34000,
+          "harga_total": 680000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 173
+          }
+        },
+        {
+          "nomor": "00.20.04-3",
+          "nama": "CLEANING - Cleaning FO Service - Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+          "volume": 1,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 174
+          }
+        },
+        {
+          "nomor": "00.20.04-4",
+          "nama": "CLEANING - Cleaning FO Service - Dilakukan lapping setelah cleaning",
+          "volume": 1,
+          "satuan": "Tanki",
+          "harga_satuan": 340000,
+          "harga_total": 340000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 175
+          }
+        },
+        {
+          "nomor": "00.20.04-5",
+          "nama": "CLEANING - Cleaning FO Service - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 176
+          }
+        },
+        {
+          "nomor": "00.20.05",
+          "nama": "CLEANING - Cleaning Sump Tank",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out",
+            "Telah dilakukan cleaning sump tank dengan ukuran",
+            "Pumping dikerjakan oleh 3 orang x 1 Hari",
+            "Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak  2 drum @ 200 ltr",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 178
+          }
+        },
+        {
+          "nomor": "00.20.05-1",
+          "nama": "CLEANING - Cleaning Sump Tank - Telah dilakukan pumping out",
+          "volume": 7,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 420000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 179
+          }
+        },
+        {
+          "nomor": "00.20.05-2",
+          "nama": "CLEANING - Cleaning Sump Tank - Telah dilakukan cleaning sump tank dengan ukuran",
+          "volume": 7.5,
+          "satuan": "M³",
+          "harga_satuan": 547400,
+          "harga_total": 4105500,
+          "catatan": [],
+          "metadata": {
+            "original_row": 180
+          }
+        },
+        {
+          "nomor": "00.20.05-3",
+          "nama": "CLEANING - Cleaning Sump Tank - Pumping dikerjakan oleh 3 orang x 1 Hari",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": 660000,
+          "harga_total": 660000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 181
+          }
+        },
+        {
+          "nomor": "00.20.05-4",
+          "nama": "CLEANING - Cleaning Sump Tank - Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak  2 drum @ 200 ltr",
+          "volume": 3,
+          "satuan": "Drum",
+          "harga_satuan": 1317000,
+          "harga_total": 1317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 182
+          }
+        },
+        {
+          "nomor": "00.20.05-5",
+          "nama": "CLEANING - Cleaning Sump Tank - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 183
+          }
+        },
+        {
+          "nomor": "00.20.06",
+          "nama": "CLEANING - Cleaning E/R",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out",
+            "Telah dilakukan cleaning engine room dengan ukuran",
+            "Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 2 drum @ 200 liter",
+            "Telah dilakukan pembuangan limbah lumpur campur minyak / limbah B3"
+          ],
+          "metadata": {
+            "original_row": 185
+          }
+        },
+        {
+          "nomor": "00.20.06-1",
+          "nama": "CLEANING - Cleaning E/R - Telah dilakukan pumping out",
+          "volume": 2,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 120000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 186
+          }
+        },
+        {
+          "nomor": "00.20.06-2",
+          "nama": "CLEANING - Cleaning E/R - Telah dilakukan cleaning engine room dengan ukuran",
+          "volume": 90,
+          "satuan": "M³",
+          "harga_satuan": 262000,
+          "harga_total": 23580000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 187
+          }
+        },
+        {
+          "nomor": "00.20.06-3",
+          "nama": "CLEANING - Cleaning E/R - Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 2 drum @ 200 liter",
+          "volume": 2,
+          "satuan": "Drum",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 188
+          }
+        },
+        {
+          "nomor": "00.20.06-4",
+          "nama": "CLEANING - Cleaning E/R - Telah dilakukan pembuangan limbah lumpur campur minyak / limbah B3",
+          "volume": 2.4,
+          "satuan": "Ton",
+          "harga_satuan": 1000000,
+          "harga_total": 2400000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 189
+          }
+        },
+        {
+          "nomor": "00.20.07",
+          "nama": "CLEANING - Buka Tutup Bottom Plug",
+          "volume": 16,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 3808000,
+          "catatan": [
+            "Telah dilaksanakan buka tutup bottom plug untuk drain air ballast serta penyemenan, dengan detail sebagai berikut :",
+            "WBT 1 (P&S)",
+            "WBT 2 (P&S)",
+            "WBT 3 (P&S)",
+            "SWBT 3 (P&S)",
+            "SWBT 3 (P&S)",
+            "SWBT 3 (P&S)",
+            "FPT",
+            "APT"
+          ],
+          "metadata": {
+            "original_row": 195
+          }
+        },
+        {
+          "nomor": "00.20.08",
+          "nama": "CLEANING - Chain locker",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": 2894000,
+          "harga_total": 5788000,
+          "catatan": [
+            "Perawatan Bak Rantai",
+            "Bak rantai jangkar kanan/kiri discrap. dibersihkan dari lumpur dan kotorannya serta dibuang hasil",
+            "kotorannya ke penampungan darat",
+            "Bak rantai jangkar (Stbd & Port) di cat 1 (satu) kali lapis coaltar / bitumastic",
+            "Telah dilakukan pembuangan lumpur & kerak-kerak dari chain locker (P&S) sebanyak"
+          ],
+          "metadata": {
+            "original_row": 206
+          }
+        },
+        {
+          "nomor": "00.20.08-1",
+          "nama": "CLEANING - Chain locker - Telah dilakukan pembuangan lumpur & kerak-kerak dari chain locker (P&S) sebanyak",
+          "volume": 3,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 951000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 211
+          }
+        },
+        {
+          "nomor": "00.20.09",
+          "nama": "CLEANING - Cleaning FPT (P)",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan FPT dengan ukuran",
+            "Telah dilakukan penimbaan lumpur",
+            "Dilaksanakan penyemenan pada FPT",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 213
+          }
+        },
+        {
+          "nomor": "00.20.09-1",
+          "nama": "CLEANING - Cleaning FPT (P) - Telah dilakukan FPT dengan ukuran",
+          "volume": 90,
+          "satuan": "M³",
+          "harga_satuan": 10000,
+          "harga_total": 900000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 214
+          }
+        },
+        {
+          "nomor": "00.20.09-2",
+          "nama": "CLEANING - Cleaning FPT (P) - Telah dilakukan penimbaan lumpur",
+          "volume": 1,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 215
+          }
+        },
+        {
+          "nomor": "00.20.09-3",
+          "nama": "CLEANING - Cleaning FPT (P) - Dilaksanakan penyemenan pada FPT",
+          "volume": 180,
+          "satuan": "M²",
+          "harga_satuan": 15000,
+          "harga_total": 2700000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 216
+          }
+        },
+        {
+          "nomor": "00.20.09-4",
+          "nama": "CLEANING - Cleaning FPT (P) - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 217
+          }
+        },
+        {
+          "nomor": "00.20.09",
+          "nama": "CLEANING - Cleaning FPT (S)",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan FPT dengan ukuran",
+            "Telah dilakukan penimbaan lumpur",
+            "Dilaksanakan penyemenan pada FPT",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 219
+          }
+        },
+        {
+          "nomor": "00.20.09-1",
+          "nama": "CLEANING - Cleaning FPT (S) - Telah dilakukan FPT dengan ukuran",
+          "volume": 90,
+          "satuan": "M³",
+          "harga_satuan": 10000,
+          "harga_total": 900000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 220
+          }
+        },
+        {
+          "nomor": "00.20.09-2",
+          "nama": "CLEANING - Cleaning FPT (S) - Telah dilakukan penimbaan lumpur",
+          "volume": 1,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 221
+          }
+        },
+        {
+          "nomor": "00.20.09-3",
+          "nama": "CLEANING - Cleaning FPT (S) - Dilaksanakan penyemenan pada FPT",
+          "volume": 180,
+          "satuan": "M²",
+          "harga_satuan": 15000,
+          "harga_total": 2700000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 222
+          }
+        },
+        {
+          "nomor": "00.20.09-4",
+          "nama": "CLEANING - Cleaning FPT (S) - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 223
+          }
+        },
+        {
+          "nomor": "00.20.10",
+          "nama": "CLEANING - Cleaning APT (S)",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Dilakukan pump out air yang dikerjakan 2 orang x 1 Hari",
+            "Telah dilakukan APT dengan ukuran",
+            "Telah dilakukan penimbaan lumpur",
+            "Dilaksanakan penyemenan pada APT",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 227
+          }
+        },
+        {
+          "nomor": "00.20.10-1",
+          "nama": "CLEANING - Cleaning APT (S) - Dilakukan pump out air yang dikerjakan 2 orang x 1 Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 440000,
+          "harga_total": 440000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 228
+          }
+        },
+        {
+          "nomor": "00.20.10-2",
+          "nama": "CLEANING - Cleaning APT (S) - Telah dilakukan APT dengan ukuran",
+          "volume": 75,
+          "satuan": "M³",
+          "harga_satuan": 10000,
+          "harga_total": 750000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 229
+          }
+        },
+        {
+          "nomor": "00.20.10-3",
+          "nama": "CLEANING - Cleaning APT (S) - Telah dilakukan penimbaan lumpur",
+          "volume": 1,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 230
+          }
+        },
+        {
+          "nomor": "00.20.10-4",
+          "nama": "CLEANING - Cleaning APT (S) - Dilaksanakan penyemenan pada APT",
+          "volume": 160,
+          "satuan": "M²",
+          "harga_satuan": 15000,
+          "harga_total": 2400000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 231
+          }
+        },
+        {
+          "nomor": "00.20.10-5",
+          "nama": "CLEANING - Cleaning APT (S) - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 232
+          }
+        },
+        {
+          "nomor": "00.20.11",
+          "nama": "CLEANING - Cleaning APT (P)",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Dilakukan pump out air yang dikerjakan 3 orang x 1 Hari",
+            "Telah dilakukan APT dengan ukuran",
+            "Telah dilakukan penimbaan lumpur",
+            "Dilaksanakan penyemenan pada APT",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 234
+          }
+        },
+        {
+          "nomor": "00.20.11-1",
+          "nama": "CLEANING - Cleaning APT (P) - Dilakukan pump out air yang dikerjakan 3 orang x 1 Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 660000,
+          "harga_total": 660000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 235
+          }
+        },
+        {
+          "nomor": "00.20.11-2",
+          "nama": "CLEANING - Cleaning APT (P) - Telah dilakukan APT dengan ukuran",
+          "volume": 75,
+          "satuan": "M³",
+          "harga_satuan": 10000,
+          "harga_total": 750000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 236
+          }
+        },
+        {
+          "nomor": "00.20.11-3",
+          "nama": "CLEANING - Cleaning APT (P) - Telah dilakukan penimbaan lumpur",
+          "volume": 1,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 237
+          }
+        },
+        {
+          "nomor": "00.20.11-4",
+          "nama": "CLEANING - Cleaning APT (P) - Dilaksanakan penyemenan pada APT",
+          "volume": 160,
+          "satuan": "M²",
+          "harga_satuan": 15000,
+          "harga_total": 2400000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 238
+          }
+        },
+        {
+          "nomor": "00.20.11-5",
+          "nama": "CLEANING - Cleaning APT (P) - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 239
+          }
+        },
+        {
+          "nomor": "00.20.12",
+          "nama": "CLEANING - Cleaning Slugde tank",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out manual",
+            "Telah dilakukan cleaning slugde tank dengan ukuran",
+            "Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 241
+          }
+        },
+        {
+          "nomor": "00.20.12-1",
+          "nama": "CLEANING - Cleaning Slugde tank - Telah dilakukan pumping out manual",
+          "volume": 2.5,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 150000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 242
+          }
+        },
+        {
+          "nomor": "00.20.12-2",
+          "nama": "CLEANING - Cleaning Slugde tank - Telah dilakukan cleaning slugde tank dengan ukuran",
+          "volume": 1,
+          "satuan": "Tanki",
+          "harga_satuan": 680000,
+          "harga_total": 680000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 243
+          }
+        },
+        {
+          "nomor": "00.20.12-3",
+          "nama": "CLEANING - Cleaning Slugde tank - Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+          "volume": 1,
+          "satuan": "Drum",
+          "harga_satuan": 1317000,
+          "harga_total": 1317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 244
+          }
+        },
+        {
+          "nomor": "00.20.12-4",
+          "nama": "CLEANING - Cleaning Slugde tank - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 245
+          }
+        },
+        {
+          "nomor": "00.20.13",
+          "nama": "CLEANING - Cleaning Bilge tank",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan pumping out manual",
+            "Telah dilakukan cleaning slugde tank dengan ukuran",
+            "Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+            "Dilaksanakan bongkar pasang manhole x 1 Units"
+          ],
+          "metadata": {
+            "original_row": 247
+          }
+        },
+        {
+          "nomor": "00.20.13-1",
+          "nama": "CLEANING - Cleaning Bilge tank - Telah dilakukan pumping out manual",
+          "volume": 0.4,
+          "satuan": "Ton",
+          "harga_satuan": 60000,
+          "harga_total": 60000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 248
+          }
+        },
+        {
+          "nomor": "00.20.13-2",
+          "nama": "CLEANING - Cleaning Bilge tank - Telah dilakukan cleaning slugde tank dengan ukuran",
+          "volume": 1,
+          "satuan": "Tanki",
+          "harga_satuan": 680000,
+          "harga_total": 680000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 249
+          }
+        },
+        {
+          "nomor": "00.20.13-3",
+          "nama": "CLEANING - Cleaning Bilge tank - Telah dilakukan penimbaan lumpur campur minyak / limbah B3 sebanyak 1 drum @ 200 ltr",
+          "volume": 1,
+          "satuan": "Drum",
+          "harga_satuan": 1317000,
+          "harga_total": 1317000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 250
+          }
+        },
+        {
+          "nomor": "00.20.13-4",
+          "nama": "CLEANING - Cleaning Bilge tank - Dilaksanakan bongkar pasang manhole x 1 Units",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 238000,
+          "harga_total": 238000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 251
+          }
+        },
+        {
+          "nomor": "00.20.14",
+          "nama": "CLEANING - Cleaning Ballas Partial",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Ballas palka 1(P/S)",
+            "Ballas palka 2 (P/S)",
+            "Ballas palka 3 (P/S)"
+          ],
+          "metadata": {
+            "original_row": 255
+          }
+        },
+        {
+          "nomor": "00.20.14-1",
+          "nama": "CLEANING - Cleaning Ballas Partial - Ballas palka 1(P/S)",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan Cleaning lumpur pada ballas tank x 2 Jumbo bag",
+            "Pekerjaan cleaning dilkukan 8 Orang  dalam 1 Hari"
+          ],
+          "metadata": {
+            "original_row": 256
+          }
+        },
+        {
+          "nomor": "00.20.14-1a",
+          "nama": "CLEANING - Cleaning Ballas Partial - Telah dilakukan Cleaning lumpur pada ballas tank x 2 Jumbo bag",
+          "volume": 4,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 1268000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 257
+          }
+        },
+        {
+          "nomor": "00.20.14-1b",
+          "nama": "CLEANING - Cleaning Ballas Partial - Pekerjaan cleaning dilkukan 8 Orang  dalam 1 Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 1760000,
+          "harga_total": 1760000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 258
+          }
+        },
+        {
+          "nomor": "00.20.14-2",
+          "nama": "CLEANING - Cleaning Ballas Partial - Ballas palka 2 (P/S)",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan Cleaning lumpur pada ballas tank x 2 Jumbo bag",
+            "Pekerjaan cleaning dilkukan 7 Orang dalam 1 Hari"
+          ],
+          "metadata": {
+            "original_row": 259
+          }
+        },
+        {
+          "nomor": "00.20.14-2a",
+          "nama": "CLEANING - Cleaning Ballas Partial - Telah dilakukan Cleaning lumpur pada ballas tank x 2 Jumbo bag",
+          "volume": 4,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 1268000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 260
+          }
+        },
+        {
+          "nomor": "00.20.14-2b",
+          "nama": "CLEANING - Cleaning Ballas Partial - Pekerjaan cleaning dilkukan 7 Orang dalam 1 Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 1540000,
+          "harga_total": 1540000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 261
+          }
+        },
+        {
+          "nomor": "00.20.14-3",
+          "nama": "CLEANING - Cleaning Ballas Partial - Ballas palka 3 (P/S)",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Telah dilakukan Cleaning lumpur pada ballas tank x 2 Jumbo bag",
+            "Pekerjaan cleaning dilkukan 10 Orang  dalam 1 Hari"
+          ],
+          "metadata": {
+            "original_row": 262
+          }
+        },
+        {
+          "nomor": "00.20.14-3a",
+          "nama": "CLEANING - Cleaning Ballas Partial - Telah dilakukan Cleaning lumpur pada ballas tank x 2 Jumbo bag",
+          "volume": 4,
+          "satuan": "Ton",
+          "harga_satuan": 317000,
+          "harga_total": 1268000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 263
+          }
+        },
+        {
+          "nomor": "00.20.14-3b",
+          "nama": "CLEANING - Cleaning Ballas Partial - Pekerjaan cleaning dilkukan 10 Orang  dalam 1 Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 2200000,
+          "harga_total": 2200000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 264
+          }
+        },
+        {
+          "nomor": "00.20.15",
+          "nama": "CLEANING - Dilaksanakan blasting ,skrap dan painting dengan item sebagai berikut :",
+          "volume": 1,
+          "satuan": "Lot",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Strainer 14 inch x 2 Units",
+            "Gate valve 12 inch x 2 Units",
+            "Angle valve  12inch x 2 Unit",
+            "Pekerjaan skrap item diatas dikerjakan 2 orang x 1 Hari"
+          ],
+          "metadata": {
+            "original_row": 266
+          }
+        },
+        {
+          "nomor": "00.20.15-1",
+          "nama": "CLEANING - Dilaksanakan blasting ,skrap dan painting dengan item sebagai berikut : - Strainer 14 inch x 2 Units",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": 775000,
+          "harga_total": 1550000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 267
+          }
+        },
+        {
+          "nomor": "00.20.15-2",
+          "nama": "CLEANING - Dilaksanakan blasting ,skrap dan painting dengan item sebagai berikut : - Gate valve 12 inch x 2 Units",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": 775000,
+          "harga_total": 1550000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 268
+          }
+        },
+        {
+          "nomor": "00.20.15-3",
+          "nama": "CLEANING - Dilaksanakan blasting ,skrap dan painting dengan item sebagai berikut : - Angle valve  12inch x 2 Unit",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": 775000,
+          "harga_total": 1550000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 269
+          }
+        },
+        {
+          "nomor": "00.20.16",
+          "nama": "CLEANING - Bongkar cor Area Engine room",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 750000,
+          "harga_total": 750000,
+          "catatan": [
+            "Ukuran 1200 x 300 x 300 mm"
+          ],
+          "metadata": {
+            "original_row": 272
+          }
+        },
+        {
+          "nomor": "00.20.17",
+          "nama": "CLEANING - Bongkar cor Area Valve bowthruster",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 660000,
+          "harga_total": 660000,
+          "catatan": [
+            "Ukuran 300 x 300 x 300 mm yang dikerjakan 3 orang dalam 1 Hari"
+          ],
+          "metadata": {
+            "original_row": 275
+          }
+        },
+        {
+          "nomor": "00.20.18",
+          "nama": "CLEANING - General cleaning Main deck, forecastle deck",
+          "volume": 350,
+          "satuan": "M²",
+          "harga_satuan": 10000,
+          "harga_total": 3500000,
+          "catatan": [
+            "Dilaksanakan general cleaning dari sampah dan kotoran lainya"
+          ],
+          "metadata": {
+            "original_row": 278
+          }
+        },
+        {
+          "nomor": "00.20.18-1",
+          "nama": "CLEANING - General cleaning Main deck, forecastle deck - Dilaksanakan general cleaning dari sampah dan kotoran lainya",
+          "volume": 3,
+          "satuan": "Jumbo",
+          "harga_satuan": 317000,
+          "harga_total": 951000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 279
+          }
+        }
+      ]
+    },
+    {
+      "kategori": "HULL",
+      "total_kategori": 736419724,
+      "items": [
+        {
+          "nomor": "01.01",
+          "nama": "Inspeksi dan Pengukuran (PT. Kava) - Ultrasonic Test",
+          "volume": 1346,
+          "satuan": "Titik",
+          "harga_satuan": 10000,
+          "harga_total": 13460000,
+          "catatan": [
+            "Telah dilaksanakan test ketebalan plat dengan ultrasonic thickness test (UT)",
+            "Shell expation : 345 Titik",
+            "Seachast : 14 Titik",
+            "Rudder : 6 Titik",
+            "Bowtrhuster : 16 Titik",
+            "Shell BGA : 145 Titik",
+            "Tank top : 220 Titik",
+            "TS 0.5 L : 111 Titik",
+            "Cover ponton 1,2,3 : 155 Titik",
+            "Shell BGA : 48 Titik",
+            "Kotak Got : 30 Titik",
+            "Cover ponton : 60 Titik",
+            "Houshing Bowtrhuster : 9 Titik",
+            "TS BHD : 71 Titik",
+            "Wing tank : 116 Titik"
+          ],
+          "metadata": {
+            "original_row": 12
+          }
+        },
+        {
+          "nomor": "01.01",
+          "nama": "Inspeksi dan Pengukuran (PT. Kava) - Pipa bunker x 1 Sistem",
+          "volume": 1,
+          "satuan": "System",
+          "harga_satuan": 3000000,
+          "harga_total": 3000000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 28
+          }
+        },
+        {
+          "nomor": "01.01",
+          "nama": "Inspeksi dan Pengukuran (PT. Kava) - Pipa Main line seachest x 1 Sistem",
+          "volume": 1,
+          "satuan": "System",
+          "harga_satuan": 3000000,
+          "harga_total": 3000000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 29
+          }
+        },
+        {
+          "nomor": "01.01",
+          "nama": "Inspeksi dan Pengukuran (PT. Kava) - Pipa vent head x 1 sistem",
+          "volume": 1,
+          "satuan": "System",
+          "harga_satuan": 4000000,
+          "harga_total": 4000000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 30
+          }
+        },
+        {
+          "nomor": "01.01",
+          "nama": "Inspeksi dan Pengukuran (PT. Kava) - Pipa overboard x 1 Sistem",
+          "volume": 1,
+          "satuan": "System",
+          "harga_satuan": 3000000,
+          "harga_total": 3000000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 31
+          }
+        },
+        {
+          "nomor": "01.01",
+          "nama": "Inspeksi dan Pengukuran (PT. Kava) - Air test FO Settling tank",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 5000000,
+          "harga_total": 5000000,
+          "catatan": [
+            "Dilaksanakan air test FO Settling tank dengan detail sebagai berikut:",
+            "Dilaksanakan pemasangan manimeter",
+            "Asistensi manpower 4 orang x 1 Hari"
+          ],
+          "metadata": {
+            "original_row": 36
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 8,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 1592000,
+          "catatan": [
+            "Telah dilakukan penambhan pemasangan zink anoda, dengan detail sebagai berikut :",
+            "Telah dilakukan bongkar dan pasangan zink anoda, dengan detail sebagai berikut :",
+            "±11 kg (Welded type)",
+            "Bulbousbow"
+          ],
+          "metadata": {
+            "original_row": 48
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 6,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 1194000,
+          "catatan": [
+            "Telah dilakukan penambahan pemasangan zink anoda, dengan detail sebagai berikut :",
+            "±11 kg (Welded type)",
+            "Lambung kiri"
+          ],
+          "metadata": {
+            "original_row": 51
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 199000,
+          "catatan": [
+            "Lambung kiri depan"
+          ],
+          "metadata": {
+            "original_row": 52
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 199000,
+          "catatan": [
+            "lambung kanan"
+          ],
+          "metadata": {
+            "original_row": 53
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 5,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 995000,
+          "catatan": [
+            "Sirip kanan"
+          ],
+          "metadata": {
+            "original_row": 54
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 5,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 995000,
+          "catatan": [
+            "Sirip kiri"
+          ],
+          "metadata": {
+            "original_row": 55
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 10,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 1990000,
+          "catatan": [
+            "Seachast (P/S)"
+          ],
+          "metadata": {
+            "original_row": 56
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 6,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 1194000,
+          "catatan": [
+            "Rudder (P/S)"
+          ],
+          "metadata": {
+            "original_row": 57
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 199000,
+          "harga_total": 398000,
+          "catatan": [
+            "Seachest Depan"
+          ],
+          "metadata": {
+            "original_row": 58
+          }
+        },
+        {
+          "nomor": "01.02.01",
+          "nama": "Cathodic / Anodic Protection - Penggantian Zink Anoda",
+          "volume": "include",
+          "satuan": null,
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Note ;",
+            "Pemasangan zinc anode dilakukan dengan pengelasan full sepanjang 400 mm x 2 layer",
+            "Telah dilakukan pemeriksaan visual hasil pengelasan zinc anode oleh tim QC DPL"
+          ],
+          "metadata": {
+            "original_row": 60
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 161.6,
+          "satuan": "M2",
+          "harga_satuan": 12400,
+          "harga_total": 2003840,
+          "catatan": [
+            "Skrap karang"
+          ],
+          "metadata": {
+            "original_row": 70
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 1616,
+          "satuan": "M2",
+          "harga_satuan": 22300,
+          "harga_total": 36036800,
+          "catatan": [
+            "Water Jet High Pressure"
+          ],
+          "metadata": {
+            "original_row": 71
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 161.6,
+          "satuan": "M2",
+          "harga_satuan": 66100,
+          "harga_total": 10681760,
+          "catatan": [
+            "Spot Blasting"
+          ],
+          "metadata": {
+            "original_row": 72
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 161.6,
+          "satuan": "M2",
+          "harga_satuan": 49600,
+          "harga_total": 8015360,
+          "catatan": [
+            "Sweep Blasting"
+          ],
+          "metadata": {
+            "original_row": 73
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 1616,
+          "satuan": "M2",
+          "harga_satuan": 9900,
+          "harga_total": 15998400,
+          "catatan": [
+            "Water Jet Low Pressure"
+          ],
+          "metadata": {
+            "original_row": 74
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 323.2,
+          "satuan": "M2",
+          "harga_satuan": 12500,
+          "harga_total": 4040000,
+          "catatan": [
+            "Pengecatan",
+            "1st Painting coat (AC), alumunium colour, touch up 20 %"
+          ],
+          "metadata": {
+            "original_row": 76
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 1292.8,
+          "satuan": "M2",
+          "harga_satuan": 7100,
+          "harga_total": 9178880,
+          "catatan": [
+            "2nd Painting coat (Tie coat), gray colour, touch up 80%"
+          ],
+          "metadata": {
+            "original_row": 77
+          }
+        },
+        {
+          "nomor": "01.03.01",
+          "nama": "Perawatan Lambung - Flat Bottom Area",
+          "volume": 1616,
+          "satuan": "M2",
+          "harga_satuan": 7100,
+          "harga_total": 11473600,
+          "catatan": [
+            "3th Painting coat (AF), red colour, full coat"
+          ],
+          "metadata": {
+            "original_row": 78
+          }
+        },
+        {
+          "nomor": "01.03.02",
+          "nama": "Perawatan Lambung - Bottop Area",
+          "volume": 516,
+          "satuan": "M2",
+          "harga_satuan": 22300,
+          "harga_total": 11506800,
+          "catatan": [
+            "Water Jet High Pressure"
+          ],
+          "metadata": {
+            "original_row": 81
+          }
+        },
+        {
+          "nomor": "01.03.02",
+          "nama": "Perawatan Lambung - Bottop Area",
+          "volume": 51.6,
+          "satuan": "M2",
+          "harga_satuan": 66100,
+          "harga_total": 3410760,
+          "catatan": [
+            "Spot Blasting"
+          ],
+          "metadata": {
+            "original_row": 82
+          }
+        },
+        {
+          "nomor": "01.03.02",
+          "nama": "Perawatan Lambung - Bottop Area",
+          "volume": 77.4,
+          "satuan": "M2",
+          "harga_satuan": 49600,
+          "harga_total": 3839040,
+          "catatan": [
+            "Sweep Blasting"
+          ],
+          "metadata": {
+            "original_row": 83
+          }
+        },
+        {
+          "nomor": "01.03.02",
+          "nama": "Perawatan Lambung - Bottop Area",
+          "volume": 516,
+          "satuan": "M2",
+          "harga_satuan": 9900,
+          "harga_total": 5108400,
+          "catatan": [
+            "Water Jet Low Pressure dilakukan"
+          ],
+          "metadata": {
+            "original_row": 84
+          }
+        },
+        {
+          "nomor": "01.03.02",
+          "nama": "Perawatan Lambung - Bottop Area",
+          "volume": 77.4,
+          "satuan": "M2",
+          "harga_satuan": 12500,
+          "harga_total": 967500,
+          "catatan": [
+            "Pengecatan",
+            "1st Painting coat (AC), alumunium colour, touch up 15%"
+          ],
+          "metadata": {
+            "original_row": 86
+          }
+        },
+        {
+          "nomor": "01.03.02",
+          "nama": "Perawatan Lambung - Bottop Area",
+          "volume": 154.8,
+          "satuan": "M2",
+          "harga_satuan": 7100,
+          "harga_total": 1099080,
+          "catatan": [
+            "2nd Painting coat (Tie coat), gray colour, touch up 30%"
+          ],
+          "metadata": {
+            "original_row": 87
+          }
+        },
+        {
+          "nomor": "01.03.02",
+          "nama": "Perawatan Lambung - Bottop Area",
+          "volume": 516,
+          "satuan": "M2",
+          "harga_satuan": 7100,
+          "harga_total": 3663600,
+          "catatan": [
+            "3th Painting coat (AF), red colour, full coat"
+          ],
+          "metadata": {
+            "original_row": 88
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 426,
+          "satuan": "M2",
+          "harga_satuan": 12400,
+          "harga_total": 5282400,
+          "catatan": [
+            "Skrap karang"
+          ],
+          "metadata": {
+            "original_row": 91
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 710,
+          "satuan": "M2",
+          "harga_satuan": 22300,
+          "harga_total": 15833000,
+          "catatan": [
+            "Water Jet High Pressure"
+          ],
+          "metadata": {
+            "original_row": 92
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 35.5,
+          "satuan": "M2",
+          "harga_satuan": 66100,
+          "harga_total": 2346550,
+          "catatan": [
+            "Spot Blasting"
+          ],
+          "metadata": {
+            "original_row": 93
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 106.5,
+          "satuan": "M2",
+          "harga_satuan": 49600,
+          "harga_total": 5282400,
+          "catatan": [
+            "Sweep Blasting"
+          ],
+          "metadata": {
+            "original_row": 94
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 710,
+          "satuan": "M2",
+          "harga_satuan": 9900,
+          "harga_total": 7029000,
+          "catatan": [
+            "Water Jet Low Pressure"
+          ],
+          "metadata": {
+            "original_row": 95
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 142,
+          "satuan": "M2",
+          "harga_satuan": 12500,
+          "harga_total": 1775000,
+          "catatan": [
+            "Pengecatan",
+            "1st Painting coat (AC), alumunium colour, touch up 20%"
+          ],
+          "metadata": {
+            "original_row": 97
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 213,
+          "satuan": "M2",
+          "harga_satuan": 7100,
+          "harga_total": 1512300,
+          "catatan": [
+            "2nd Painting coat (Tie coat), gray colour, touch up 30%"
+          ],
+          "metadata": {
+            "original_row": 98
+          }
+        },
+        {
+          "nomor": "01.03.03",
+          "nama": "Perawatan Lambung - Vertical Side Area",
+          "volume": 710,
+          "satuan": "M2",
+          "harga_satuan": 7100,
+          "harga_total": 5041000,
+          "catatan": [
+            "3th Painting coat (AF), red colour, full coat"
+          ],
+          "metadata": {
+            "original_row": 99
+          }
+        },
+        {
+          "nomor": "01.03.04",
+          "nama": "Perawatan Lambung - Top Side Area",
+          "volume": 84.6,
+          "satuan": "M2",
+          "harga_satuan": 72710,
+          "harga_total": 6151266,
+          "catatan": [
+            "Spot Blasting"
+          ],
+          "metadata": {
+            "original_row": 102
+          }
+        },
+        {
+          "nomor": "01.03.04",
+          "nama": "Perawatan Lambung - Top Side Area",
+          "volume": 42.3,
+          "satuan": "M2",
+          "harga_satuan": 53800,
+          "harga_total": 2275740,
+          "catatan": [
+            "Hard Sweep Blasting"
+          ],
+          "metadata": {
+            "original_row": 103
+          }
+        },
+        {
+          "nomor": "01.03.04",
+          "nama": "Perawatan Lambung - Top Side Area",
+          "volume": 846,
+          "satuan": "M2",
+          "harga_satuan": 10890,
+          "harga_total": 9212940,
+          "catatan": [
+            "Water Jet Low Pressure"
+          ],
+          "metadata": {
+            "original_row": 104
+          }
+        },
+        {
+          "nomor": "01.03.04",
+          "nama": "Perawatan Lambung - Top Side Area",
+          "volume": 84.6,
+          "satuan": "M2",
+          "harga_satuan": 13750,
+          "harga_total": 1163250,
+          "catatan": [
+            "Pengecatan",
+            "1st Painting coat (AC), alumunium colour, touch up 10%"
+          ],
+          "metadata": {
+            "original_row": 106
+          }
+        },
+        {
+          "nomor": "01.03.04",
+          "nama": "Perawatan Lambung - Top Side Area",
+          "volume": 84.6,
+          "satuan": "M2",
+          "harga_satuan": 13750,
+          "harga_total": 1163250,
+          "catatan": [
+            "2nd Painting coat (Tie coat), gray colour, touch up 10%"
+          ],
+          "metadata": {
+            "original_row": 107
+          }
+        },
+        {
+          "nomor": "01.03.04",
+          "nama": "Perawatan Lambung - Top Side Area",
+          "volume": 846,
+          "satuan": "M2",
+          "harga_satuan": 7100,
+          "harga_total": 6006600,
+          "catatan": [
+            "3th Painting coat (Finish coat), black colour, full coat"
+          ],
+          "metadata": {
+            "original_row": 108
+          }
+        },
+        {
+          "nomor": "01.03.05",
+          "nama": "Perawatan Lambung - Ship Marking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 2637600,
+          "harga_total": 2637600,
+          "catatan": [
+            "Painting ship name and port register",
+            "Painting draft mark and plimsol mark",
+            "Painting waterline from top side to vertical side, from vertical side to bottom area"
+          ],
+          "metadata": {
+            "original_row": 110
+          }
+        },
+        {
+          "nomor": "01.04.01",
+          "nama": "Sea Chest Box - Bongkar pasang grating, cleaning, dan pengecatan box sea chest",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3289000,
+          "harga_total": 3289000,
+          "catatan": [
+            "Telah dilaksanakan pelepasan sea chest grating, pembersihan sea chest box, pengecatan sea chest box",
+            "(2x AC dan 1x AF), dan pemasangan kembali sea chest grating dengan detail sebagai berikut :",
+            "Stbd Side (low)",
+            "700 mmP x 1150 mmL x 940 mmT (Seachest Box)",
+            "36.61417322834646 inch",
+            "540 mm x 1400 mm x 14 thk (Grating Cover)"
+          ],
+          "metadata": {
+            "original_row": 123
+          }
+        },
+        {
+          "nomor": "01.04.01",
+          "nama": "Sea Chest Box - Bongkar pasang grating, cleaning, dan pengecatan box sea chest",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3289000,
+          "harga_total": 3289000,
+          "catatan": [
+            "700 mmP x 1600 mmL x 1000 mmT (Seachest Box)",
+            "43.30708661417323 inch",
+            "620 mm x 1730 mm x 14 thk (Grating Cover)"
+          ],
+          "metadata": {
+            "original_row": 125
+          }
+        },
+        {
+          "nomor": "01.04.01",
+          "nama": "Sea Chest Box - Bongkar pasang grating, cleaning, dan pengecatan box sea chest",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3289000,
+          "harga_total": 3289000,
+          "catatan": [
+            "Port Side (high)",
+            "700 mmP x 1800 mmL x 1000 mmT (Seachest Box)",
+            "45.931758530183735 inch",
+            "640 mm x 1000 mm x 14 thk (Grating Cover)"
+          ],
+          "metadata": {
+            "original_row": 128
+          }
+        },
+        {
+          "nomor": "01.04.01",
+          "nama": "Sea Chest Box - Bongkar pasang grating, cleaning, dan pengecatan box sea chest",
+          "volume": 2,
+          "satuan": "Unit",
+          "harga_satuan": 3289000,
+          "harga_total": 6578000,
+          "catatan": [
+            "700 mmP x 2000 mmL x 1000 mmT (Seachest Box)",
+            "48.55643044619423 inch",
+            "530 mm x 1000 mm x 14 thk (Grating Cover)"
+          ],
+          "metadata": {
+            "original_row": 130
+          }
+        },
+        {
+          "nomor": "01.05.01",
+          "nama": "Bow Thruster Box - Bongkar pasang grating, cleaning, dan pengecatan box bow thruster (1700 x 1900 x 1700)",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3289000,
+          "harga_total": 3289000,
+          "catatan": [
+            "Telah dilaksanakan pelepasan bow thruster grating, pembersihan bow thruster box, pengecatan bow thruster box",
+            "(2x AC dan 1x AF), dan pemasangan kembali bow thruster grating dengan detail sebagai berikut :",
+            "- Bongkar pasang Mur baut + ring plat M16 x 50 mm sebanyak x 34 Pcs"
+          ],
+          "metadata": {
+            "original_row": 134
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Plat side shell 1830 x 1200 x 14",
+          "volume": 241.3404,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 7143676,
+          "catatan": [
+            "Telah dilaksanakan replate lambung dengan detail sebagai berikut :",
+            "Side shell",
+            "S"
+          ],
+          "metadata": {
+            "original_row": 146
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Plat long stiffener 1000 x 160 x 16",
+          "volume": 40.192,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1427620,
+          "catatan": [],
+          "metadata": {
+            "original_row": 147
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Plat side shell 2160 x 2970 x 20",
+          "volume": 1007.1864,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 29812717,
+          "catatan": [
+            "Side shell",
+            "P"
+          ],
+          "metadata": {
+            "original_row": 148
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Plat long stiffener 2080 x 250 x 16",
+          "volume": 65.312,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2319882,
+          "catatan": [],
+          "metadata": {
+            "original_row": 149
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Skat trans BHD 900 x 450 x 10",
+          "volume": 31.7925,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1129270,
+          "catatan": [],
+          "metadata": {
+            "original_row": 150
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Bracket plate 700 x 500 x 16",
+          "volume": 43.96,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1561459,
+          "catatan": [],
+          "metadata": {
+            "original_row": 151
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Plat akses main deck 650 x 350 x 12",
+          "volume": 21.4305,
+          "satuan": "Kg",
+          "harga_satuan": 23088,
+          "harga_total": 494787,
+          "catatan": [
+            "Mat. Lama"
+          ],
+          "metadata": {
+            "original_row": 152
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Backing plate 700 x 80 x 10",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 710400,
+          "catatan": [
+            "8.792"
+          ],
+          "metadata": {
+            "original_row": 153
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replating Lambung kapal - Backing plate 400 x 80 x 10",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 710400,
+          "catatan": [
+            "5.024"
+          ],
+          "metadata": {
+            "original_row": 154
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat side shell 3500 x 1400 x 12",
+          "volume": 461.58,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 16395322,
+          "catatan": [
+            "Telah dilaksanakan replate side shell haluan dengan detail sebagai berikut :",
+            "153/154 – 158/159",
+            "I",
+            "P",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 161
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat side shell 1100 x 400 x 12",
+          "volume": 41.448,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 1226861,
+          "catatan": [
+            "152/153 – 153/154",
+            "I",
+            "P"
+          ],
+          "metadata": {
+            "original_row": 162
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat side shell 3900 x 1650 x 12",
+          "volume": 606.177,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 17942839,
+          "catatan": [
+            "155/156 – 157/158",
+            "J",
+            "P"
+          ],
+          "metadata": {
+            "original_row": 163
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat side shell 6000 x 1700 x 12",
+          "volume": 960.84,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 34129037,
+          "catatan": [
+            "153/154- 160/161",
+            "K",
+            "P",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 164
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat side shell 1200 x 300 x 12",
+          "volume": 33.912,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 1003795,
+          "catatan": [
+            "157/158 – 161/162",
+            "K",
+            "S"
+          ],
+          "metadata": {
+            "original_row": 165
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat side shell 900 x 300 x 12",
+          "volume": 25.434,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 752846,
+          "catatan": [
+            "158/159 – 159/160",
+            "J",
+            "P"
+          ],
+          "metadata": {
+            "original_row": 166
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat Linggih haluan 2100 x 1100 x 12",
+          "volume": 217.602,
+          "satuan": "Kg",
+          "harga_satuan": 53280,
+          "harga_total": 11593835,
+          "catatan": [
+            "158/159 – 159/160",
+            "Keel",
+            "C",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 167
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat Linggih haluan 2700 x 1500 x 12",
+          "volume": 381.51,
+          "satuan": "Kg",
+          "harga_satuan": 53280,
+          "harga_total": 20326853,
+          "catatan": [
+            "158/159 – 159/160",
+            "Keel",
+            "C",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 168
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat ordinary frame 2200 x 240 x 16",
+          "volume": 66.3168,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2355573,
+          "catatan": [
+            "Internal forepeack / Store room"
+          ],
+          "metadata": {
+            "original_row": 170
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Bracket plate 400 x 300 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "9.42"
+          ],
+          "metadata": {
+            "original_row": 171
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Ordinary deck 2800 x 240 x 16",
+          "volume": 84.4032,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2998002,
+          "catatan": [],
+          "metadata": {
+            "original_row": 172
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Web frame plate 1400 x 2200 x 10",
+          "volume": 241.78,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 8588026,
+          "catatan": [],
+          "metadata": {
+            "original_row": 173
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Web frame plate 2600 x 370 x 10",
+          "volume": 75.517,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2682364,
+          "catatan": [],
+          "metadata": {
+            "original_row": 174
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat top 1850 x 150 x 10",
+          "volume": 21.78375,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 773759,
+          "catatan": [],
+          "metadata": {
+            "original_row": 175
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat top 1600 x 150 x 10",
+          "volume": 18.84,
+          "satuan": "Kg",
+          "harga_satuan": 42624,
+          "harga_total": 803036,
+          "catatan": [
+            "Bending"
+          ],
+          "metadata": {
+            "original_row": 176
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Carling plate 1100 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "8.635"
+          ],
+          "metadata": {
+            "original_row": 177
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Carling plate 1000 x 240 x 16",
+          "volume": 30.144,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1070715,
+          "catatan": [],
+          "metadata": {
+            "original_row": 178
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat ordinary frame 4400 x 240 x 16",
+          "volume": 132.6336,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 4711145,
+          "catatan": [],
+          "metadata": {
+            "original_row": 179
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Ordinary deck 1500 x 240 x 16",
+          "volume": 45.216,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1606072,
+          "catatan": [],
+          "metadata": {
+            "original_row": 180
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Bracket plate 400 x 300 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "9.42"
+          ],
+          "metadata": {
+            "original_row": 181
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Ordinary deck 3300 x 240 x 16",
+          "volume": 99.4752,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3533359,
+          "catatan": [],
+          "metadata": {
+            "original_row": 182
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Bracket plate 400 x 300 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "9.42"
+          ],
+          "metadata": {
+            "original_row": 183
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat ordinary frame 3300 x 240 x 16",
+          "volume": 99.4752,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3533359,
+          "catatan": [],
+          "metadata": {
+            "original_row": 184
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Ordinary deck 2200 x 240 x 16",
+          "volume": 66.3168,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2355573,
+          "catatan": [],
+          "metadata": {
+            "original_row": 185
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat ordinary frame 2000 x 240 x 16",
+          "volume": 60.288,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2141430,
+          "catatan": [],
+          "metadata": {
+            "original_row": 186
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Bracket plate 400 x 300 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "9.42"
+          ],
+          "metadata": {
+            "original_row": 187
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Carling plate 500 x 150 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "5.8875"
+          ],
+          "metadata": {
+            "original_row": 188
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat stringer 2850 x 650 x 10",
+          "volume": 145.42125,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 5165363,
+          "catatan": [],
+          "metadata": {
+            "original_row": 189
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat top stringer 2300 x 150 x 10",
+          "volume": 27.0825,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 961970,
+          "catatan": [],
+          "metadata": {
+            "original_row": 196
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat stringer 2570 x 500 x 10",
+          "volume": 100.8725,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3582991,
+          "catatan": [],
+          "metadata": {
+            "original_row": 197
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat top stringer 1830 x 150 x 10",
+          "volume": 21.54825,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 765394,
+          "catatan": [],
+          "metadata": {
+            "original_row": 198
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat stringer 1000 x 550 x 10",
+          "volume": 43.175,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1533576,
+          "catatan": [],
+          "metadata": {
+            "original_row": 199
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat top stringer 900 x 150 x 10",
+          "volume": 10.5975,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 376423,
+          "catatan": [],
+          "metadata": {
+            "original_row": 200
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Longitudinal stringer 1000 x 760 x 10",
+          "volume": 59.66,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2119123,
+          "catatan": [],
+          "metadata": {
+            "original_row": 201
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Longitudinal stringer 1100 x 1000 x 10",
+          "volume": 86.35,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3067152,
+          "catatan": [],
+          "metadata": {
+            "original_row": 202
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Longitudinal stringer 800 x 500 x 10",
+          "volume": 31.4,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1115328,
+          "catatan": [],
+          "metadata": {
+            "original_row": 203
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat tank top FWT 1100 x 800 x 10",
+          "volume": 69.08,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2453722,
+          "catatan": [],
+          "metadata": {
+            "original_row": 204
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat ordinary frame 1600 x 240 x 16",
+          "volume": 48.2304,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1713144,
+          "catatan": [
+            "Internal area emergency fire pump"
+          ],
+          "metadata": {
+            "original_row": 206
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Plat ordinary frame 2400 x 240 x 16",
+          "volume": 72.3456,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2569716,
+          "catatan": [],
+          "metadata": {
+            "original_row": 207
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Ordinary deck 1100 x 240 x 16",
+          "volume": 33.1584,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1177786,
+          "catatan": [],
+          "metadata": {
+            "original_row": 208
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Bracket plate 400 x 300 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "9.42"
+          ],
+          "metadata": {
+            "original_row": 209
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Skat trans BHD 1500 x 1600 x 10",
+          "volume": 188.4,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 6691968,
+          "catatan": [],
+          "metadata": {
+            "original_row": 210
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Stiffener plate 950 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "7.4575"
+          ],
+          "metadata": {
+            "original_row": 211
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Stiffener plate 900 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "7.065"
+          ],
+          "metadata": {
+            "original_row": 212
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Web frame plate 1100 x 800 x 10",
+          "volume": 69.08,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2453722,
+          "catatan": [],
+          "metadata": {
+            "original_row": 213
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Carling plate 700 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "5.495"
+          ],
+          "metadata": {
+            "original_row": 214
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate side shell haluan - Carling plate 500 x 150 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "5.8875"
+          ],
+          "metadata": {
+            "original_row": 215
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat Bullwalk 3300 x 1200 x 10",
+          "volume": 310.86,
+          "satuan": "Kg",
+          "harga_satuan": 42624,
+          "harga_total": 13250097,
+          "catatan": [
+            "Telah dilaksanakan replatebullwark haluan dengan detail sebagai berikut :",
+            "Bullwalk",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 222
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat Bullwalk 3200 x 1200 x 10",
+          "volume": 301.44,
+          "satuan": "Kg",
+          "harga_satuan": 42624,
+          "harga_total": 12848579,
+          "catatan": [
+            "√"
+          ],
+          "metadata": {
+            "original_row": 223
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat Bullwalk 2130 x 1200 x 10",
+          "volume": 200.646,
+          "satuan": "Kg",
+          "harga_satuan": 42624,
+          "harga_total": 8552335,
+          "catatan": [
+            "√"
+          ],
+          "metadata": {
+            "original_row": 224
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat Bullwalk 4900 x 1200 x 10",
+          "volume": 461.58,
+          "satuan": "Kg",
+          "harga_satuan": 42624,
+          "harga_total": 19674386,
+          "catatan": [
+            "√"
+          ],
+          "metadata": {
+            "original_row": 225
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top bulwalk 1700 x 220 x 16",
+          "volume": 46.9744,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1668531,
+          "catatan": [],
+          "metadata": {
+            "original_row": 226
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top bulwalk 2200 x 220 x 16",
+          "volume": 60.7904,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2159275,
+          "catatan": [],
+          "metadata": {
+            "original_row": 227
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Bracket plate 950 x 180 x 10",
+          "volume": 13.4235,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 476803,
+          "catatan": [],
+          "metadata": {
+            "original_row": 228
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top bulwalk 860 x 220 x 16",
+          "volume": 23.76352,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 844080,
+          "catatan": [],
+          "metadata": {
+            "original_row": 229
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Dinding bullwalk 1570 x 850 x 10",
+          "volume": 104.75825,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3721013,
+          "catatan": [],
+          "metadata": {
+            "original_row": 230
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Dinding bullwalk 1570 x 850 x 10",
+          "volume": 104.75825,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3721013,
+          "catatan": [],
+          "metadata": {
+            "original_row": 231
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Internal bullwalk 1570 x 250 x 10",
+          "volume": 30.81125,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1094416,
+          "catatan": [],
+          "metadata": {
+            "original_row": 232
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top plate internal 1250 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 426240,
+          "harga_total": 426240,
+          "catatan": [
+            "9.8125",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 233
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Internal bullwalk 1400 x 250 x 10",
+          "volume": 27.475,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 975912,
+          "catatan": [],
+          "metadata": {
+            "original_row": 234
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top plate internal 1400 x 100 x 10",
+          "volume": 10.99,
+          "satuan": "Kg",
+          "harga_satuan": 42624,
+          "harga_total": 468438,
+          "catatan": [
+            "√"
+          ],
+          "metadata": {
+            "original_row": 235
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Internal bullwalk 1100 x 1000 x 10",
+          "volume": 86.35,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3067152,
+          "catatan": [],
+          "metadata": {
+            "original_row": 236
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top plate internal 1100 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "8.635"
+          ],
+          "metadata": {
+            "original_row": 237
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Internal bullwalk 1500 x 1000 x 10",
+          "volume": 117.75,
+          "satuan": "Kg",
+          "harga_satuan": 42624,
+          "harga_total": 5018976,
+          "catatan": [
+            "√"
+          ],
+          "metadata": {
+            "original_row": 238
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top plate internal 1100 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 426240,
+          "harga_total": 426240,
+          "catatan": [
+            "8.635",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 239
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Internal bullwalk 1500 x 1000 x 10",
+          "volume": 117.75,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 4182480,
+          "catatan": [],
+          "metadata": {
+            "original_row": 240
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Internal bullwalk 1400 x 1000 x 10",
+          "volume": 109.9,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3903648,
+          "catatan": [],
+          "metadata": {
+            "original_row": 241
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top plate internal 1100 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 426240,
+          "harga_total": 426240,
+          "catatan": [
+            "8.635",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 242
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Internal bullwalk 1200 x 250 x 10",
+          "volume": 23.55,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 836496,
+          "catatan": [],
+          "metadata": {
+            "original_row": 249
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat top plate internal 1100 x 100 x 10",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 355200,
+          "catatan": [
+            "8.635",
+            "√"
+          ],
+          "metadata": {
+            "original_row": 250
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Platform Bullwalk 6100 x 1600 x 8",
+          "volume": 612.928,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 21771203,
+          "catatan": [],
+          "metadata": {
+            "original_row": 251
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Platform Bullwalk 1800 x 1200 x 8",
+          "volume": 135.648,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 4818217,
+          "catatan": [],
+          "metadata": {
+            "original_row": 252
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Facestay platform 1600 x 150 x 16",
+          "volume": 30.144,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1070715,
+          "catatan": [],
+          "metadata": {
+            "original_row": 253
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Facestay platform 4500 x 150 x 16",
+          "volume": 84.78,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3011386,
+          "catatan": [],
+          "metadata": {
+            "original_row": 254
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Facestay platform 1900 x 150 x 16",
+          "volume": 35.796,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 1271474,
+          "catatan": [],
+          "metadata": {
+            "original_row": 255
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plate deck forecastle 6000 x 1700 x 10",
+          "volume": 800.7,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 23700720,
+          "catatan": [],
+          "metadata": {
+            "original_row": 256
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plate deck forecastle 4500 x 1830 x 10",
+          "volume": 646.4475,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 19134846,
+          "catatan": [],
+          "metadata": {
+            "original_row": 257
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plate deck forecastle 6000 x 1830 x 10",
+          "volume": 861.93,
+          "satuan": "Kg",
+          "harga_satuan": 29600,
+          "harga_total": 25513128,
+          "catatan": [],
+          "metadata": {
+            "original_row": 258
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Bongkar pasang fairlead double Uk, 950 x 500 x 200 mm",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1000000,
+          "harga_total": 1000000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 259
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Bongkar pasang panama cock Roundbar 2 inch x 2600 mm x 2 Pcs Bending 4 x",
+          "volume": 5.2,
+          "satuan": "Mtr",
+          "harga_satuan": 339840,
+          "harga_total": 1767168,
+          "catatan": [],
+          "metadata": {
+            "original_row": 260
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Bongkar pasang panama cock Dia, 550 x 300 x 1 Pcs",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 875000,
+          "harga_total": 875000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 261
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat carling panama cock 700 x 200 x 10",
+          "volume": 21.98,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 780730,
+          "catatan": [],
+          "metadata": {
+            "original_row": 262
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat carling panama cock 500 x 200 x 10",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 710400,
+          "catatan": [
+            "15.7"
+          ],
+          "metadata": {
+            "original_row": 263
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat penegar 1000 x 80 x 16",
+          "volume": 90.432,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 3212145,
+          "catatan": [
+            "Railing bullwalk Haluan"
+          ],
+          "metadata": {
+            "original_row": 265
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat penegar 1000 x 80 x 12",
+          "volume": 7,
+          "satuan": "Pcs",
+          "harga_satuan": 230880,
+          "harga_total": 1616160,
+          "catatan": [
+            "Mat. Lama",
+            "52.752"
+          ],
+          "metadata": {
+            "original_row": 266
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat dobler penegar 80 x 50 x 12",
+          "volume": 16,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 5683200,
+          "catatan": [
+            "6.0288"
+          ],
+          "metadata": {
+            "original_row": 267
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Pipa Glv Sch 40 Dia 1.5 inch x 12000 x 1 Pcs",
+          "volume": 12,
+          "satuan": "Mtr",
+          "harga_satuan": 679680,
+          "harga_total": 8156160,
+          "catatan": [
+            "Bending"
+          ],
+          "metadata": {
+            "original_row": 268
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Roundbar 25 mm x 9000 x 1 Pcs",
+          "volume": 9,
+          "satuan": "Mtr",
+          "harga_satuan": 291200,
+          "harga_total": 2620800,
+          "catatan": [],
+          "metadata": {
+            "original_row": 269
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Roundbar 25 mm x 10000 x 1 Pcs",
+          "volume": 10,
+          "satuan": "Mtr",
+          "harga_satuan": 291200,
+          "harga_total": 2912000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 270
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Pipa Glv Sch 40 Dia 1.5 inch x 4800 x 1 Pcs",
+          "volume": 4.8,
+          "satuan": "Mtr",
+          "harga_satuan": 566400,
+          "harga_total": 2718720,
+          "catatan": [],
+          "metadata": {
+            "original_row": 271
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Roundbar 25 mm x 1700 x 2 Pcs",
+          "volume": 1.7,
+          "satuan": "Mtr",
+          "harga_satuan": 174720,
+          "harga_total": 297024,
+          "catatan": [
+            "Mat. Lama"
+          ],
+          "metadata": {
+            "original_row": 272
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Pipa Glv Sch 40 Dia 1.5 inch x 4800 x 1 Pcs",
+          "volume": 4.8,
+          "satuan": "Mtr",
+          "harga_satuan": 566400,
+          "harga_total": 2718720,
+          "catatan": [],
+          "metadata": {
+            "original_row": 273
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Roundbar 25 mm x 1700 x 2 Pcs",
+          "volume": 3.4,
+          "satuan": "Mtr",
+          "harga_satuan": 174720,
+          "harga_total": 594048,
+          "catatan": [
+            "Mat. Lama"
+          ],
+          "metadata": {
+            "original_row": 274
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Pipa Glv Sch 40 Dia 1.5 inch x 4800 x 1 Pcs",
+          "volume": 4.8,
+          "satuan": "Mtr",
+          "harga_satuan": 566400,
+          "harga_total": 2718720,
+          "catatan": [],
+          "metadata": {
+            "original_row": 275
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Roundbar 25 mm x 1700 x 2 Pcs",
+          "volume": 3.4,
+          "satuan": "Mtr",
+          "harga_satuan": 174720,
+          "harga_total": 594048,
+          "catatan": [
+            "Mat. Lama"
+          ],
+          "metadata": {
+            "original_row": 276
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Elbow Sch80 Dia, 1,5 inch x 9 Pcs",
+          "volume": 9,
+          "satuan": "Pcs",
+          "harga_satuan": 342000,
+          "harga_total": 3078000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 277
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Tangga platform 1200 x 140 x 16",
+          "volume": 84.4032,
+          "satuan": "Kg",
+          "harga_satuan": 35520,
+          "harga_total": 2998002,
+          "catatan": [],
+          "metadata": {
+            "original_row": 278
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat bordest (bending) 280 x 500 x 4.5",
+          "volume": 6,
+          "satuan": "Pcs",
+          "harga_satuan": 426240,
+          "harga_total": 2557440,
+          "catatan": [
+            "29.673"
+          ],
+          "metadata": {
+            "original_row": 279
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat stoper 120 x 120 x 10",
+          "volume": 8,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 2841600,
+          "catatan": [
+            "9.0432"
+          ],
+          "metadata": {
+            "original_row": 280
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Plat braket 100 x 100 x 10",
+          "volume": 8,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 2841600,
+          "catatan": [
+            "6.28"
+          ],
+          "metadata": {
+            "original_row": 281
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Replate Bullwalk haluan - Draft mark 100 x 150 x 10",
+          "volume": 3,
+          "satuan": "Pcs",
+          "harga_satuan": 355200,
+          "harga_total": 1065600,
+          "catatan": [
+            "3.5325"
+          ],
+          "metadata": {
+            "original_row": 282
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Build up sterntube bowtrhruster - 40mm x 40mm x 7 Pcs",
+          "volume": 112,
+          "satuan": "Titik",
+          "harga_satuan": 7000,
+          "harga_total": 784000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 287
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Supply material dari galangan untuk kebutuhan pekerjaan by crew - Kawat las 6013 x 20 Kg",
+          "volume": 20,
+          "satuan": "Kg",
+          "harga_satuan": 30802.5,
+          "harga_total": 616050,
+          "catatan": [
+            "Supply material dari galangan untuk kebutuhan pekerjaan by crew dengan detail sebagai berikut :"
+          ],
+          "metadata": {
+            "original_row": 290
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Supply material dari galangan untuk kebutuhan pekerjaan by crew - Plat bordest 1200 x 2400 x 4,5 x 1 Lembar",
+          "volume": 1,
+          "satuan": "Lbr",
+          "harga_satuan": 6043950,
+          "harga_total": 6043950,
+          "catatan": [],
+          "metadata": {
+            "original_row": 291
+          }
+        },
+        {
+          "nomor": "01.08",
+          "nama": "Supply material dari galangan untuk kebutuhan pekerjaan by crew - Siku (60+60) x 1 Lonjor",
+          "volume": 1,
+          "satuan": "Ljr",
+          "harga_satuan": 699300,
+          "harga_total": 699300,
+          "catatan": [],
+          "metadata": {
+            "original_row": 292
+          }
+        }
+      ]
+    },
+    {
+      "kategori": "PIPING",
+      "total_kategori": 355531810,
+      "items": [
+        {
+          "nomor": "",
+          "nama": "Pipa Sch80 Ø 1 inch x 3200.0 mm",
+          "volume": 3.2,
+          "satuan": "Mtr",
+          "harga_satuan": 160160,
+          "harga_total": 512512,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 589
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Pipa Sch80 Ø 1 inch x 2350.0 mm",
+          "volume": 2.35,
+          "satuan": "Mtr",
+          "harga_satuan": 160160,
+          "harga_total": 376376,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 595
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Pipa Sch80 Ø 1 inch x 2800.0 mm",
+          "volume": 2.8,
+          "satuan": "Mtr",
+          "harga_satuan": 160160,
+          "harga_total": 448448,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 601
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Pipa Sch80 Ø 1 inch x 2100.0 mm",
+          "volume": 2.1,
+          "satuan": "Mtr",
+          "harga_satuan": 160160,
+          "harga_total": 336336,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 607
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Pipa Sch80 Ø 1 inch x 2200.0 mm",
+          "volume": 2.2,
+          "satuan": "Mtr",
+          "harga_satuan": 160160,
+          "harga_total": 352352,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 613
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Elbow Sch80 Ø 4 inch x",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1388000,
+          "harga_total": 1388000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 621
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Pipa Sch 80 Ø 1 ½ inch x 1 Lonjor",
+          "volume": 1,
+          "satuan": "Ljr",
+          "harga_satuan": 1998000,
+          "harga_total": 1998000,
+          "catatan": [
+            "Supply material dari galangan untuk keperluan orang kapal detail sebagai berikut:"
+          ],
+          "metadata": {
+            "original_row": 624
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Elbow Sch 80 Ø 1 ½ inch x 6 Pcs",
+          "volume": 6,
+          "satuan": "Pcs",
+          "harga_satuan": 124875,
+          "harga_total": 749250,
+          "catatan": [],
+          "metadata": {
+            "original_row": 625
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Pipa Sch 80 Ø 5 inch x 1 Lonjor",
+          "volume": 1,
+          "satuan": "Ljr",
+          "harga_satuan": 11207115,
+          "harga_total": 11207115,
+          "catatan": [],
+          "metadata": {
+            "original_row": 626
+          }
+        },
+        {
+          "nomor": "",
+          "nama": "Flange 5K Ø 5 inch x 5 pCS",
+          "volume": 5,
+          "satuan": "Pcs",
+          "harga_satuan": 324675,
+          "harga_total": 1623375,
+          "catatan": [],
+          "metadata": {
+            "original_row": 627
+          }
+        }
+      ]
+    },
+    {
+      "kategori": "VALVE",
+      "total_kategori": 79227050,
+      "items": [
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 12 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 14
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Strainer",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 6512400,
+          "harga_total": 6512400,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 24 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 15
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 12 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 16
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1851000,
+          "harga_total": 1851000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 17
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1308000,
+          "harga_total": 1308000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 18
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1308000,
+          "harga_total": 1308000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 19
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 494000,
+          "harga_total": 494000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 2 ½ inch"
+          ],
+          "metadata": {
+            "original_row": 20
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 21
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 22
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 23
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Angle valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1481000,
+          "harga_total": 1481000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 8 inch"
+          ],
+          "metadata": {
+            "original_row": 24
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Angle valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 25
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1308000,
+          "harga_total": 1308000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 5 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 26
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 741000,
+          "harga_total": 741000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Ukuran: Ø 3 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 27
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1481000,
+          "harga_total": 1481000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 8 inch"
+          ],
+          "metadata": {
+            "original_row": 28
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 494000,
+          "harga_total": 494000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 3 inch"
+          ],
+          "metadata": {
+            "original_row": 29
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 2 inch"
+          ],
+          "metadata": {
+            "original_row": 30
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 2 inch"
+          ],
+          "metadata": {
+            "original_row": 31
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1727000,
+          "harga_total": 1727000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 8 inch"
+          ],
+          "metadata": {
+            "original_row": 32
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1727000,
+          "harga_total": 1727000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 8 inch"
+          ],
+          "metadata": {
+            "original_row": 33
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 2 inch"
+          ],
+          "metadata": {
+            "original_row": 34
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 2 inch"
+          ],
+          "metadata": {
+            "original_row": 35
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 4 inch"
+          ],
+          "metadata": {
+            "original_row": 36
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 4 inch"
+          ],
+          "metadata": {
+            "original_row": 37
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 4 inch"
+          ],
+          "metadata": {
+            "original_row": 38
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 12 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 39
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Strainer",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 6512400,
+          "harga_total": 6512400,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 24 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 40
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Ukuran: Ø 12 inch",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 41
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 592800,
+          "harga_total": 592800,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack",
+            "Ukuran: Ø 3 inch"
+          ],
+          "metadata": {
+            "original_row": 46
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 592800,
+          "harga_total": 592800,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack",
+            "Ukuran: Ø 3 inch"
+          ],
+          "metadata": {
+            "original_row": 47
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 474000,
+          "harga_total": 474000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack",
+            "Ukuran: Ø 2 inch"
+          ],
+          "metadata": {
+            "original_row": 48
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 474000,
+          "harga_total": 474000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack",
+            "Ukuran: Ø 2 inch"
+          ],
+          "metadata": {
+            "original_row": 49
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 750000,
+          "harga_total": 750000,
+          "catatan": [
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Bow trhruster",
+            "Ukuran: Ø 4 inch"
+          ],
+          "metadata": {
+            "original_row": 50
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1234000,
+          "harga_total": 1234000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 55
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1234000,
+          "harga_total": 1234000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 56
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Gate valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1234000,
+          "harga_total": 1234000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 57
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 5 inch"
+          ],
+          "metadata": {
+            "original_row": 58
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 494000,
+          "harga_total": 494000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 3 inch"
+          ],
+          "metadata": {
+            "original_row": 59
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 4 inch"
+          ],
+          "metadata": {
+            "original_row": 60
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 4 inch"
+          ],
+          "metadata": {
+            "original_row": 61
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Globe valve",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Lokasi: Engine Room",
+            "Ukuran: Ø 4 inch"
+          ],
+          "metadata": {
+            "original_row": 62
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Packing karet 5mm",
+          "volume": 5,
+          "satuan": "Mtr",
+          "harga_satuan": 183150,
+          "harga_total": 915750,
+          "catatan": [
+            "Supply material dari galangan"
+          ],
+          "metadata": {
+            "original_row": 67
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Shock drat 100 mm",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 83250,
+          "harga_total": 166500,
+          "catatan": [
+            "Supply material dari galangan"
+          ],
+          "metadata": {
+            "original_row": 68
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Double mipel 1/2 inch",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 108225,
+          "harga_total": 216450,
+          "catatan": [
+            "Supply material dari galangan"
+          ],
+          "metadata": {
+            "original_row": 69
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Bolt valve 1/2 inch",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 191475,
+          "harga_total": 382950,
+          "catatan": [
+            "Supply material dari galangan"
+          ],
+          "metadata": {
+            "original_row": 70
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Dilaksanakan prees test pada main line seecast dikerjakan 6 orang x 1Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 4830000,
+          "harga_total": 4830000,
+          "catatan": [
+            "Supply material dari galangan"
+          ],
+          "metadata": {
+            "original_row": 71
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Dilaksankan press test pada sistem individu Valve utama main line seachest 12 inch x 4 Pcs x 4 orang dalam 1 Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 3220000,
+          "harga_total": 3220000,
+          "catatan": [
+            "Supply material dari galangan"
+          ],
+          "metadata": {
+            "original_row": 72
+          }
+        },
+        {
+          "nomor": "05.03",
+          "nama": "Ganti baru valve Di engine room - Dilaksanakan prest test sistem ballas yang dikerjakan 2 orang x 3 Hari",
+          "volume": 1,
+          "satuan": "Ls",
+          "harga_satuan": 4830000,
+          "harga_total": 4830000,
+          "catatan": [
+            "Supply material dari galangan"
+          ],
+          "metadata": {
+            "original_row": 73
+          }
+        }
+      ]
+    }
+  ]
+}

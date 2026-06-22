@@ -1,7 +1,15 @@
-import { Pool } from "pg";
+// import { Pool } from "pg";
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-});
+// const pool = new Pool({
+//   connectionString: process.env.DATABASE_URL,
+// });
 
-export default pool;
+// export default pool;
+
+// import { PrismaClient } from "@prisma/client";
+
+// const globalForPrisma = globalThis;
+
+// export const db = globalForPrisma.prisma || new PrismaClient();
+
+// if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = db;

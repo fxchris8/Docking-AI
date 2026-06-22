@@ -1,0 +1,422 @@
+{
+  "harga_layanan": [
+       {
+           "kategori": "VALVE",
+           "total_kategori": 79227050,
+           "items": [
+               {
+                   "nomor": "05.01",
+                   "nama": "Valve Sistem di Engine Room - Servis Valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 0,
+                   "harga_total": 0,
+                   "catatan": [
+                       "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle",
+                       "ganti packing dan baut, diperiksakan class dan dipasang kembali."
+                   ],
+                   "metadata": {"original_row": 9}
+               },
+               {
+                   "nomor": "05.01.01",
+                   "nama": "Gate valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 3700500,
+                   "harga_total": 3700500,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 12 inch"],
+                   "metadata": {"original_row": 14}
+               },
+               {
+                   "nomor": "05.01.02",
+                   "nama": "Strainer - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 6512400,
+                   "harga_total": 6512400,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 24 inch"],
+                   "metadata": {"original_row": 15}
+               },
+               {
+                   "nomor": "05.01.03",
+                   "nama": "Gate valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 3700500,
+                   "harga_total": 3700500,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 12 inch"],
+                   "metadata": {"original_row": 16}
+               },
+               {
+                   "nomor": "05.01.04",
+                   "nama": "Gate valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1851000,
+                   "harga_total": 1851000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 17}
+               },
+               {
+                   "nomor": "05.01.05",
+                   "nama": "Globe valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1308000,
+                   "harga_total": 1308000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 18}
+               },
+               {
+                   "nomor": "05.01.06",
+                   "nama": "Globe valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1308000,
+                   "harga_total": 1308000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 19}
+               },
+               {
+                   "nomor": "05.01.07",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 494000,
+                   "harga_total": 494000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 2 ½ inch"],
+                   "metadata": {"original_row": 20}
+               },
+               {
+                   "nomor": "05.01.08",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 872000,
+                   "harga_total": 872000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 21}
+               },
+               {
+                   "nomor": "05.01.09",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 872000,
+                   "harga_total": 872000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 22}
+               },
+               {
+                   "nomor": "05.01.10",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 872000,
+                   "harga_total": 872000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 23}
+               },
+               {
+                   "nomor": "05.01.11",
+                   "nama": "Angle valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1481000,
+                   "harga_total": 1481000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 8 inch"],
+                   "metadata": {"original_row": 24}
+               },
+               {
+                   "nomor": "05.01.12",
+                   "nama": "Angle valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 872000,
+                   "harga_total": 872000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 25}
+               },
+               {
+                   "nomor": "05.01.13",
+                   "nama": "Globe valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1308000,
+                   "harga_total": 1308000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 26}
+               },
+               {
+                   "nomor": "05.01.14",
+                   "nama": "Globe valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 741000,
+                   "harga_total": 741000,
+                   "catatan": ["Lokasi: Engine Room (S)", "Ukuran: Ø 3 inch"],
+                   "metadata": {"original_row": 27}
+               },
+               {
+                   "nomor": "05.01.15",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1481000,
+                   "harga_total": 1481000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 8 inch"],
+                   "metadata": {"original_row": 28}
+               },
+               {
+                   "nomor": "05.01.16",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 494000,
+                   "harga_total": 494000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 3 inch"],
+                   "metadata": {"original_row": 29}
+               },
+               {
+                   "nomor": "05.01.17",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 395000,
+                   "harga_total": 395000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 2 inch"],
+                   "metadata": {"original_row": 30}
+               },
+               {
+                   "nomor": "05.01.18",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 395000,
+                   "harga_total": 395000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 2 inch"],
+                   "metadata": {"original_row": 31}
+               },
+               {
+                   "nomor": "05.01.19",
+                   "nama": "Gate valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1727000,
+                   "harga_total": 1727000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 8 inch"],
+                   "metadata": {"original_row": 32}
+               },
+               {
+                   "nomor": "05.01.20",
+                   "nama": "Gate valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1727000,
+                   "harga_total": 1727000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 8 inch"],
+                   "metadata": {"original_row": 33}
+               },
+               {
+                   "nomor": "05.01.21",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 395000,
+                   "harga_total": 395000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 2 inch"],
+                   "metadata": {"original_row": 34}
+               },
+               {
+                   "nomor": "05.01.22",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 395000,
+                   "harga_total": 395000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 2 inch"],
+                   "metadata": {"original_row": 35}
+               },
+               {
+                   "nomor": "05.01.23",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 625000,
+                   "harga_total": 625000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 4 inch"],
+                   "metadata": {"original_row": 36}
+               },
+               {
+                   "nomor": "05.01.24",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 625000,
+                   "harga_total": 625000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 4 inch"],
+                   "metadata": {"original_row": 37}
+               },
+               {
+                   "nomor": "05.01.25",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 625000,
+                   "harga_total": 625000,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 4 inch"],
+                   "metadata": {"original_row": 38}
+               },
+               {
+                   "nomor": "05.01.26",
+                   "nama": "Gate valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 3700500,
+                   "harga_total": 3700500,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 12 inch"],
+                   "metadata": {"original_row": 39}
+               },
+               {
+                   "nomor": "05.01.27",
+                   "nama": "Strainer - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 6512400,
+                   "harga_total": 6512400,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 24 inch"],
+                   "metadata": {"original_row": 40}
+               },
+               {
+                   "nomor": "05.01.28",
+                   "nama": "Gate valve - Overhaul",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 3700500,
+                   "harga_total": 3700500,
+                   "catatan": ["Lokasi: Engine Room (P)", "Ukuran: Ø 12 inch"],
+                   "metadata": {"original_row": 41}
+               },
+               {
+                   "nomor": "05.02",
+                   "nama": "Valve Sistem di Forepeack - Servis Valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 0,
+                   "harga_total": 0,
+                   "catatan": [
+                       "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle",
+                       "ganti packing dan baut, diperiksakan class dan dipasang kembali."
+                   ],
+                   "metadata": {"original_row": 42}
+               },
+               {
+                   "nomor": "05.02.01",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 592800,
+                   "harga_total": 592800,
+                   "catatan": ["Lokasi: Forepeack", "Ukuran: Ø 3 inch"],
+                   "metadata": {"original_row": 46}
+               },
+               {
+                   "nomor": "05.02.02",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 592800,
+                   "harga_total": 592800,
+                   "catatan": ["Lokasi: Forepeack", "Ukuran: Ø 3 inch"],
+                   "metadata": {"original_row": 47}
+               },
+               {
+                   "nomor": "05.02.03",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 474000,
+                   "harga_total": 474000,
+                   "catatan": ["Lokasi: Forepeack", "Ukuran: Ø 2 inch"],
+                   "metadata": {"original_row": 48}
+               },
+               {
+                   "nomor": "05.02.04",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 474000,
+                   "harga_total": 474000,
+                   "catatan": ["Lokasi: Forepeack", "Ukuran: Ø 2 inch"],
+                   "metadata": {"original_row": 49}
+               },
+               {
+                   "nomor": "05.02.05",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 750000,
+                   "harga_total": 750000,
+                   "catatan": ["Lokasi: Bow trhruster", "Ukuran: Ø 4 inch"],
+                   "metadata": {"original_row": 50}
+               },
+               {
+                   "nomor": "05.03",
+                   "nama": "Ganti baru valve Di engine room",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 0,
+                   "harga_total": 0,
+                   "catatan": [],
+                   "metadata": {"original_row": 54}
+               },
+               {
+                   "nomor": "05.03.01",
+                   "nama": "Ganti baru valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1234000,
+                   "harga_total": 1234000,
+                   "catatan": ["Lokasi: Engine Room", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 55}
+               },
+               {
+                   "nomor": "05.03.02",
+                   "nama": "Gate valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1234000,
+                   "harga_total": 1234000,
+                   "catatan": ["Lokasi: Engine Room", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 56}
+               },
+               {
+                   "nomor": "05.03.03",
+                   "nama": "Gate valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 1234000,
+                   "harga_total": 1234000,
+                   "catatan": ["Lokasi: Engine Room", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 57}
+               },
+               {
+                   "nomor": "05.03.04",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 872000,
+                   "harga_total": 872000,
+                   "catatan": ["Lokasi: Engine Room", "Ukuran: Ø 5 inch"],
+                   "metadata": {"original_row": 58}
+               },
+               {
+                   "nomor": "05.03.05",
+                   "nama": "Globe valve",
+                   "volume": 1,
+                   "satuan": "Unit",
+                   "harga_satuan": 494000,
+                   "harga_total": 494000,
+                   "catatan": ["Lokasi: Engine Room", "Ukuran: Ø 3 inch"],
+                   "metadata": {"original_row": 59}
+               }]}]}

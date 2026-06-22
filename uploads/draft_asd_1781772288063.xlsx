@@ -1,0 +1,57 @@
+Baris Excel,Kategori,Nomor,Nama Pekerjaan,Volume,Satuan,Harga Satuan,Harga Total,Catatan
+8,PIPING,04.00,Ganti Baru Pipa di Area Engine Room,1,Pcs,0,0.0,Material lama
+9,PIPING,04.01,Ganti Baru Pipa di Area Engine Room,1,Pcs,0,0.0,Material lama
+56,PIPING,PP.01,Ganti Baru Pipa di Area Engine Room,1,Pcs,0,0.0,Material lama
+56,PIPING,PP.02,Ganti Baru Pipa Generator A/E (P) di engine room,1,Pcs,0,0.0,Material lama
+98,PIPING,PP.03,Ganti baru pipa pendingin AE area Pompa di engine room,1,Pcs,0,0.0,Material lama
+148,PIPING,PP.04,Ganti baru pipa pendingin in AE (P) di engine room,1,Pcs,0,0.0,Material lama
+192,PIPING,PP.05,Ganti baru pipa AC Central di engine room,1,Pcs,0,0.0,Material lama
+236,PIPING,PP.06,Ganti baru pipa di tangki minyak 01 di engine room,1,Pcs,0,0.0,Material lama
+284,PIPING,PP.07,Ganti baru pipa SW cooling gear box ME di engine room,1,Pcs,0,0.0,Material lama
+293,Piping,00.01,"Pipa Sch80 Ø 2 ½"" x",1,Mtr,1111000,555500.0,Material lama
+294,Piping,00.02,"Pipa Sch80 Ø 2 ½"" x",1,Mtr,1111000,1410970.0,Material lama
+295,Piping,00.03,"Pipa Sch80 Ø 2 ½"" x",0.5,Mtr,1111000,555500.0,Material lama
+296,Piping,00.04,"Pipa Sch80 Ø 2 ½"" x",1,Mtr,1111000,1111000.0,Material lama
+297,Piping,00.05,"Pipa Sch80 Ø 2 ½"" x",0.5,Mtr,1111000,555500.0,Material lama
+298,Piping,00.06,"Pipa Sch80 Ø 2 ½"" x",1,Mtr,1111000,1111000.0,Material lama
+299,Piping,00.07,"Pipa Sch80 Ø 2 ½"" x",1.1,Mtr,1111000,1222100.0,Material lama
+300,Piping,00.08,"Pipa Sch80 Ø 2 ½"" x",0.5,Mtr,1111000,555500.0,Material lama
+301,Piping,00.09,"Pipa Sch80 Ø 4"" x",3,Mtr,1526800,4580400.0,Material lama
+302,Piping,00.10,"Elbow Sch80 Ø 2 ½"" x",3,Pcs,484000,1452000.0,Material lama
+303,Piping,00.11,"Flange 5k Ø 2 ½"" x",2,Pcs,89760,179520.0,Material lama
+304,Piping,00.12,"Packing 3mm Ø 2 ½"" x",2,Pcs,75000,150000.0,Material lama
+305,Piping,00.13,Mur Baut M12 x 50mm,8,Pcs,25000,200000.0,Material lama
+311,Piping,00.14,"Pipa Sch80 Ø 1 ¼"" x",1,Mtr,778800,778800.0,Material lama
+312,Piping,00.15,"Pipa Sch80 Ø 1"" x",1.29,Mtr,400400,516516.0,Material lama
+313,Piping,00.16,"Pipa Sch80 Ø 1"" x",1.23,Mtr,400400,492492.0,Material lama
+314,Piping,00.17,"Flange 5k Ø  1 ¼"" x",2,Pcs,84000,168000.0,Material lama
+315,Piping,00.18,"Flange 5k Ø 1"" x",2,Pcs,59400,118800.0,Material lama
+316,Piping,00.19,"Packing 3mm Ø 1 ¼"" x",2,Pcs,37500,75000.0,Material lama
+317,Piping,00.20,"Packing 3mm Ø 1"" x",2,Pcs,30000,60000.0,Material lama
+318,Piping,00.21,Mur Baut M12 x 50mm,16,Pcs,25000,400000.0,Material lama
+322,Piping,00.22,"Pipa Sch80 Ø 1 ½"" x",1,Mtr,778800,778800.0,Material lama
+570,PIPING,00.01,Pipa Sch80 Ø 3 inch x 100 mm,1,Pcs,1111000,1111000.0,Material lama
+571,PIPING,00.02,Flange 5k Ø 3 inch x,1,Pcs,1111000,1111000.0,Material lama
+572,PIPING,00.03,Packing 3mm Ø 3 inch x,1,Pcs,1111000,1111000.0,Material lama
+573,PIPING,00.04,Mur Baut M16 x 50mm,1,Pcs,1111000,1111000.0,Material lama
+576,PIPING,00.05,Pipa Sch80 Ø 1 inch x,1,Mtr,160160,160160.0,Material lama
+577,PIPING,00.06,Flange 5k Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+578,PIPING,00.07,Packing 3mm Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+579,PIPING,00.08,Mur Baut M12 x 50mm,1,Pcs,1111000,1111000.0,Material lama
+583,PIPING,00.09,Pipa Sch80 Ø 1 inch x,1,Mtr,160160,160160.0,Material lama
+584,PIPING,00.10,Flange 5k Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+585,PIPING,00.11,Packing 3mm Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+586,PIPING,00.12,Mur Baut M12 x 50mm,1,Pcs,1111000,1111000.0,Material lama
+589,PIPING,00.13,Pipa Sch80 Ø 1 inch x,1,Mtr,160160,160160.0,Material lama
+590,PIPING,00.14,Flange 5k Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+591,PIPING,00.15,Packing 3mm Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+592,PIPING,00.16,Mur Baut M12 x 50mm,1,Pcs,1111000,1111000.0,Material lama
+595,PIPING,00.17,Pipa Sch80 Ø 1 inch x,1,Mtr,160160,160160.0,Material lama
+596,PIPING,00.18,Flange 5k Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+597,PIPING,00.19,Packing 3mm Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+598,PIPING,00.20,Mur Baut M12 x 50mm,1,Pcs,1111000,1111000.0,Material lama
+601,PIPING,00.21,Pipa Sch80 Ø 1 inch x,1,Mtr,160160,160160.0,Material lama
+602,PIPING,00.22,Flange 5k Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+603,PIPING,00.23,Packing 3mm Ø 1 inch x,1,Pcs,1111000,1111000.0,Material lama
+TOTAL,PIPING,-,GRAND TOTAL PIPING,-,-,-,355531810.88,Total Kategori Otomatis
+TOTAL,Piping,-,GRAND TOTAL PIPING,-,-,-,343374848.0,Total Kategori Otomatis

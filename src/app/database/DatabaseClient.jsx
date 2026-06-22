@@ -1,5 +1,6 @@
 "use client";
 import { useState, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import {
   simpanKapal,
   hapusKapal,
@@ -10,11 +11,12 @@ import {
 } from "@/actions/master.action";
 
 export default function DatabaseClient({
-  dataKapal,
-  dataTempat,
-  dataSuperintendent,
+  dataKapal = [],
+  dataTempat = [],
+  dataSuperintendent = [],
 }) {
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   const [isModalKapal, setIsModalKapal] = useState(false);
   const [editKapal, setEditKapal] = useState(null);
@@ -35,10 +37,13 @@ export default function DatabaseClient({
     }
   };
 
-  const submitData = async (e, actionFn, closeModalFn) => {
+  const submitData = async (e, actionFn, closeModalFn, idField, idValue) => {
     e.preventDefault();
     setIsLoading(true);
     const formData = new FormData(e.target);
+    if (idValue) {
+      formData.set(idField, idValue);
+    }
     const res = await actionFn(formData);
     setIsLoading(false);
     if (res.success) {
@@ -76,6 +81,18 @@ export default function DatabaseClient({
           s.asal_kota.toLowerCase().includes(searchSup.toLowerCase())),
     );
   }, [dataSuperintendent, searchSup]);
+
+  const InfoIcon = () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      viewBox="0 0 256 256"
+    >
+      <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-4,48a12,12,0,1,1,12,12A12,12,0,0,1,124,72Zm4,128a8,8,0,0,1-8-8V120a8,8,0,0,1,0-16,8,8,0,0,1,8,8v72A8,8,0,0,1,128,200Z" />
+    </svg>
+  );
 
   return (
     <div className="main flex-1 p-10 flex flex-col gap-8 text-gray-800 h-screen overflow-y-auto">
@@ -162,6 +179,7 @@ export default function DatabaseClient({
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 items-start">
+        {/* KAPAL */}
         <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-4">
           <div className="flex justify-between items-center pb-3 border-b border-gray-100">
             <div>
@@ -180,7 +198,6 @@ export default function DatabaseClient({
               + Tambah
             </button>
           </div>
-
           <div className="relative mb-2">
             <input
               type="text"
@@ -198,7 +215,6 @@ export default function DatabaseClient({
               </button>
             )}
           </div>
-
           <div className="flex flex-col gap-2 max-h-[500px] overflow-y-auto pr-1">
             {filteredKapal.map((k) => (
               <div
@@ -215,6 +231,13 @@ export default function DatabaseClient({
                 </div>
                 <div className="opacity-0 group-hover:opacity-100 flex gap-1">
                   <button
+                    onClick={() => router.push(`/database/kapal/${k.id_kapal}`)}
+                    className="text-gray-500 hover:bg-gray-200 p-1.5 rounded-md"
+                    title="Info"
+                  >
+                    <InfoIcon />
+                  </button>
+                  <button
                     onClick={() => {
                       setEditKapal(k);
                       setIsModalKapal(true);
@@ -228,7 +251,7 @@ export default function DatabaseClient({
                       fill="#2970ff"
                       viewBox="0 0 256 256"
                     >
-                      <path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z"></path>
+                      <path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z" />
                     </svg>
                   </button>
                   <button
@@ -244,7 +267,7 @@ export default function DatabaseClient({
                       fill="#ff2929"
                       viewBox="0 0 256 256"
                     >
-                      <path d="M216,48H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM192,208H64V64H192ZM80,24a8,8,0,0,1,8-8h80a8,8,0,0,1,0,16H88A8,8,0,0,1,80,24Z"></path>
+                      <path d="M216,48H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM192,208H64V64H192ZM80,24a8,8,0,0,1,8-8h80a8,8,0,0,1,0,16H88A8,8,0,0,1,80,24Z" />
                     </svg>
                   </button>
                 </div>
@@ -253,6 +276,7 @@ export default function DatabaseClient({
           </div>
         </div>
 
+        {/* TEMPAT */}
         <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-4">
           <div className="flex justify-between items-center pb-3 border-b border-gray-100">
             <div>
@@ -271,7 +295,6 @@ export default function DatabaseClient({
               + Tambah
             </button>
           </div>
-
           <div className="relative mb-2">
             <input
               type="text"
@@ -289,7 +312,6 @@ export default function DatabaseClient({
               </button>
             )}
           </div>
-
           <div className="flex flex-col gap-2 max-h-[500px] overflow-y-auto pr-1">
             {filteredTempat.map((t) => (
               <div
@@ -300,6 +322,15 @@ export default function DatabaseClient({
                   {t.nama_tempat}
                 </span>
                 <div className="opacity-0 group-hover:opacity-100 flex gap-1">
+                  <button
+                    onClick={() =>
+                      router.push(`/database/tempat/${t.id_tempat}`)
+                    }
+                    className="text-gray-500 hover:bg-gray-200 p-1.5 rounded-md"
+                    title="Info"
+                  >
+                    <InfoIcon />
+                  </button>
                   <button
                     onClick={() => {
                       setEditTempat(t);
@@ -314,7 +345,7 @@ export default function DatabaseClient({
                       fill="#2970ff"
                       viewBox="0 0 256 256"
                     >
-                      <path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z"></path>
+                      <path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z" />
                     </svg>
                   </button>
                   <button
@@ -330,7 +361,7 @@ export default function DatabaseClient({
                       fill="#ff2929"
                       viewBox="0 0 256 256"
                     >
-                      <path d="M216,48H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM192,208H64V64H192ZM80,24a8,8,0,0,1,8-8h80a8,8,0,0,1,0,16H88A8,8,0,0,1,80,24Z"></path>
+                      <path d="M216,48H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM192,208H64V64H192ZM80,24a8,8,0,0,1,8-8h80a8,8,0,0,1,0,16H88A8,8,0,0,1,80,24Z" />
                     </svg>
                   </button>
                 </div>
@@ -339,6 +370,7 @@ export default function DatabaseClient({
           </div>
         </div>
 
+        {/* SUPERINTENDENT */}
         <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-4">
           <div className="flex justify-between items-center pb-3 border-b border-gray-100">
             <div>
@@ -357,7 +389,6 @@ export default function DatabaseClient({
               + Tambah
             </button>
           </div>
-
           <div className="relative mb-2">
             <input
               type="text"
@@ -375,7 +406,6 @@ export default function DatabaseClient({
               </button>
             )}
           </div>
-
           <div className="flex flex-col gap-2 max-h-[500px] overflow-y-auto pr-1">
             {filteredSup.map((s) => (
               <div
@@ -392,6 +422,17 @@ export default function DatabaseClient({
                 </div>
                 <div className="opacity-0 group-hover:opacity-100 flex gap-1">
                   <button
+                    onClick={() =>
+                      router.push(
+                        `/database/superintendent/${s.id_superintendent}`,
+                      )
+                    }
+                    className="text-gray-500 hover:bg-gray-200 p-1.5 rounded-md"
+                    title="Info"
+                  >
+                    <InfoIcon />
+                  </button>
+                  <button
                     onClick={() => {
                       setEditSup(s);
                       setIsModalSup(true);
@@ -405,7 +446,7 @@ export default function DatabaseClient({
                       fill="#2970ff"
                       viewBox="0 0 256 256"
                     >
-                      <path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z"></path>
+                      <path d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.68,147.31,64l24-24L216,84.68Z" />
                     </svg>
                   </button>
                   <button
@@ -425,7 +466,7 @@ export default function DatabaseClient({
                       fill="#ff2929"
                       viewBox="0 0 256 256"
                     >
-                      <path d="M216,48H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM192,208H64V64H192ZM80,24a8,8,0,0,1,8-8h80a8,8,0,0,1,0,16H88A8,8,0,0,1,80,24Z"></path>
+                      <path d="M216,48H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM192,208H64V64H192ZM80,24a8,8,0,0,1,8-8h80a8,8,0,0,1,0,16H88A8,8,0,0,1,80,24Z" />
                     </svg>
                   </button>
                 </div>
@@ -435,6 +476,7 @@ export default function DatabaseClient({
         </div>
       </div>
 
+      {/* MODAL KAPAL */}
       {isModalKapal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div
@@ -454,14 +496,15 @@ export default function DatabaseClient({
               </button>
             </div>
             <form
-              onSubmit={(e) => {
-                if (editKapal)
-                  e.target.insertAdjacentHTML(
-                    "beforeend",
-                    `<input type="hidden" name="id_kapal" value="${editKapal.id_kapal}" />`,
-                  );
-                submitData(e, simpanKapal, setIsModalKapal);
-              }}
+              onSubmit={(e) =>
+                submitData(
+                  e,
+                  simpanKapal,
+                  setIsModalKapal,
+                  "id_kapal",
+                  editKapal?.id_kapal,
+                )
+              }
               className="p-6 flex flex-col gap-5"
             >
               <div className="grid grid-cols-3 gap-4">
@@ -494,54 +537,22 @@ export default function DatabaseClient({
                   Dimensi Fisik (Opsional)
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="flex flex-col gap-1.5">
-                    <label className="text-[11px] font-bold text-gray-600">
-                      Flat Bottom
-                    </label>
-                    <input
-                      name="flat_bottom"
-                      type="number"
-                      defaultValue={editKapal?.flat_bottom || ""}
-                      placeholder="0"
-                      className="px-3 py-2 border border-gray-200 rounded-lg text-sm"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1.5">
-                    <label className="text-[11px] font-bold text-gray-600">
-                      Vertical Side
-                    </label>
-                    <input
-                      name="vertical_side"
-                      type="number"
-                      defaultValue={editKapal?.vertical_side || ""}
-                      placeholder="0"
-                      className="px-3 py-2 border border-gray-200 rounded-lg text-sm"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1.5">
-                    <label className="text-[11px] font-bold text-gray-600">
-                      Bottop
-                    </label>
-                    <input
-                      name="bottop"
-                      type="number"
-                      defaultValue={editKapal?.bottop || ""}
-                      placeholder="0"
-                      className="px-3 py-2 border border-gray-200 rounded-lg text-sm"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1.5">
-                    <label className="text-[11px] font-bold text-gray-600">
-                      Topside
-                    </label>
-                    <input
-                      name="topside"
-                      type="number"
-                      defaultValue={editKapal?.topside || ""}
-                      placeholder="0"
-                      className="px-3 py-2 border border-gray-200 rounded-lg text-sm"
-                    />
-                  </div>
+                  {["flat_bottom", "vertical_side", "bottop", "topside"].map(
+                    (dim) => (
+                      <div key={dim} className="flex flex-col gap-1.5">
+                        <label className="text-[11px] font-bold text-gray-600 capitalize">
+                          {dim.replace("_", " ")}
+                        </label>
+                        <input
+                          name={dim}
+                          type="number"
+                          defaultValue={editKapal?.[dim] || ""}
+                          placeholder="0"
+                          className="px-3 py-2 border border-gray-200 rounded-lg text-sm"
+                        />
+                      </div>
+                    ),
+                  )}
                 </div>
               </div>
               <div className="pt-2 flex justify-end gap-3">
@@ -558,6 +569,7 @@ export default function DatabaseClient({
         </div>
       )}
 
+      {/* MODAL TEMPAT */}
       {isModalTempat && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div
@@ -577,14 +589,15 @@ export default function DatabaseClient({
               </button>
             </div>
             <form
-              onSubmit={(e) => {
-                if (editTempat)
-                  e.target.insertAdjacentHTML(
-                    "beforeend",
-                    `<input type="hidden" name="id_tempat" value="${editTempat.id_tempat}" />`,
-                  );
-                submitData(e, simpanTempat, setIsModalTempat);
-              }}
+              onSubmit={(e) =>
+                submitData(
+                  e,
+                  simpanTempat,
+                  setIsModalTempat,
+                  "id_tempat",
+                  editTempat?.id_tempat,
+                )
+              }
               className="p-6 flex flex-col gap-5"
             >
               <div className="flex flex-col gap-1.5">
@@ -596,6 +609,18 @@ export default function DatabaseClient({
                   defaultValue={editTempat?.nama_tempat || ""}
                   required
                   placeholder="PT. Nama Galangan"
+                  className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
+                />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-gray-600 uppercase">
+                  URL Company Profile
+                </label>
+                <input
+                  name="url_company_profile"
+                  type="url"
+                  defaultValue={editTempat?.url_company_profile || ""}
+                  placeholder="https://example.com"
                   className="w-full px-3 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
                 />
               </div>
@@ -613,6 +638,7 @@ export default function DatabaseClient({
         </div>
       )}
 
+      {/* MODAL SUPERINTENDENT */}
       {isModalSup && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div
@@ -632,14 +658,15 @@ export default function DatabaseClient({
               </button>
             </div>
             <form
-              onSubmit={(e) => {
-                if (editSup)
-                  e.target.insertAdjacentHTML(
-                    "beforeend",
-                    `<input type="hidden" name="id_superintendent" value="${editSup.id_superintendent}" />`,
-                  );
-                submitData(e, simpanSuperintendent, setIsModalSup);
-              }}
+              onSubmit={(e) =>
+                submitData(
+                  e,
+                  simpanSuperintendent,
+                  setIsModalSup,
+                  "id_superintendent",
+                  editSup?.id_superintendent,
+                )
+              }
               className="p-6 flex flex-col gap-5"
             >
               <div className="flex flex-col gap-1.5">

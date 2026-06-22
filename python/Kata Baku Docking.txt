@@ -1,0 +1,197 @@
+pasang lepas = sambung dan lepas
+bongkar pasang = sambung dan lepas
+buka tutup = sambung dan lepas
+buka pasang = sambung dan lepas
+lepas = lepas
+pasang = sambung
+ganti baru = penggantian
+ganti = penggantian
+replating = penggantian baru plat
+cleaning = pembersihan
+recleaning = pembersihan
+cuci = pembersihan
+cek = periksa
+inspection = periksa
+inspeksi = periksa
+repair = perawatan
+servis = perawatan
+service = perawatan
+overhaul = perawatan
+go = general overhaul
+turun mesin = general overhaul
+assist = asistensi
+asistensi sandar = penundaan
+stanby = penjaga
+standby = penjaga
+timbang = penimbagan
+
+# --- 2. PELAYANAN UMUM & DOCKING (GENERAL SERVICES) ---
+gas free inspection = periksa bebas gas
+cek bebas gas = periksa bebas gas
+gas free = bebas gas
+tong sampah = bak sampah
+garbage = bak sampah
+trash = bak sampah
+sampah domestik = pembuangan sampah
+standby fire = penjaga kebakaran
+standby damkar = penjaga kebakaran
+fire watch = penjaga kebakaran
+fw = air tawar
+fresh water = air tawar
+freshwater = air tawar
+power = shore connection
+power supply = shore connection
+listrik = pelayanan listrik
+kabel listrik = line
+selang air = line
+scaffolding = peranca
+stagging = peranca
+staging = peranca
+steger = peranca
+hanging scaffolding = peranca
+tower scaffolding = peranca
+mobile crane = mobil crane
+crane = mobil crane
+forklift = mobil forklift
+tugboat = penundaan
+tug = penundaan
+tunda = penundaan
+pilot = pandu
+piloting = pandu
+docking = merapat
+tali temali = tali-temali
+
+# --- 3. PEMBERSIHAN & PENGECATAN (CLEANING & PAINTING) ---
+waterjet = water jetting
+water jet = water jetting
+high pressure wash = water jetting
+fw wash = cuci air tawar
+cuci lambung = cuci air tawar
+hardsweep = sweep blasting
+hard sweep = sweep blasting
+hardsweep blasting = sweep blasting
+sand blasting = blasting
+painting = pengecatan
+coating = pengecatan
+cat = pengecatan
+draft mark = tanda syarat
+plimsol mark = garis air
+waterline = garis air
+tank mark = tanda tangki
+
+# --- 4. KONSTRUKSI BADAN KAPAL (HULL CONSTRUCTION) ---
+thickness test = ultrasonic
+ut test = ultrasonic
+ut = ultrasonic
+steel plate = plat baja
+mild steel = plat baja
+plat lurus = plat lurus
+plat bordes = plat bordes
+zinc anode = zinc anoda
+zink = zinc anoda
+zinc = zinc anoda
+welding = pengelasan
+las = pengelasan
+shell expansion = plat lambung
+seachest = sea chest
+kisi-kisi = sea chest
+hatch cover = tutup palka
+palka = palka
+hatch coaming = ambang palka
+tank top = alas ganda
+wing tank = tangki samping
+bilge wells = got
+bulwark = kubu-kubu
+
+# --- 5. TANGKI (TANK) ---
+press test = hydrotest
+pressure test = hydrotest
+fo tank = tangki minyak
+fuel tank = tangki minyak
+hfo = tangki minyak
+wbt = tangki ballast
+ballast tank = tangki ballast
+sludge = lumpur
+minyak kotor = lumpur
+palka kecil = manhole
+
+# --- 6. MESIN & PROPULSI (MACHINERY) ---
+tail shaft = as propeller
+propeller shaft = as propeller
+shaft propeller = as propeller
+shaft = poros
+propeller = baling-baling
+propeler = baling-baling
+baling baling = baling-baling
+prop = baling-baling
+propeller blade = daun baling-baling
+rope guard = gelang pengamanan
+ropeguard = gelang pengamanan
+bearing = bantalan
+rudder = kemudi
+rudder blade = daun kemudi
+rudder stock = tongkat kemudi
+clearance = kelonggaran
+celah = kelonggaran
+elmot = motor listrik
+dinamo = motor listrik
+electro motor = motor listrik
+botol angin = botol angin
+cooler = pendingin
+
+# --- 7. PIPA & KATUP (PIPING & VALVE) ---
+straight pipe = pipa lurus
+pipa galvanis = pipa putih
+pipa seamless = pipa hitam
+pipa sch 80 = pipa lurus
+pipe clamp = klem pipa
+flange = plendes
+flens = plendes
+knee = elbow
+l pipe = elbow
+tee = potongan-t
+valve = katup
+kran = katup
+globe valve = katup globe
+gate valve = katup gate
+butterfly valve = katup butterfly
+angle valve = katup angle
+check valve = katup check
+safety valve = katup safety
+strainer = saringan
+selang = line
+hose = line
+packing karet = packing
+
+# --- 8. JANGKAR & RANTAI (ANCHOR & DECK OUTFITTING) ---
+anchor = jangkar
+anker = jangkar
+anchor chain = rantai jangkar
+rantai anker = rantai jangkar
+shackle = segel
+chain locker = bak rantai
+bitter end = bitter end
+fairlead = fairlead
+roller = roller
+
+# --- 9. PERTUKANGAN (CARPENTRY) ---
+rock wool = insulation
+glass cloth = insulation
+lantai semen = penyemenan
+platfon = plafon
+kaca anjungan = kaca
+loundry room = ruang cuci
+smooking room = ruang merokok
+
+# --- 10. LOKASI / POSISI KATA SIFAT (LOCATIONS) ---
+engine room = kamar mesin
+pump room = ruang pompa
+main deck = geladak utama
+forecastle = haluan
+poop deck = buritan
+portside = kiri
+starboard = kanan
+stbd = kanan
+port = kiri
+inside = dalam tangki
+outside = luar tangki

@@ -1,0 +1,3776 @@
+{
+  "harga_layanan": [
+    {
+      "kategori": "A. PELAYANAN UMUM",
+      "items": [
+        {
+          "nomor": "1",
+          "nama": "Periksa bebas gas per tangki",
+          "harga": 481000,
+          "satuan": "/ Tank",
+          "catatan": []
+        },
+        {
+          "nomor": "2",
+          "nama": "Penyediaan Bak Sampah dan Pembuangan Sampah Domestik kapal per hari",
+          "harga": 201000,
+          "satuan": "/ Hari",
+          "catatan": []
+        },
+        {
+          "nomor": "3",
+          "nama": "Pemadam kebakaran",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Penjaga kebakaran per hari",
+              "harga": 165000,
+              "satuan": "/ Hari",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Sambung & lepas line",
+              "harga": 201000,
+              "satuan": "/ Kali",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "4",
+          "nama": "Pelayanan air",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Supply air tawar dari darat / kade per ton",
+              "harga": 41000,
+              "satuan": "/ Ton",
+              "catatan": ["Minimum charge 5 ton"]
+            },
+            {
+              "nomor": "b",
+              "nama": "Sambung & lepas line per 1 x pelaksanaan",
+              "harga": 201000,
+              "satuan": "/ Kali",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "5",
+          "nama": "Pelayanan listrik",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Disesuaikan dengan tarif PLN",
+              "harga": null,
+              "satuan": "-",
+              "catatan": ["Harga disesuaikan dengan tarif PLN (hitung manual)"]
+            },
+            {
+              "nomor": "b",
+              "nama": "Sambung & lepas line per 1 x pelaksanaan",
+              "harga": 288000,
+              "satuan": "/ Kali",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "7",
+          "nama": "Peranca, pemasangan dan pembongkaran staging",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Posisi luar tangki per M3",
+              "harga": 22000,
+              "satuan": "/ M3",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Posisi dalam tangki per M3",
+              "harga": 35000,
+              "satuan": "/ M3",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "8",
+          "nama": "Pelayanan Derek",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "b",
+              "nama": "Mobil Forklift",
+              "harga": null,
+              "satuan": null,
+              "catatan": ["Penggunaan dihitung minimum 2 jam per pergerakan"],
+              "detail": [
+                {
+                  "nomor": "1",
+                  "nama": "Kapasitas s/d 10 ton",
+                  "harga": 273000,
+                  "satuan": "/ Jam",
+                  "catatan": []
+                }
+              ]
+            },
+            {
+              "nomor": "c",
+              "nama": "Mobil Crane",
+              "harga": null,
+              "satuan": null,
+              "catatan": [
+                "Penggunaan dihitung minimum 2 jam per pergerakan",
+                "Penggunaan crane sewa dari luar dihitung tersendiri"
+              ],
+              "detail": [
+                {
+                  "nomor": "1",
+                  "nama": "Kapasitas s/d 50 ton",
+                  "harga": 537000,
+                  "satuan": "/ Jam",
+                  "catatan": []
+                },
+                {
+                  "nomor": "2",
+                  "nama": "Kapasitas s/d 100 ton",
+                  "harga": 1514000,
+                  "satuan": "/ Jam",
+                  "catatan": []
+                },
+                {
+                  "nomor": "3",
+                  "nama": "Kapasitas s/d 200 ton",
+                  "harga": 2270000,
+                  "satuan": "/ Jam",
+                  "catatan": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "9. Jasa TUNDA dan PANDU",
+      "items": [
+        {
+          "nomor": "9a",
+          "nama": "Penundaan Kapal di daerah Perairan Galangan",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga per unit Tug Boat",
+            "Penggunaan minimum 2 jam per pergerakan",
+            "Penundaan kapal berbendera asing tarif diperhitungkan tersendiri"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 500 GT",
+              "harga": 1746000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "2",
+              "nama": "501 GT s/d 1500 GT",
+              "harga": 2037000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "3",
+              "nama": "1501 GT s/d 3500 GT",
+              "harga": 2619000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "4",
+              "nama": "3501 GT s/d 8000 GT",
+              "harga": 3783000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "5",
+              "nama": "8001 GT s/d 14000 GT",
+              "harga": 5532000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "6",
+              "nama": "14001 GT s/d 20000 GT",
+              "harga": 8874000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "7",
+              "nama": "20001 GT s/d 30000 GT",
+              "harga": 12511000,
+              "satuan": "/ Jam",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "9b",
+          "nama": "Pelayanan PANDU per gerakan di daerah Galangan",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 500 GT",
+              "harga": 270000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "2",
+              "nama": "501 GT s/d 1500 GT",
+              "harga": 364000,
+              "satuan": "/ Jam",
+              "catatan": []
+            },
+            {
+              "nomor": "3",
+              "nama": "Lebih dari 1000 GT dan setiap kelebihan s/d 500 GT",
+              "harga": 48000,
+              "satuan": "/ Jam",
+              "catatan": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "B. KEBERSIHAN BADAN KAPAL",
+      "items": [
+        {
+          "nomor": "1",
+          "nama": "Blasting tank top",
+          "harga": null,
+          "satuan": null,
+          "catatan": ["Indeks ditambah 20%"]
+        },
+        {
+          "nomor": "2",
+          "nama": "Power tools ponton, tank top",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Chipping",
+              "harga": 5000,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Brushing",
+              "harga": 6600,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Cat",
+              "harga": 3500,
+              "satuan": "/ M2/layer",
+              "catatan": ["Menggunakan roll"]
+            }
+          ]
+        },
+        {
+          "nomor": "3",
+          "nama": "Power tools dalam tangki",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Chipping",
+              "harga": 10000,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Brushing",
+              "harga": 12000,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Cat",
+              "harga": 5000,
+              "satuan": "/ M2/layer",
+              "catatan": ["Menggunakan roll"]
+            }
+          ]
+        },
+        {
+          "nomor": "4",
+          "nama": "Dalam double bottom void",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Chipping",
+              "harga": 12000,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Brushing",
+              "harga": 14400,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Cat",
+              "harga": 6000,
+              "satuan": "/ M2/layer",
+              "catatan": ["Menggunakan roll"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "C. BANGUNAN KAPAL",
+      "items": [
+        {
+          "nomor": "C.1",
+          "nama": "Pembersihan Badan Kapal",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "Water jetting",
+              "harga": 22300,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "2",
+              "nama": "Spot blasting",
+              "harga": 66100,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "3",
+              "nama": "Sand blasting",
+              "harga": 58000,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "4",
+              "nama": "Sweep blasting",
+              "harga": 49600,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "5",
+              "nama": "Scrapping",
+              "harga": 12400,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "6",
+              "nama": "Wire brushing",
+              "harga": 6600,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "7",
+              "nama": "Ultrasonic test",
+              "harga": 10000,
+              "satuan": "/ Titik",
+              "catatan": []
+            },
+            {
+              "nomor": "8",
+              "nama": "Amplashing",
+              "harga": 36300,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "9",
+              "nama": "Cuci air tawar pada lambung",
+              "harga": 9900,
+              "satuan": "/ M2",
+              "catatan": []
+            },
+            {
+              "nomor": "10",
+              "nama": "Chipping",
+              "harga": 5000,
+              "satuan": "/ M2",
+              "catatan": []
+            }
+          ],
+          "catatan_pekerjaan": [
+            "Pengerjaan dengan lembur dihitung tersendiri",
+            "Untuk ultrasonic minimum 100 titik",
+            "Gambar laporan bukaan kulit sebagai lampiran ultrasonic maksimal 6 lembar",
+            "Penambahan gambar laporan bukaan kulit sebagai lampiran hasil ultrasonic: Rp 690.000 / Shipset",
+            "Pekerjaan di dalam ruangan menjadi 200%",
+            "Area Top Side, ditambah 10% dari tarif diatas",
+            "Untuk pekerjaan blasting, minimum luasan 100 M²",
+            "Dikenakan penambahan tarip untuk kondisi kapal sangat kotor, pembersihan dengan chemical, kondisi cat yang menyebabkan ekstra kerja & waktu, korosi yang sangat parah, penetapan pengecatan SPC (ditambah 50% dari tarif)",
+            "Pekerjaan dalam tangki menjadi 250%",
+            "Pekerjaan badan kapal bagian dalam (inside hull)",
+            "Untuk pekerjaan blasting, untuk Sa = 2,5 dihitung tersendiri"
+          ]
+        },
+        {
+          "nomor": "C.2",
+          "nama": "Pengecatan (Cat dari pemilik)",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "1",
+              "nama": "Lambung - Pengecatan per lapis",
+              "harga": 7100,
+              "satuan": "/ M2 / layer",
+              "catatan": []
+            },
+            {
+              "nomor": "1.1",
+              "nama": "Lambung - Pengecatan per Touch Up",
+              "harga": 12500,
+              "satuan": "/ M2 / layer touch up",
+              "catatan": []
+            },
+            {
+              "nomor": "2",
+              "nama": "Tanda syarat dan garis air",
+              "harga": null,
+              "satuan": null,
+              "catatan": [],
+              "detail": [
+                {
+                  "nomor": "1",
+                  "nama": "Painting of Draft & Plimsol Mark",
+                  "harga": null,
+                  "satuan": null,
+                  "catatan": [],
+                  "detail": [
+                    {
+                      "nomor": "1",
+                      "nama": "s/d - 300",
+                      "harga": 636500,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "2",
+                      "nama": "301 - 500",
+                      "harga": 909200,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "3",
+                      "nama": "501 - 1500",
+                      "harga": 1182100,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "4",
+                      "nama": "1501 - 2500",
+                      "harga": 1454800,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "5",
+                      "nama": "2501 - 3500",
+                      "harga": 1727600,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "6",
+                      "nama": "3501 - 5000",
+                      "harga": 2000300,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "7",
+                      "nama": "5001 - keatas",
+                      "harga": "2.000.300 + 120 (GRT-5000)",
+                      "satuan": null
+                    }
+                  ]
+                },
+                {
+                  "nomor": "2",
+                  "nama": "Painting of Ship Name + Register Port",
+                  "harga": null,
+                  "satuan": null,
+                  "catatan": [],
+                  "detail": [
+                    {
+                      "nomor": "1",
+                      "nama": "s/d - 300",
+                      "harga": 363000,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "2",
+                      "nama": "301 - 500",
+                      "harga": 454000,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "3",
+                      "nama": "501 - 1500",
+                      "harga": 637000,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "4",
+                      "nama": "1501 - 2500",
+                      "harga": 777000,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "5",
+                      "nama": "2501 - 3500",
+                      "harga": 910000,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "6",
+                      "nama": "3501 - 5000",
+                      "harga": 1091000,
+                      "satuan": null
+                    },
+                    {
+                      "nomor": "7",
+                      "nama": "5001 - keatas",
+                      "harga": "1.091.000 + 70 (GRT-5000)",
+                      "satuan": null
+                    }
+                  ]
+                }
+              ],
+              "catatan": ["Tidak termasuk biaya peranca"]
+            }
+          ]
+        },
+        {
+          "nomor": "C.3",
+          "nama": "Penggantian Baru Plat Baja / Plat Lurus",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "1",
+              "nama": "Tebal Plat s/d 1/4\" / 6 mm",
+              "harga": 29600,
+              "satuan": "/ Kg",
+              "catatan": []
+            },
+            {
+              "nomor": "2",
+              "nama": "Tebal Plat 8 mm s/d 12 mm",
+              "harga": 29600,
+              "satuan": "/ Kg",
+              "catatan": []
+            },
+            {
+              "nomor": "3",
+              "nama": "Tebal Plat lebih besar 12 mm",
+              "harga": 29600,
+              "satuan": "/ Kg",
+              "catatan": []
+            }
+          ],
+          "catatan_umum": [
+            "Penggantian plat baja (mild steel) menurut jumlah: s/d - 50 kg = 200%, 51 - 100 kg = 175%, 101 - 500 kg = 150%, Material dari galangan",
+            "High Tensile Steel, Grade plate type D&E dikenakan tarif ekstra",
+            "Doubling plate, tarif ditambah 75% dari tarif replating",
+            "Plat dengan dimensi khusus (trapesium) dihitung berdasarkan dimensi terbesar",
+            "Berlaku untuk plat (marine use) dengan standar BKI",
+            "Bila berat re-plate atau doubling kurang dari 50 kg, maka dihitung 50 kg",
+            "Apabila material plat disuplai oleh owner maka harga jasa sebesar 65% dari tarif",
+            "Belum termasuk peranca",
+            "Belum termasuk test kekedapan",
+            "Harga plat class IACS dihitung tersendiri",
+            "Harga plat menyesuaikan dengan fluktuasi pasar",
+            "Lengkung s/d 45 derajat, tarif ditambah 25%. Lengkung lebih dari 45 s/d 90 derajat, tarif ditambah 60%. Lengkung ganda, tarif diperhitungkan tersendiri. Bongkar pasang penghalang diperhitungkan tersendiri.",
+            "Penggantian plat menurut lokasi: Side shell (100%), Bottom (110%), Keel plates (110%), Deck plates (100%), Tank tops (110%), Engine room (side shell and deck) (120%), Bulkhead (120%), Fore and aft peak keel plate (140%), Internals in DBT (140%), Internals in room and casings (120%), Mixed frame (120%), Internal in aft and fore peak (140%), Fore and aft stem (linggi haluan dan buritan) (150%), Bulbows Bow (200%), Internal Engine room & propulsion system (bottom) (200%), replate ponton (110%)"
+          ]
+        },
+        {
+          "nomor": "C.4",
+          "nama": "Pekerjaan Tangki",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "Pembersihan Tangki Air - Tangki Air Tawar",
+              "harga": 21000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Tidak termasuk pembuangan sludge dan penggunaan chemical",
+                "Minimum caps. 40 M³, dengan 1x pelaksanaan",
+                "Jika kondisi tanki terkontaminasi akan dihitung tersendiri"
+              ]
+            },
+            {
+              "nomor": "1",
+              "nama": "Pembersihan Tangki Air - Tangki Air Ballast",
+              "harga": 21000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Tidak termasuk pembuangan sludge dan penggunaan chemical",
+                "Minimum caps. 40 M³, dengan 1x pelaksanaan",
+                "Jika kondisi tanki terkontaminasi akan dihitung tersendiri"
+              ]
+            },
+            {
+              "nomor": "2",
+              "nama": "Pembersihan Tangki Minyak - Heavy Oil Tank",
+              "harga": 34000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Minimum caps. 40 M³, dengan 1x pelaksanaan",
+                "Tidak termasuk pembuangan sludge dan penggunaan chemical"
+              ]
+            },
+            {
+              "nomor": "2",
+              "nama": "Pembersihan Tangki Minyak - Light Oil Tank",
+              "harga": 34000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Minimum caps. 40 M³, dengan 1x pelaksanaan",
+                "Tidak termasuk pembuangan sludge dan penggunaan chemical"
+              ]
+            },
+            {
+              "nomor": "2",
+              "nama": "Pembersihan Tangki Minyak - Sump Tank",
+              "harga": 860000,
+              "satuan": "/ M3",
+              "catatan": ["Minimum caps. = 10 M3"]
+            },
+            {
+              "nomor": "2",
+              "nama": "Pembersihan Tangki Minyak - Pembersihan tangki harian",
+              "harga": 34000,
+              "satuan": "/ M3",
+              "catatan": ["Minimum caps. = 10 M3"]
+            },
+            {
+              "nomor": "3",
+              "nama": "Pembersihan Tangki Void, Tangki Sewage - Tangki Void",
+              "harga": 12000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Tidak termasuk pembuangan sludge dan penggunaan chemical",
+                "Minimum caps. untuk tangki Void = 40 M³, dengan 1x pelaksanaan",
+                "Jika kondisi tanki terkontaminasi akan dihitung tersendiri"
+              ]
+            },
+            {
+              "nomor": "3",
+              "nama": "Pembersihan Tangki Void, Tangki Sewage - Tangki Sewage",
+              "harga": 435000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Tidak termasuk pembuangan sludge dan penggunaan chemical",
+                "Untuk crude oil / minyak kotor / chemical product dihitung tersendiri"
+              ]
+            },
+            {
+              "nomor": "4",
+              "nama": "Bongkar pasang manhole cover",
+              "harga": 238000,
+              "satuan": "/ Buah",
+              "catatan": ["Belum termasuk perbaikan, ganti packing & baut"]
+            },
+            {
+              "nomor": "5",
+              "nama": "Penyemenan manhole cover",
+              "harga": 200000,
+              "satuan": "/ Buah",
+              "catatan": []
+            },
+            {
+              "nomor": "6",
+              "nama": "Bongkar pasang bottom plugs",
+              "harga": 238000,
+              "satuan": "/ Buah",
+              "catatan": ["Termasuk vacuum test dan penyemenan"]
+            },
+            {
+              "nomor": "7",
+              "nama": "Pembuangan lumpur (minimum 1m3)",
+              "harga": 317000,
+              "satuan": "/ M3",
+              "catatan": ["bukan termasuk limbah B3"]
+            },
+            {
+              "nomor": "8",
+              "nama": "HYDRO TEST TANK",
+              "harga": 25000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Minimum caps. = 300 M³",
+                "Menggunakan Air Laut",
+                "Jika menggunakan air tawar akan dihitung tersendiri"
+              ]
+            },
+            {
+              "nomor": "8",
+              "nama": "AIR TEST TANK",
+              "harga": 20000,
+              "satuan": "/ M3",
+              "catatan": ["Minimum caps. = 300 M³"]
+            },
+            {
+              "nomor": "9",
+              "nama": "Hose Test dan Water Test - Side Scutle (min. 5 buah)",
+              "harga": 135000,
+              "satuan": "/ Buah",
+              "catatan": []
+            },
+            {
+              "nomor": "9",
+              "nama": "Hose Test dan Water Test - Pintu Kedap",
+              "harga": 175000,
+              "satuan": "/ Buah",
+              "catatan": []
+            },
+            {
+              "nomor": "9",
+              "nama": "Hose Test dan Water Test - Hatch Cover",
+              "harga": 1750000,
+              "satuan": "/ Buah",
+              "catatan": []
+            },
+            {
+              "nomor": "10",
+              "nama": "Pembersihan dan Pengecatan Tank Top, Bilge Space - Pembersihan Tank Top pada Ruang Muat",
+              "harga": 17000,
+              "satuan": "/ M²",
+              "catatan": []
+            },
+            {
+              "nomor": "10",
+              "nama": "Pembersihan dan Pengecatan Tank Top, Bilge Space - Pengecatan Tank Top pada Ruang Muat",
+              "harga": 12200,
+              "satuan": "/ M² per lapis",
+              "catatan": []
+            },
+            {
+              "nomor": "10",
+              "nama": "Pembersihan dan Pengecatan Tank Top, Bilge Space - Pembersihan Bilge Cargo Hold",
+              "harga": 348000,
+              "satuan": "/ Area bilge",
+              "catatan": []
+            },
+            {
+              "nomor": "10",
+              "nama": "Pembersihan dan Pengecatan Tank Top, Bilge Space - Pembersihan Bilge Ruang Mesin",
+              "harga": 262000,
+              "satuan": "/ M3",
+              "catatan": [
+                "Minimum 30 M3",
+                "Pembuangan sludge dan pembersihan dengan chemical dihitung tersendiri",
+                "Bongkar pasang papan dasar dan penghalang dihitung tersendiri",
+                "Dikenakan 50% dari tarif cleaning untuk re-cleaning"
+              ]
+            },
+            {
+              "nomor": "C.4.1",
+              "nama": "Penggantian Zinc Anoda",
+              "harga": null,
+              "satuan": null,
+              "catatan": [
+                "Pekerjaan di dalam tangki / DBT, tarif ditambah 150%",
+                "Belum termasuk material Zinc Anoda dan baut",
+                "Zinc Anoda lebih besar dikenakan tarif tersendiri"
+              ],
+              "detail": [
+                {
+                  "nomor": "1",
+                  "nama": "s/d 8 Kg",
+                  "harga": 125000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "2",
+                  "nama": "s/d 10 Kg",
+                  "harga": 146000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "3",
+                  "nama": "s/d 12 Kg",
+                  "harga": 199000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "4",
+                  "nama": "s/d 16 Kg",
+                  "harga": 219000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "5",
+                  "nama": "s/d 18 Kg",
+                  "harga": 252000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "6",
+                  "nama": "s/d 22 Kg",
+                  "harga": 305000,
+                  "satuan": "/ Buah"
+                }
+              ]
+            },
+            {
+              "nomor": "C.4.2",
+              "nama": "Pembersihan Sea Chest",
+              "harga": null,
+              "satuan": null,
+              "catatan": [
+                "Tidak termasuk biaya perbaikan dan ganti spare part",
+                "Tidak termasuk biaya staging"
+              ],
+              "detail": [
+                {
+                  "nomor": "1",
+                  "nama": "s/d 6\"",
+                  "harga": 1028000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "2",
+                  "nama": "s/d 12\"",
+                  "harga": 1440000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "3",
+                  "nama": "s/d 20\"",
+                  "harga": 1906000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "4",
+                  "nama": "s/d 40\"",
+                  "harga": 2467000,
+                  "satuan": "/ Buah"
+                },
+                {
+                  "nomor": "5",
+                  "nama": "lebih besar 40\"",
+                  "harga": 3289000,
+                  "satuan": "/ Buah"
+                }
+              ]
+            },
+            {
+              "nomor": "C.4.3",
+              "nama": "Pengelasan",
+              "harga": null,
+              "satuan": null,
+              "catatan": [],
+              "sub_items": [
+                {
+                  "nomor": "a",
+                  "nama": "Pengelasan fitting",
+                  "harga": 7000,
+                  "satuan": "/ Titik",
+                  "catatan": [
+                    "Diameter 1 cm dan minimum 50 titik",
+                    "Diameter lebih besar dihitung tersendiri"
+                  ]
+                },
+                {
+                  "nomor": "b",
+                  "nama": "Pengelasan sambungan",
+                  "harga": 79000,
+                  "satuan": "/ M per layer",
+                  "catatan": [
+                    "Minimum 1 M per tempat",
+                    "Pekerjaan horizontal / vertikal ditambah 120%",
+                    "Pekerjaan overhead ditambah 130%"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "D. MESIN PENGGERAK UTAMA",
+      "items": [
+        {
+          "nomor": "D.1",
+          "nama": "Perbaikan General Overhaul Mesin Kapal",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Biaya penghalang dihitung tersendiri",
+            "Suku cadang dari owner",
+            "Overhaul gear box, governor dan turbo charge dihitung tersendiri",
+            "Tarif minimum dihitung daya motor 100 HP",
+            "Motor / mesin khusus dengan putaran tinggi, V-form dihitung tersendiri (mis.: MTU, Caterpillar, MWM, dan lain-lain)",
+            "Pekerjaan Intermediate Ovhl. = 60% dari G.O.",
+            "Pelaksanaan Top Overhaul 40% dari G.O.",
+            "Surcharge 30% dari tarif bila pekerjaan dilakukan oleh ABK",
+            "Pekerjaan rekondisi komponen dan balancing dihitung tersendiri"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "0 s/d 100 HP",
+              "harga": 109100,
+              "satuan": "/ HP"
+            },
+            {
+              "nomor": "2",
+              "nama": "101 s/d 200 HP",
+              "harga": 87700,
+              "satuan": "/ HP"
+            },
+            {
+              "nomor": "3",
+              "nama": "201 s/d 500 HP",
+              "harga": 69000,
+              "satuan": "/ HP"
+            },
+            {
+              "nomor": "4",
+              "nama": "501 s/d 1000 HP",
+              "harga": 60400,
+              "satuan": "/ HP"
+            },
+            {
+              "nomor": "5",
+              "nama": "1001 s/d 2500 HP",
+              "harga": 57500,
+              "satuan": "/ HP"
+            },
+            {
+              "nomor": "6",
+              "nama": "2501 s/d 3500 HP",
+              "harga": 52100,
+              "satuan": "/ HP"
+            },
+            {
+              "nomor": "7",
+              "nama": "3501 s/d 5000 HP",
+              "harga": 51800,
+              "satuan": "/ HP"
+            }
+          ]
+        },
+        {
+          "nomor": "D.2",
+          "nama": "Pengetesan Keretakan pada Shaft",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Di bengkel",
+              "harga_magnaflux": 2500000,
+              "harga_colour": 1000000,
+              "satuan": "Rp.",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Di kapal / di dock",
+              "harga_magnaflux": 5456000,
+              "harga_colour": 2479000,
+              "satuan": "Rp.",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "D.3",
+          "nama": "Megger Test Elmot",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Type Kapal Penumpang, Tarif menjadi 200%",
+            "Pekerjaan instalasi listrik dikenakan tarif tambahan",
+            "Pekerjaan elektromotor dikenakan tarif tambahan"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "0 s/d 1500 GT",
+              "harga": 8602000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "1501 s/d 3500 GT",
+              "harga": 11454000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "3501 s/d 8000 GT",
+              "harga": 15928000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "8001 s/d 14000 GT",
+              "harga": 26554000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "14001 s/d 20000 GT",
+              "harga": 53038000,
+              "satuan": "/ "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "E. SISTEM PROPULSI",
+      "items": [
+        {
+          "nomor": "E.1.1",
+          "nama": "Bongkar/pasang dan dibersihkan untuk pemeriksaan di tempat",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Perbaikan daun baling-baling dihitung tersendiri",
+            "Type system CPP dikenakan tarif min. 200%",
+            "Type khusus dikenakan tarif tersendiri"
+          ],
+          "detail": [
+            { "nomor": "1", "nama": "s/d 1", "harga": 3183000, "satuan": "/ " },
+            {
+              "nomor": "2",
+              "nama": "1,01 s/d 1,5",
+              "harga": 4092000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "1,51 s/d 2",
+              "harga": 5001000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "2,01 s/d 2,5",
+              "harga": 5910000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "2,51 s/d 3",
+              "harga": 7274000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "3,01 s/d 3,5",
+              "harga": 9092000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "3,51 s/d 4",
+              "harga": 11821000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "4,01 s/d 4,5",
+              "harga": 14548000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "4,51 s/d 5",
+              "harga": 18185000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "5,01 s/d 5,5",
+              "harga": 25459000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "11",
+              "nama": "5,51 s/d 6",
+              "harga": 32732000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.1.2",
+          "nama": "Daun baling-baling dipolish ditempat dan divernish",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Minimum 3 daun",
+            "Harga termasuk bahan polish & vernish (pernis)",
+            "Untuk 4 daun biaya menjadi 125% dari harga 3 daun",
+            "Untuk 5 daun biaya menjadi 150% dari harga 3 daun"
+          ],
+          "detail": [
+            { "nomor": "1", "nama": "s/d 1", "harga": 728000, "satuan": "/ " },
+            {
+              "nomor": "2",
+              "nama": "1,01 s/d 1,5",
+              "harga": 910000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "1,51 s/d 2",
+              "harga": 1364000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "2,01 s/d 2,5",
+              "harga": 1818000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "2,51 s/d 3",
+              "harga": 2272000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "3,01 s/d 3,5",
+              "harga": 2729000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "3,51 s/d 4",
+              "harga": 3183000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "4,01 s/d 4,5",
+              "harga": 3637000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "4,51 s/d 5",
+              "harga": 4547000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "5,01 s/d 5,5",
+              "harga": 5456000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "11",
+              "nama": "5,51 s/d 6",
+              "harga": 6365000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "12",
+              "nama": "lebih dari 6",
+              "harga": 7274000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.1.3",
+          "nama": "Melamak surface contact baling-baling terhadap konis poros",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Tidak termasuk biaya rekondisi",
+            "Pekerjaan dilaksanakan di bengkel",
+            "Pekerjaan dilaksanakan di kapal/dock dikenakan 150%",
+            "Untuk pelaksanaan di kapal tanpa cabut as propeller",
+            "Tidak termasuk penggantian propeller baru"
+          ],
+          "detail": [
+            { "nomor": "1", "nama": "s/d 1", "harga": 1818000, "satuan": "/ " },
+            {
+              "nomor": "2",
+              "nama": "1,01 s/d 1,5",
+              "harga": 2272000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "1,51 s/d 2",
+              "harga": 3637000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "2,01 s/d 2,5",
+              "harga": 5456000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "2,51 s/d 3",
+              "harga": 7728000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "3,01 s/d 3,5",
+              "harga": 10457000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "3,51 s/d 4",
+              "harga": 13184000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "4,01 s/d 4,5",
+              "harga": 16820000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "4,51 s/d 5",
+              "harga": 20003000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "5,01 s/d 5,5",
+              "harga": 25459000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "11",
+              "nama": "5,51 s/d 6",
+              "harga": 29095000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.1.4",
+          "nama": "Balanseren Statis baling-baling",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Belum termasuk biaya transportasi ke bengkel",
+            "Untuk 4 daun biaya menjadi 125% dari harga 3 daun",
+            "Untuk 5 daun biaya menjadi 150% dari harga 3 daun",
+            "Tidak termasuk biaya rekondisi baling-baling"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1,0",
+              "harga": 910000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "1,01 s/d 1,5",
+              "harga": 1364000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "1,51 s/d 2,0",
+              "harga": 1818000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "2,01 s/d 2,5",
+              "harga": 2729000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "2,51 s/d 3,0",
+              "harga": 3637000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "3,01 s/d 3,5",
+              "harga": 4547000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "3,51 s/d 4,0",
+              "harga": 5456000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "4,01 s/d 4,5",
+              "harga": 6365000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "4,51 s/d 5,0",
+              "harga": 7274000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "5,01 s/d 5,5",
+              "harga": 9092000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "11",
+              "nama": "5,51 s/d 6,0",
+              "harga": 10911000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.2.1",
+          "nama": "Pengukuran kelonggaran poros baling-baling dengan pelumasan air laut",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Tidak termasuk biaya bongkar pasang penghalang meskipun masih pada sistemnya",
+            "Dari hasil pengukuran apabila poros harus dilepas / diperbaiki biaya pengukuran tetap diperhitungkan",
+            "Untuk pelumasan minyak ditambah 10% dari tarif diatas",
+            "Untuk pekerjaan per Unit Bracket dikenakan 50% tarif diatas",
+            "Pekerjaan pelepasan dan pemasangan Rope Guard, biaya dihitung tersendiri (excl. spare)",
+            "Type propulsi khusus diperhitungkan tersendiri"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 100",
+              "harga": 905000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "101 s/d 150",
+              "harga": 996000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "151 s/d 200",
+              "harga": 1086000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "201 s/d 250",
+              "harga": 1176000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "251 s/d 300",
+              "harga": 1267000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "301 s/d 350",
+              "harga": 1448000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "351 s/d 400",
+              "harga": 1629000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "401 s/d 450",
+              "harga": 1810000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "451 s/d 500",
+              "harga": 1991000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "501 s/d 550",
+              "harga": 2170000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.2.2",
+          "nama": "Cabut poros baling-baling",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "a. Cabut poros ditempat dan dipasang kembali",
+            "b. Bongkar & pasang kopling (Flens) poros antara. Untuk kopling SKF khusus dihitung tersendiri",
+            "c. Type pelumas oli, tambah 30% (seal box simplex bearing). Material symplex seal dihitung tersendiri",
+            "d. Perbaikan dan penggantian material dibengkel dihitung tersendiri",
+            "e. Magnaflux dihitung tersendiri",
+            "f. Cek kelurusan di bengkel dihitung tersendiri (20% dari tarif cabut as)",
+            "g. Perbaikan kelurusan dihitung tersendiri",
+            "h. Tidak termasuk biaya cabut baling-baling",
+            "i. Type CPP dihitung tersendiri, minimum ditambah 200% dari tarif diatas",
+            "j. Bongkar pasang Intermediate shaft per unit dikenakan tarif min. 30% dari tarif bongkar pasang poros",
+            "k. Alignment shaft dikenakan 40% dari tarif GO Main Engine. Penghalang dihitung tersendiri",
+            "l. Type sistem kopling Keyless ditambah min. 25%"
+          ],
+          "detail": [
+            { "nomor": "1", "nama": "100", "harga": 4342000, "satuan": "/ " },
+            { "nomor": "2", "nama": "150", "harga": 7236000, "satuan": "/ " },
+            { "nomor": "3", "nama": "200", "harga": 9045000, "satuan": "/ " },
+            { "nomor": "4", "nama": "250", "harga": 12663000, "satuan": "/ " },
+            { "nomor": "5", "nama": "300", "harga": 14472000, "satuan": "/ " },
+            { "nomor": "6", "nama": "350", "harga": 18090000, "satuan": "/ " },
+            { "nomor": "7", "nama": "400", "harga": 19899000, "satuan": "/ " },
+            { "nomor": "8", "nama": "450", "harga": 23517000, "satuan": "/ " },
+            { "nomor": "9", "nama": "500", "harga": 27135000, "satuan": "/ " },
+            { "nomor": "10", "nama": "550", "harga": 30753000, "satuan": "/ " },
+            { "nomor": "11", "nama": "600", "harga": 34371000, "satuan": "/ " }
+          ]
+        },
+        {
+          "nomor": "E.2.4",
+          "nama": "Ganti gelang pengamanan",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Tidak termasuk biaya: Material, Perbaikan, rekondisi dan pembuatan SUCAD"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 100",
+              "harga": 987000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "s/d 200",
+              "harga": 1481000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "s/d 300",
+              "harga": 1974000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "s/d 400",
+              "harga": 3209000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "s/d 500",
+              "harga": 3947000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "s/d 600",
+              "harga": 4934000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.2.5",
+          "nama": "Bongkar dan pasang stern tube dan bracket per koker bush",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "a. Tidak termasuk biaya perbaikan / rekondisi bearing di bengkel, pembuatan sucad dan material",
+            "b. Tidak termasuk biaya bongkar/pasang penghalang dan sistem",
+            "c. Tidak termasuk cabut poros",
+            "d. Bahan bantalan dari babit, biaya dihitung tersendiri",
+            "e. Untuk bahan kayu pok silinder dihitung sesuai pemasangan kayu pok bagian bawah"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 50",
+              "harga_koker_bush": 724000,
+              "harga_karet": 634000,
+              "harga_kayu_pok_atas_bawah": 1267000,
+              "harga_kayu_pok_bawah": 905000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "51 s/d 75",
+              "harga_koker_bush": 905000,
+              "harga_karet": 814000,
+              "harga_kayu_pok_atas_bawah": 2353000,
+              "harga_kayu_pok_bawah": 1629000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "76 s/d 100",
+              "harga_koker_bush": 1629000,
+              "harga_karet": 1538000,
+              "harga_kayu_pok_atas_bawah": 5609000,
+              "harga_kayu_pok_bawah": 3980000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "101 s/d 150",
+              "harga_koker_bush": 2353000,
+              "harga_karet": 2081000,
+              "harga_kayu_pok_atas_bawah": 7598000,
+              "harga_kayu_pok_bawah": 5609000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "151 s/d 200",
+              "harga_koker_bush": 3256000,
+              "harga_karet": 2894000,
+              "harga_kayu_pok_atas_bawah": 9406000,
+              "harga_kayu_pok_bawah": 6694000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "201 s/d 250",
+              "harga_koker_bush": 3980000,
+              "harga_karet": 3618000,
+              "harga_kayu_pok_atas_bawah": 11397000,
+              "harga_kayu_pok_bawah": 7598000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "256 s/d 300",
+              "harga_koker_bush": 6150000,
+              "harga_karet": 5609000,
+              "harga_kayu_pok_atas_bawah": 13207000,
+              "harga_kayu_pok_bawah": 8737000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "301 s/d 350",
+              "harga_koker_bush": 8507000,
+              "harga_karet": 7779000,
+              "harga_kayu_pok_atas_bawah": 15739000,
+              "harga_kayu_pok_bawah": 11939000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "356 s/d 400",
+              "harga_koker_bush": 11939000,
+              "harga_karet": 10854000,
+              "harga_kayu_pok_atas_bawah": 17909000,
+              "harga_kayu_pok_bawah": 13748000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "401 s/d 450",
+              "harga_koker_bush": 16281000,
+              "harga_karet": 14834000,
+              "harga_kayu_pok_atas_bawah": 20803000,
+              "harga_kayu_pok_bawah": 18813000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "11",
+              "nama": "451 s/d 475",
+              "harga_koker_bush": 19899000,
+              "harga_karet": 18090000,
+              "harga_kayu_pok_atas_bawah": 25507000,
+              "harga_kayu_pok_bawah": 22613000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "12",
+              "nama": "476 s/d 500",
+              "harga_koker_bush": 23878000,
+              "harga_karet": 21707000,
+              "harga_kayu_pok_atas_bawah": 26231000,
+              "harga_kayu_pok_bawah": 23517000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.2.6",
+          "nama": "Bantalan dukung poros baling-baling",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "a. Buka bantalan dukung poros baling-baling untuk diperiksa dan diukur, dibersihkan",
+            "b. Tidak termasuk biaya perbaikan, rekondisi dan pembuatan Suku Cadang"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 100",
+              "harga_plummer_block": 787000,
+              "harga_shaft_thrust": 1101000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "101 s/d 200",
+              "harga_plummer_block": 1101000,
+              "harga_shaft_thrust": 1416000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "201 s/d 250",
+              "harga_plummer_block": 1101000,
+              "harga_shaft_thrust": 1573000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "251 s/d 300",
+              "harga_plummer_block": 1258000,
+              "harga_shaft_thrust": 1888000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "301 s/d 350",
+              "harga_plummer_block": 1258000,
+              "harga_shaft_thrust": 2517000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "351 s/d 400",
+              "harga_plummer_block": 1573000,
+              "harga_shaft_thrust": 2989000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "401 s/d 450",
+              "harga_plummer_block": 1730000,
+              "harga_shaft_thrust": 3461000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "451 s/d 500",
+              "harga_plummer_block": 2045000,
+              "harga_shaft_thrust": 3933000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "501 s/d 550",
+              "harga_plummer_block": 2674000,
+              "harga_shaft_thrust": 4404000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "551 s/d 600",
+              "harga_plummer_block": 3303000,
+              "harga_shaft_thrust": 5034000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "E.4",
+          "nama": "Pengukuran kelonggaran dan bongkar/pasang kembali (per kemudi)",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "a. Tidak termasuk pekerjaan penghalang dan sistemnya",
+            "b. Tidak termasuk biaya perbaikan dan pembuatan Suku Cadang",
+            "c. Biaya hydro test termasuk ganti isian oli bekas untuk daun kemudi sama dengan biaya pengukuran kelonggaran tongkat dan pasang kemudi",
+            "d. Untuk Pintle Kemudi dihitung tersendiri",
+            "e. Kort Nozzle biaya ditambah 100%",
+            "f. Untuk bongkar daun kemudi dikenakan tarif 60%",
+            "g. Di luar GT diatas, dihitung tersendiri",
+            "h. Bongkar pasang kwadran kemudi berikut sistem dihitung tersendiri"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 300",
+              "harga_clearance": 859000,
+              "harga_bongkar_pasang": 9768000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "301 s/d 500",
+              "harga_clearance": 1411000,
+              "harga_bongkar_pasang": 11939000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "501 s/d 1500",
+              "harga_clearance": 1834000,
+              "harga_bongkar_pasang": 16101000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "1501 s/d 3000",
+              "harga_clearance": 2081000,
+              "harga_bongkar_pasang": 22431000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "3001 s/d 4000",
+              "harga_clearance": 2497000,
+              "harga_bongkar_pasang": 24060000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "4001 s/d 5000",
+              "harga_clearance": 2912000,
+              "harga_bongkar_pasang": 25687000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "5001 s/d 7000",
+              "harga_clearance": 3331000,
+              "harga_bongkar_pasang": 28943000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "7001 s/d 9000",
+              "harga_clearance": 3797340,
+              "harga_bongkar_pasang": 32560875,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "9001 s/d 11000",
+              "harga_clearance": 4328968,
+              "harga_bongkar_pasang": 36630984,
+              "satuan": "/ "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "F. SISTEM AIR / MINYAK",
+      "items": [
+        {
+          "nomor": "F.1",
+          "nama": "Ganti Baru Pipa Lurus Per Meter",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Bongkar / pasang pipa sebagai penghalang 40% harga per meter",
+            "Bongkar / pasang pipa dan perbaikan 60% harga per meter",
+            "Panjang pipa kurang dari 1 meter dihitung jadi 1 meter",
+            "Pekerjaan pipa di dalam DBT 110% harga per meter. Pekerjaan pipa di dalam tangki 120% harga per meter",
+            "Pipa aluminium dihitung 1,5 kali pipa putih",
+            "Pipa seamless sch 40 dihitung 2x pipa putih. Pipa seamless sch 80 dihitung 2,5x pipa putih",
+            "Pipa tembaga dihitung 3,5x pipa putih",
+            "Pipa Cuni dihitung 4,5x pipa putih",
+            "Proses galvanish dihitung tersendiri",
+            "Untuk pipa diameter lebih dari 12\", minimum dihitung 6 meter",
+            "Untuk pipa di engine room dan funnel menjadi 120%",
+            "Flushing pipa = 5% dari tarif pipa (tanpa index)",
+            "Vent head = 30% x harga pipa",
+            "Flexibel hose = 30% x harga pipa",
+            "Blow test pipa = 50% x tarif",
+            "Pipa tubing = sch 40 x 60%",
+            "Pipa galvanis sch 40 = 2,5",
+            "Packing karet = 5000/inch",
+            "Packing tombo = 25000/inch"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1/2\"",
+              "harga_hitam": 119000,
+              "harga_putih": 139000,
+              "harga_sch_40": 278000,
+              "harga_sch_80": 347500,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "2",
+              "nama": "s/d 1\"",
+              "harga_hitam": 154000,
+              "harga_putih": 182000,
+              "harga_sch_40": 364000,
+              "harga_sch_80": 455000,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "3",
+              "nama": "s/d 2\"",
+              "harga_hitam": 306000,
+              "harga_putih": 354000,
+              "harga_sch_40": 708000,
+              "harga_sch_80": 885000,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "4",
+              "nama": "s/d 3\"",
+              "harga_hitam": 457000,
+              "harga_putih": 505000,
+              "harga_sch_40": 1010000,
+              "harga_sch_80": 1262500,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "5",
+              "nama": "s/d 4\"",
+              "harga_hitam": 606000,
+              "harga_putih": 694000,
+              "harga_sch_40": 1388000,
+              "harga_sch_80": 1735000,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "6",
+              "nama": "s/d 5\"",
+              "harga_hitam": 761000,
+              "harga_putih": 875000,
+              "harga_sch_40": 1750000,
+              "harga_sch_80": 2187500,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "7",
+              "nama": "s/d 6\"",
+              "harga_hitam": 917000,
+              "harga_putih": 1044000,
+              "harga_sch_40": 2088000,
+              "harga_sch_80": 2610000,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "8",
+              "nama": "s/d 8\"",
+              "harga_hitam": 1210000,
+              "harga_putih": 1402000,
+              "harga_sch_40": 2804000,
+              "harga_sch_80": 3505000,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "9",
+              "nama": "s/d 10\"",
+              "harga_hitam": 1530000,
+              "harga_putih": 1795000,
+              "harga_sch_40": 3590000,
+              "harga_sch_80": 4487500,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "10",
+              "nama": "s/d 12\"",
+              "harga_hitam": 1889000,
+              "harga_putih": 2172000,
+              "harga_sch_40": 4344000,
+              "harga_sch_80": 5430000,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "11",
+              "nama": "14",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 5472600,
+              "harga_sch_80": 8208900,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "12",
+              "nama": "16",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 6568800,
+              "harga_sch_80": 9853200,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "13",
+              "nama": "18",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 7881300,
+              "harga_sch_80": 11821950,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "14",
+              "nama": "20",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 9458400,
+              "harga_sch_80": 14187600,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "15",
+              "nama": "22",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 11350500,
+              "harga_sch_80": 17025750,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "16",
+              "nama": "24",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 13620600,
+              "harga_sch_80": 20430900,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "17",
+              "nama": "26",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 16344300,
+              "harga_sch_80": 24516450,
+              "satuan": "/ mtr"
+            },
+            {
+              "nomor": "18",
+              "nama": "28",
+              "harga_hitam": null,
+              "harga_putih": null,
+              "harga_sch_40": 19611900,
+              "harga_sch_80": 29417850,
+              "satuan": "/ mtr"
+            }
+          ]
+        },
+        {
+          "nomor": "F.2",
+          "nama": "Penggantian Klem Pipa",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1/2\"",
+              "harga": 64000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "2",
+              "nama": "0,55 s/d 1\"",
+              "harga": 79000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "3",
+              "nama": "1,1 s/d 2\"",
+              "harga": 95000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "4",
+              "nama": "2,1 s/d 3\"",
+              "harga": 140000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "5",
+              "nama": "3,1 s/d 4\"",
+              "harga": 188000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "6",
+              "nama": "4,1 s/d 6\"",
+              "harga": 251000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "7",
+              "nama": "6,1 s/d 8\"",
+              "harga": 376000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "8",
+              "nama": "8,1 s/d 10\"",
+              "harga": 556000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "9",
+              "nama": "10,1 s/d 12\"",
+              "harga": 628000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "10",
+              "nama": "diatas 12\"",
+              "harga": null,
+              "satuan": "Dihitung tersendiri"
+            }
+          ]
+        },
+        {
+          "nomor": "F.3",
+          "nama": "Penggantian Plendes",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1/2\"",
+              "harga": 79000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "2",
+              "nama": "0,55 s/d 1\"",
+              "harga": 99000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "3",
+              "nama": "1,1 s/d 2\"",
+              "harga": 140000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "4",
+              "nama": "2,1 s/d 3\"",
+              "harga": 187000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "5",
+              "nama": "3,1 s/d 4\"",
+              "harga": 266000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "6",
+              "nama": "4,1 s/d 5\"",
+              "harga": 325000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "7",
+              "nama": "5,1 s/d 6\"",
+              "harga": 396000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "8",
+              "nama": "6,1 s/d 8\"",
+              "harga": 535000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "9",
+              "nama": "8,1 s/d 10\"",
+              "harga": 660000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "10",
+              "nama": "10,1 s/d 12\"",
+              "harga": 839000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "11",
+              "nama": "12,1 s/d 14\"",
+              "harga": 1006800,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "12",
+              "nama": "14,1 s/d 16\"",
+              "harga": 1208160,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "13",
+              "nama": "16,1 s/d 18\"",
+              "harga": 1449792,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "14",
+              "nama": "18,1 s/d 20\"",
+              "harga": 1739750,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "15",
+              "nama": "20,1 s/d 22\"",
+              "harga": 2087700,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "16",
+              "nama": "22,1 s/d 24\"",
+              "harga": 2505240,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "17",
+              "nama": "24,1 s/d 26\"",
+              "harga": 3006258,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "18",
+              "nama": "26,1 s/d 28\"",
+              "harga": 3607546,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "19",
+              "nama": "diatas 28\"",
+              "harga": null,
+              "satuan": "Dihitung tersendiri"
+            }
+          ],
+          "catatan": [
+            "Ukuran standard katup s/d 10K / 150 psi",
+            "Tekanan diatas 16K harga ditambah 100%",
+            "Material packing dan baut dihitung tersendiri"
+          ]
+        },
+        {
+          "nomor": "F.4",
+          "nama": "Penggantian Elbow, Potongan-T",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Untuk bahan Sch 40 ditambah 100%",
+            "Untuk bahan Sch 80 ditambah 100%"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1/2\"",
+              "harga_galvanis": 73000,
+              "harga_steel": 118000,
+              "harga_sch_40": 236000,
+              "harga_sch_80": 295000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "2",
+              "nama": "1\"",
+              "harga_galvanis": 80000,
+              "harga_steel": 131000,
+              "harga_sch_40": 262000,
+              "harga_sch_80": 327500,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "3",
+              "nama": "2\"",
+              "harga_galvanis": 129000,
+              "harga_steel": 171000,
+              "harga_sch_40": 342000,
+              "harga_sch_80": 427500,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "4",
+              "nama": "3\"",
+              "harga_galvanis": 179000,
+              "harga_steel": 242000,
+              "harga_sch_40": 484000,
+              "harga_sch_80": 605000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "5",
+              "nama": "4\"",
+              "harga_galvanis": 274000,
+              "harga_steel": 395000,
+              "harga_sch_40": 790000,
+              "harga_sch_80": 987500,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "6",
+              "nama": "5\"",
+              "harga_galvanis": 319000,
+              "harga_steel": 461000,
+              "harga_sch_40": 922000,
+              "harga_sch_80": 1152500,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "7",
+              "nama": "6\"",
+              "harga_galvanis": 363000,
+              "harga_steel": 526000,
+              "harga_sch_40": 1052000,
+              "harga_sch_80": 1315000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "8",
+              "nama": "8\"",
+              "harga_galvanis": 436000,
+              "harga_steel": 631000,
+              "harga_sch_40": 1262000,
+              "harga_sch_80": 1577500,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "9",
+              "nama": "10\"",
+              "harga_galvanis": 548000,
+              "harga_steel": 794000,
+              "harga_sch_40": 1588000,
+              "harga_sch_80": 1985000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "10",
+              "nama": "12\"",
+              "harga_galvanis": 725000,
+              "harga_steel": 1049000,
+              "harga_sch_40": 2098000,
+              "harga_sch_80": 2622500,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "11",
+              "nama": "14\"",
+              "harga_galvanis": null,
+              "harga_steel": 1258800,
+              "harga_sch_40": null,
+              "harga_sch_80": null,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "12",
+              "nama": "16\"",
+              "harga_galvanis": null,
+              "harga_steel": 1510560,
+              "harga_sch_40": null,
+              "harga_sch_80": null,
+              "satuan": "/ Buah"
+            }
+          ]
+        },
+        {
+          "nomor": "F.5",
+          "nama": "Bengkokan (Bending) per Bengkokan",
+          "harga": null,
+          "satuan": null,
+          "catatan": ["Untuk Pekerjaan Pipa Putih"],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1/2\"",
+              "harga": 56000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "2",
+              "nama": "0,55 s/d 1\"",
+              "harga": 85600,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "3",
+              "nama": "1,1 s/d 2\"",
+              "harga": 121600,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "4",
+              "nama": "2,1 s/d 3\"",
+              "harga": 207200,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "5",
+              "nama": "3,1 s/d 4\"",
+              "harga": 256800,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "6",
+              "nama": "4,1 s/d 5\"",
+              "harga": 295200,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "7",
+              "nama": "5,1 s/d 6\"",
+              "harga": 334400,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "8",
+              "nama": "6,1 s/d 8\"",
+              "harga": 488800,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "9",
+              "nama": "8,1 s/d 10\"",
+              "harga": 1028800,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "10",
+              "nama": "10,1 s/d 12\"",
+              "harga": 1203200,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "11",
+              "nama": "diatas 12\"",
+              "harga": null,
+              "satuan": "dihitung tersendiri"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "G. SISTEM AIR LAUT",
+      "items": [
+        {
+          "nomor": "G1",
+          "nama": "Katup-katup air laut (Kran-kran laut)",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Buka ditempat, dibersihkan, diperiksa, dikonserver untuk pemeriksaan class, dipasang kembali dan dicat meni",
+            "Pekerjaan dan test di bengkel biaya menjadi 150%",
+            "Belum termasuk biaya bongkar pasang penghalang",
+            "Lokasi pekerjaan di tangki, DBT menjadi 120%",
+            "Pekerjaan Butterfly Valve menjadi 200% dari type Globe Valve",
+            "Pekerjaan Angle Valve sama dengan type Globe Valve",
+            "Penggantian material packing dan baut mur dihitung tersendiri",
+            "Stop Valve dan jenis katup lainnya dihitung tersendiri",
+            "Valve sea chest = 0,5 x tarif valve",
+            "Strainer = Rp 50.000 / 20 inch",
+            "Blasting + painting strainer = 0,5 x tarif strainer",
+            "OVH valve pneumatic = 1,75 x tarif",
+            "Akuater valve hidrolik = 0,7 x tarif",
+            "Three way valve = gate valve x 2",
+            "Jika dilakukan press test individu = press test x 1,3"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1\"",
+              "harga_globe": 296000,
+              "harga_gate": 494000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "2",
+              "nama": "1,1 s/d 2\"",
+              "harga_globe": 395000,
+              "harga_gate": 625000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "3",
+              "nama": "2,1 s/d 3\"",
+              "harga_globe": 494000,
+              "harga_gate": 740000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "4",
+              "nama": "3,1 s/d 4\"",
+              "harga_globe": 625000,
+              "harga_gate": 987000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "5",
+              "nama": "4,1 s/d 5\"",
+              "harga_globe": 872000,
+              "harga_gate": 1234000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "6",
+              "nama": "5,1 s/d 6\"",
+              "harga_globe": 1234000,
+              "harga_gate": 1481000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "7",
+              "nama": "6,1 s/d 8\"",
+              "harga_globe": 1481000,
+              "harga_gate": 1727000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "8",
+              "nama": "8,1 s/d 10\"",
+              "harga_globe": 1859000,
+              "harga_gate": 2105000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "9",
+              "nama": "10,1 s/d 12\"",
+              "harga_globe": 2221000,
+              "harga_gate": 2467000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "10",
+              "nama": "12,1 s/d 14\"",
+              "harga_globe": 2846000,
+              "harga_gate": 3092000,
+              "satuan": "/ Buah"
+            },
+            {
+              "nomor": "11",
+              "nama": "14,1 s/d 16\"",
+              "harga_globe": 3454000,
+              "harga_gate": 3700000,
+              "satuan": "/ Buah"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "H. JANGKAR, RANTAI JANGKAR & CERUK RANTAI",
+      "items": [
+        {
+          "nomor": "H.1",
+          "nama": "Jangkar",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Jangkar, rantai jangkar dan stalrad jangkar diturunkan, direntangkan, diketok, disikat dengan sikat kawat baja, dibersihkan diukur diameternya, di cat dengan coalter, diberi tanda, segel (dibuatkan laporan hasil pengukuran rangkap 7)",
+            "Jangkar dan rantainya dipasang / disimpan seperti semula",
+            "Untuk jangkar dengan stalrad biaya dihitung 80% dari tarif bila dikerjakan tersendiri",
+            "Pembalikan rantai jangkar bila diperlukan sudah termasuk",
+            "Pembersihan jangkar & rantainya dengan sandblasting / waterjet di perhitungan tersendiri",
+            "Tidak termasuk biaya perbaikan, rekondisi, pembuatan SUCAD dan material",
+            "Tidak termasuk biaya RB dan TD"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 300",
+              "harga": 1967000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "301 s/d 500",
+              "harga": 2324000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "501 s/d 1500",
+              "harga": 3039000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "1501 s/d 2500",
+              "harga": 3933000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "2501 s/d 3500",
+              "harga": 5184000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "3501 s/d 5000",
+              "harga": 6435000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "5001 s/d 7000",
+              "harga": 8044000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "7001 s/d 9000",
+              "harga": 9474000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "9001 s/d 11000",
+              "harga": 13407000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "11001 s/d 13000",
+              "harga": 16267000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "11",
+              "nama": "13001 s/d 15000",
+              "harga": 19484000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "12",
+              "nama": "15001 s/d 17000",
+              "harga": 23059000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "13",
+              "nama": "17001 s/d 20000",
+              "harga": 27459000,
+              "satuan": "/ "
+            }
+          ]
+        },
+        {
+          "nomor": "H.2",
+          "nama": "Penggantian rantai Jangkar (Rantai ex. pemilik) per segel",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 300",
+              "harga": 996000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "301 s/d 500",
+              "harga": 1267000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "501 s/d 1500",
+              "harga": 1538000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "1501 s/d 3000",
+              "harga": 1810000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "3001 s/d 4000",
+              "harga": 2170000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "4001 s/d 6000",
+              "harga": 3076000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "6000 keatas",
+              "harga": "s/d 6000 RT + 350 (GT-6000)",
+              "satuan": null
+            }
+          ]
+        },
+        {
+          "nomor": "H.3",
+          "nama": "Ceruk rantai (Chain Lockers)",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Dibersihkan dan dicat satu lapis cat Coaltar (cat dari owner)",
+            "Tidak termasuk biaya material",
+            "Pembersihan lumpur dihitung tersendiri"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 300",
+              "harga": 1267000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "2",
+              "nama": "301 s/d 500",
+              "harga": 1448000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "3",
+              "nama": "501 s/d 1500",
+              "harga": 1810000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "4",
+              "nama": "1501 s/d 2500",
+              "harga": 1991000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "5",
+              "nama": "2501 s/d 3500",
+              "harga": 2302000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "6",
+              "nama": "3501 s/d 5000",
+              "harga": 2532000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "7",
+              "nama": "5001 s/d 7000",
+              "harga": 2894000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "8",
+              "nama": "7001 s/d 9000",
+              "harga": 3256000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "9",
+              "nama": "9001 s/d 11000",
+              "harga": 3980000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "10",
+              "nama": "11001 s/d 13000",
+              "harga": 4704000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "11",
+              "nama": "13001 s/d 15000",
+              "harga": 5427000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "12",
+              "nama": "15001 s/d 17000",
+              "harga": 7688000,
+              "satuan": "/ "
+            },
+            {
+              "nomor": "13",
+              "nama": "17001 s/d 20000",
+              "harga": 9045000,
+              "satuan": "/ "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "I. KEBERSIHAN BADAN KAPAL",
+      "items": [
+        {
+          "nomor": "1",
+          "nama": "Blasting tank top",
+          "harga": null,
+          "satuan": null,
+          "catatan": ["Indeks ditambah 20%"]
+        },
+        {
+          "nomor": "2",
+          "nama": "Power tools ponton, tank top",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Chipping",
+              "harga": 5000,
+              "satuan": "/ m2",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Brushing",
+              "harga": 6600,
+              "satuan": "/ m2",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Cat",
+              "harga": 3500,
+              "satuan": "/ m2/layer (menggunakan roll)",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "3",
+          "nama": "Power tools dalam tangki",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Chipping",
+              "harga": 10000,
+              "satuan": "/ m2",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Brushing",
+              "harga": 12000,
+              "satuan": "/ m2",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Cat",
+              "harga": 5000,
+              "satuan": "/ m2/layer (menggunakan roll)",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "4",
+          "nama": "Dalam double bottom void",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Chipping",
+              "harga": 12000,
+              "satuan": "/ m2",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Brushing",
+              "harga": 14400,
+              "satuan": "/ m2",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Cat",
+              "harga": 6000,
+              "satuan": "/ m2/layer (menggunakan roll)",
+              "catatan": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "J. PEKERJAAN TANGKI",
+      "items": [
+        {
+          "nomor": "1",
+          "nama": "Hydrotest tangki",
+          "harga": 8300,
+          "satuan": "/ m3",
+          "catatan": []
+        },
+        {
+          "nomor": "2",
+          "nama": "Air test",
+          "harga": 10000,
+          "satuan": "/ m3",
+          "catatan": []
+        },
+        {
+          "nomor": "3",
+          "nama": "Pompa tangki SWBT, fresh water",
+          "harga": 35000,
+          "satuan": "/ m3",
+          "catatan": ["dengan pompa celup"]
+        },
+        {
+          "nomor": "4",
+          "nama": "Pompa tangki bahan bakar",
+          "harga": 60000,
+          "satuan": "/ m3",
+          "catatan": ["dengan gear pump"]
+        },
+        {
+          "nomor": "5",
+          "nama": "Penimpaan oli/bahan bakar",
+          "harga": 75000,
+          "satuan": "/ drum",
+          "catatan": []
+        },
+        {
+          "nomor": "6",
+          "nama": "Penyemenan tangki",
+          "harga": null,
+          "satuan": null,
+          "catatan": [],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Dibawah 50m3",
+              "harga": 25000,
+              "satuan": "(harga per satuan, lihat catatan)",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Diatas 50m3",
+              "harga": 22500,
+              "satuan": "(harga per satuan, lihat catatan)",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "7",
+          "nama": "Recleaning tangki ballast",
+          "harga": null,
+          "satuan": null,
+          "catatan": ["30% dari volume tangki yang dicleaning"]
+        },
+        {
+          "nomor": "8",
+          "nama": "Sewa tangki penampungan",
+          "harga": 25000,
+          "satuan": "/ ton",
+          "catatan": []
+        },
+        {
+          "nomor": "9",
+          "nama": "Penggantian packing manhole",
+          "harga": 150000,
+          "satuan": "/ unit",
+          "catatan": ["Material packing dari galangan"]
+        },
+        {
+          "nomor": "10",
+          "nama": "Pengganti packing manhole",
+          "harga": 90000,
+          "satuan": "/ unit",
+          "catatan": ["Material packing dari OS"]
+        }
+      ],
+      "catatan": [
+        "Untuk nomor 6 (Penyemenan tangki), harga kemungkinan besar adalah dalam satuan tertentu (misal Rp/m3 atau Rp/unit). Karena yang tertera hanya angkanya di gambar, saya tulis apa adanya.",
+        "Untuk perhitungan di Excel, jangan lupa untuk mengalikan persentase pada nomor 7 (30%) dengan nilai volume tangki yang dibersihkan."
+      ]
+    },
+    {
+      "kategori": "K. DATA TAMBAHAN DARI DATABASE (Perlu Verifikasi Harga)",
+      "items": [
+        {
+          "nomor": "K.1",
+          "nama": "Layanan Docking & Umum Tambahan",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "sub_items": [
+            {
+              "nomor": "a",
+              "nama": "Penyediaan cooling line per line",
+              "harga": 0,
+              "satuan": "/ Hari",
+              "catatan": []
+            },
+            {
+              "nomor": "b",
+              "nama": "Sambung dan lepas line cooling line",
+              "harga": 0,
+              "satuan": "/ Hari",
+              "catatan": []
+            },
+            {
+              "nomor": "c",
+              "nama": "Penjagaan keamanan docking atau floating",
+              "harga": 0,
+              "satuan": "/ Hari",
+              "catatan": []
+            },
+            {
+              "nomor": "d",
+              "nama": "Sambung dan lepas line saluran ventilasi",
+              "harga": 582000,
+              "satuan": "/ Kali",
+              "catatan": []
+            },
+            {
+              "nomor": "e",
+              "nama": "Pembuatan gambar teknik",
+              "harga": 690000,
+              "satuan": "/ Hari",
+              "catatan": []
+            },
+            {
+              "nomor": "f",
+              "nama": "Pengaturan dock block",
+              "harga": 42000,
+              "satuan": "/ Block",
+              "catatan": []
+            },
+            {
+              "nomor": "g",
+              "nama": "Fasilitas MCK",
+              "harga": 200000,
+              "satuan": "/ Block",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "K.2",
+          "nama": "Asistensi Naik/Turun Docking & Undocking",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "0 - 500 GT",
+              "harga": 3221000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "2",
+              "nama": "501 - 1500 GT",
+              "harga": 3600000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "3",
+              "nama": "1501 - 2500 GT",
+              "harga": 4401000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "4",
+              "nama": "2501 - 3500 GT",
+              "harga": 5201000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "5",
+              "nama": "3501 - 5000 GT",
+              "harga": 6002000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "6",
+              "nama": "5001 - 7000 GT",
+              "harga": 6800000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "7",
+              "nama": "7001 - 9000 GT",
+              "harga": 7601000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "8",
+              "nama": "9001 - 11000 GT",
+              "harga": 8802000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "9",
+              "nama": "11001 - 13000 GT",
+              "harga": 10001000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "10",
+              "nama": "13001 - 15000 GT",
+              "harga": 11201000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "11",
+              "nama": "15001 - 17000 GT",
+              "harga": 12403000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "12",
+              "nama": "17001 - 19000 GT",
+              "harga": 13566000,
+              "satuan": "/ Kapal"
+            }
+          ]
+        },
+        {
+          "nomor": "K.3",
+          "nama": "Docking dan Undocking",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "0 - 500 GT",
+              "harga": 5601000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "2",
+              "nama": "501 - 1500 GT",
+              "harga": 7202000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "3",
+              "nama": "1501 - 2500 GT",
+              "harga": 8802000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "4",
+              "nama": "2501 - 3500 GT",
+              "harga": 11201000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "5",
+              "nama": "3501 - 5000 GT",
+              "harga": 14402000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "6",
+              "nama": "5001 - 7000 GT",
+              "harga": 19203000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "7",
+              "nama": "7001 - 9000 GT",
+              "harga": 24003000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "8",
+              "nama": "9001 - 11000 GT",
+              "harga": 30404000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "9",
+              "nama": "11001 - 13000 GT",
+              "harga": 36805000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "10",
+              "nama": "13001 - 15000 GT",
+              "harga": 44806000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "11",
+              "nama": "15001 - 17000 GT",
+              "harga": 52808000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "12",
+              "nama": "17001 - 19000 GT",
+              "harga": 62409000,
+              "satuan": "/ Kapal"
+            }
+          ]
+        },
+        {
+          "nomor": "K.4",
+          "nama": "Docking Per Hari",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "0 - 500 GT",
+              "harga": 851000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "2",
+              "nama": "501 - 1500 GT",
+              "harga": 1091000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "3",
+              "nama": "1501 - 2500 GT",
+              "harga": 1331000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "4",
+              "nama": "2501 - 3500 GT",
+              "harga": 1680000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "5",
+              "nama": "3501 - 5000 GT",
+              "harga": 2160000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "6",
+              "nama": "5001 - 7000 GT",
+              "harga": 2881000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "7",
+              "nama": "7001 - 9000 GT",
+              "harga": 3600000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "8",
+              "nama": "9001 - 11000 GT",
+              "harga": 4561000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "9",
+              "nama": "11001 - 13000 GT",
+              "harga": 5521000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "10",
+              "nama": "13001 - 15000 GT",
+              "harga": 6721000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "11",
+              "nama": "15001 - 17000 GT",
+              "harga": 7921000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "12",
+              "nama": "17001 - 19000 GT",
+              "harga": 9361000,
+              "satuan": "/ Hari"
+            }
+          ]
+        },
+        {
+          "nomor": "K.5",
+          "nama": "Docking Report",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "0 - 2500 GT",
+              "harga": 2401000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "2",
+              "nama": "2501 - 15000 GT",
+              "harga": 4001000,
+              "satuan": "/ Kapal"
+            },
+            {
+              "nomor": "3",
+              "nama": "15001 - 19000 GT",
+              "harga": 5601000,
+              "satuan": "/ Kapal"
+            }
+          ]
+        },
+        {
+          "nomor": "K.6",
+          "nama": "Kapal Diposisikan di Ujung Slipway",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "0 - 500 GT",
+              "harga": 255300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "2",
+              "nama": "501 - 1500 GT",
+              "harga": 327300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "3",
+              "nama": "1501 - 2500 GT",
+              "harga": 399300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "4",
+              "nama": "2501 - 3500 GT",
+              "harga": 504000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "5",
+              "nama": "3501 - 5000 GT",
+              "harga": 648000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "6",
+              "nama": "5001 - 7000 GT",
+              "harga": 864300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "7",
+              "nama": "7001 - 9000 GT",
+              "harga": 1080000,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "8",
+              "nama": "9001 - 11000 GT",
+              "harga": 1368300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "9",
+              "nama": "11001 - 13000 GT",
+              "harga": 1656300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "10",
+              "nama": "13001 - 15000 GT",
+              "harga": 2016300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "11",
+              "nama": "15001 - 17000 GT",
+              "harga": 2376300,
+              "satuan": "/ Hari"
+            },
+            {
+              "nomor": "12",
+              "nama": "17001 - 19000 GT",
+              "harga": 2808300,
+              "satuan": "/ Hari"
+            }
+          ]
+        },
+        {
+          "nomor": "K.7",
+          "nama": "Pekerjaan Konstruksi & Bangunan Kapal Tambahan",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "Bongkar dan pasang kembali bordes",
+              "harga": 75000,
+              "satuan": "/ Pcs",
+              "catatan": []
+            },
+            {
+              "nomor": "2",
+              "nama": "Pumping out",
+              "harga": 60000,
+              "satuan": "/ Pcs",
+              "catatan": []
+            },
+            {
+              "nomor": "3",
+              "nama": "Bongkar dan pasang ban dampra",
+              "harga": 450000,
+              "satuan": "-",
+              "catatan": []
+            },
+            {
+              "nomor": "4",
+              "nama": "Kupingan dampra",
+              "harga": 150000,
+              "satuan": "/ Unit",
+              "catatan": []
+            },
+            {
+              "nomor": "5",
+              "nama": "Replate huruf",
+              "harga": 150000,
+              "satuan": "/ Pcs",
+              "catatan": []
+            },
+            {
+              "nomor": "6",
+              "nama": "Scupper",
+              "harga": 50000,
+              "satuan": "-",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "K.8",
+          "nama": "Pekerjaan Piping (Pipa) Tambahan",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "Pressure Test",
+              "harga": 1500000,
+              "satuan": "-",
+              "catatan": []
+            },
+            {
+              "nomor": "2",
+              "nama": "Flushing Line pipa",
+              "harga": 2500000,
+              "satuan": "-",
+              "catatan": []
+            },
+            {
+              "nomor": "3",
+              "nama": "Rewelding",
+              "harga": 79000,
+              "satuan": "-",
+              "catatan": []
+            },
+            {
+              "nomor": "4",
+              "nama": "Shock drat",
+              "harga": 10000,
+              "satuan": "-",
+              "catatan": []
+            }
+          ]
+        },
+        {
+          "nomor": "K.9",
+          "nama": "Bell Socket",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1/2\"",
+              "harga_sch_40": 83400,
+              "harga_sch_80": 104250,
+              "satuan": "-"
+            },
+            {
+              "nomor": "2",
+              "nama": "s/d 1\"",
+              "harga_sch_40": 109200,
+              "harga_sch_80": 136500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "3",
+              "nama": "s/d 2\"",
+              "harga_sch_40": 212400,
+              "harga_sch_80": 265500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "4",
+              "nama": "s/d 3\"",
+              "harga_sch_40": 303000,
+              "harga_sch_80": 378750,
+              "satuan": "-"
+            },
+            {
+              "nomor": "5",
+              "nama": "s/d 4\"",
+              "harga_sch_40": 416400,
+              "harga_sch_80": 520500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "6",
+              "nama": "s/d 5\"",
+              "harga_sch_40": 525000,
+              "harga_sch_80": 656250,
+              "satuan": "-"
+            },
+            {
+              "nomor": "7",
+              "nama": "s/d 6\"",
+              "harga_sch_40": 626400,
+              "harga_sch_80": 783000,
+              "satuan": "-"
+            },
+            {
+              "nomor": "8",
+              "nama": "s/d 8\"",
+              "harga_sch_40": 841200,
+              "harga_sch_80": 1051500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "9",
+              "nama": "s/d 10\"",
+              "harga_sch_40": 1077000,
+              "harga_sch_80": 1346250,
+              "satuan": "-"
+            },
+            {
+              "nomor": "10",
+              "nama": "s/d 12\"",
+              "harga_sch_40": 1303200,
+              "harga_sch_80": 1629000,
+              "satuan": "-"
+            }
+          ]
+        },
+        {
+          "nomor": "K.10",
+          "nama": "Connector Spigot",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "s/d 1/2\"",
+              "harga_sch_40": 83400,
+              "harga_sch_80": 104250,
+              "satuan": "-"
+            },
+            {
+              "nomor": "2",
+              "nama": "s/d 1\"",
+              "harga_sch_40": 109200,
+              "harga_sch_80": 136500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "3",
+              "nama": "s/d 2\"",
+              "harga_sch_40": 212400,
+              "harga_sch_80": 265500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "4",
+              "nama": "s/d 3\"",
+              "harga_sch_40": 303000,
+              "harga_sch_80": 378750,
+              "satuan": "-"
+            },
+            {
+              "nomor": "5",
+              "nama": "s/d 4\"",
+              "harga_sch_40": 416400,
+              "harga_sch_80": 520500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "6",
+              "nama": "s/d 5\"",
+              "harga_sch_40": 525000,
+              "harga_sch_80": 656250,
+              "satuan": "-"
+            },
+            {
+              "nomor": "7",
+              "nama": "s/d 6\"",
+              "harga_sch_40": 626400,
+              "harga_sch_80": 783000,
+              "satuan": "-"
+            },
+            {
+              "nomor": "8",
+              "nama": "s/d 8\"",
+              "harga_sch_40": 841200,
+              "harga_sch_80": 1051500,
+              "satuan": "-"
+            },
+            {
+              "nomor": "9",
+              "nama": "s/d 10\"",
+              "harga_sch_40": 1077000,
+              "harga_sch_80": 1346250,
+              "satuan": "-"
+            },
+            {
+              "nomor": "10",
+              "nama": "s/d 12\"",
+              "harga_sch_40": 1303200,
+              "harga_sch_80": 1629000,
+              "satuan": "-"
+            }
+          ]
+        },
+        {
+          "nomor": "K.11",
+          "nama": "Pekerjaan Jangkar Tambahan",
+          "harga": 1250000,
+          "satuan": "-",
+          "catatan": [
+            "Telah dilaksanakan penimbangan jangkar kanan dan kiri dan dibuatkan laporan",
+            "Harga diambil dari SQL, berpotensi salah dan perlu verifikasi"
+          ]
+        }
+      ]
+    },
+    {
+      "kategori": "L. MATERIAL TAMBAHAN",
+      "items": [
+        {
+          "nomor": "L.1",
+          "nama": "Mur Baut",
+          "harga": 15000,
+          "satuan": "/ Pcs",
+          "catatan": [
+            "Harga flat per Pcs",
+            "Berlaku untuk segala jenis ukuran standar (M10, M12, M14, M16, M20, dll)"
+          ]
+        },
+        {
+          "nomor": "L.2",
+          "nama": "Packing Karet",
+          "harga": null,
+          "satuan": null,
+          "catatan": [
+            "Dasar perhitungan harga adalah Rp 5.000 per inch diameter"
+          ],
+          "detail": [
+            {
+              "nomor": "1",
+              "nama": "Ukuran s/d 1 inch",
+              "harga": 5000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "2",
+              "nama": "Ukuran s/d 1.5 inch",
+              "harga": 7500,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "3",
+              "nama": "Ukuran s/d 2 inch",
+              "harga": 10000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "4",
+              "nama": "Ukuran s/d 2.5 inch",
+              "harga": 12500,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "5",
+              "nama": "Ukuran s/d 3 inch",
+              "harga": 15000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "6",
+              "nama": "Ukuran s/d 4 inch",
+              "harga": 20000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "7",
+              "nama": "Ukuran s/d 5 inch",
+              "harga": 25000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "8",
+              "nama": "Ukuran s/d 6 inch",
+              "harga": 30000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "9",
+              "nama": "Ukuran s/d 8 inch",
+              "harga": 40000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "10",
+              "nama": "Ukuran s/d 10 inch",
+              "harga": 50000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "11",
+              "nama": "Ukuran s/d 12 inch",
+              "harga": 60000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "12",
+              "nama": "Ukuran s/d 14 inch",
+              "harga": 70000,
+              "satuan": "/ Pcs"
+            },
+            {
+              "nomor": "13",
+              "nama": "Ukuran s/d 16 inch",
+              "harga": 80000,
+              "satuan": "/ Pcs"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

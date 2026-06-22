@@ -25,9 +25,9 @@ export default async function EditDockingPage({ params }) {
           </h2>
           <Link
             href="/ongoing"
-            className="mt-4 px-6 py-2 bg-[#2e004f] text-white rounded-lg"
+            className="mt-4 px-6 py-2 bg-[#2e004f] text-white rounded-lg hover:bg-[#1a0035] transition-all"
           >
-            Kembali
+            Kembali ke Ongoing
           </Link>
         </div>
       </div>
@@ -43,6 +43,7 @@ export default async function EditDockingPage({ params }) {
             <Link
               href={`/ongoing`}
               className="w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-50 hover:text-[#2e004f] transition-all"
+              title="Kembali"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -24,3 +24,38 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media print {
+  /* Sembunyikan SEMUA elemen di body secara default */
+  body * {
+    visibility: hidden !important;
+  }
+
+  /* Kecuali area cetak dan isinya */
+  #printable-area,
+  #printable-area * {
+    visibility: visible !important;
+  }
+
+  /* Posisikan area cetak di kiri atas */
+  #printable-area {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background-color: white !important;
+    z-index: 99999 !important;
+  }
+
+  /* Pastikan background putih */
+  body {
+    background-color: white !important;
+  }
+
+  /* Reset visibility untuk elemen dalam area cetak */
+  #printable-area * {
+    visibility: visible !important;
+  }
+}

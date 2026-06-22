@@ -1,8 +1,142 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { updateMaintenanceDetail } from "@/actions/maintenance.action";
+import { formatRupiah } from "@/utils/formatters";
 
+/* ====================== IKON SVG ====================== */
+const XMarkIcon = () => (
+  <svg
+    width="12"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+  </svg>
+);
+const CheckIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <polyline points="20 6 9 17 4 12"></polyline>
+  </svg>
+);
+const PlusIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+  </svg>
+);
+
+/* ====================== INPUT RUPIAH ====================== */
+const CurrencyInput = ({
+  name,
+  value,
+  onChange,
+  placeholder,
+  className = "",
+}) => {
+  const [display, setDisplay] = useState("");
+
+  useEffect(() => {
+    setDisplay(value ? formatRupiah(value) : "");
+  }, [value]);
+
+  const handleChange = (e) => {
+    const raw = e.target.value.replace(/\D/g, "");
+    const numeric = raw === "" ? 0 : Number(raw);
+    onChange(numeric);
+    setDisplay(numeric ? formatRupiah(numeric) : "");
+  };
+
+  return (
+    <div className="relative">
+      <input
+        type="text"
+        value={display}
+        onChange={handleChange}
+        placeholder={placeholder}
+        className={className}
+      />
+      <input type="hidden" name={name} value={value || ""} />
+    </div>
+  );
+};
+
+/* ====================== KOMPONEN FILE INPUT DENGAN EXISTING URL ====================== */
+const FileInputWithExisting = ({
+  label,
+  fileName,
+  accept,
+  existingUrl,
+  onFileSelected,
+}) => {
+  const [selectedFileName, setSelectedFileName] = useState("");
+
+  const handleFileChange = (e) => {
+    const file = e.target.files?.[0];
+    setSelectedFileName(file ? file.name : "");
+    if (onFileSelected) onFileSelected(file);
+  };
+
+  return (
+    <div className="flex flex-col gap-1.5 mt-2">
+      <label className="text-[10px] font-bold text-gray-500 uppercase">
+        {label}
+      </label>
+      <input
+        type="file"
+        name={fileName}
+        accept={accept}
+        onChange={handleFileChange}
+        className="block w-full text-xs text-gray-500 file:mr-2 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-gray-200 file:text-gray-700 hover:file:bg-gray-300 cursor-pointer"
+      />
+      {existingUrl && (
+        <div className="mt-1 flex items-center gap-2">
+          <span className="text-[10px] text-gray-500">File tersimpan:</span>
+          <a
+            href={existingUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="text-[10px] text-blue-600 underline truncate"
+          >
+            Lihat
+          </a>
+        </div>
+      )}
+      {selectedFileName && (
+        <p className="text-[10px] text-green-600 mt-1">
+          Baru: {selectedFileName}
+        </p>
+      )}
+    </div>
+  );
+};
+
+/* ====================== SEARCHABLE MULTI SELECT ====================== */
 const SearchableMultiSelect = ({
   options,
   placeholder,
@@ -12,22 +146,21 @@ const SearchableMultiSelect = ({
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [selectedItems, setSelectedItems] = useState(initialSelected);
-
-  const filteredOptions = options.filter((opt) =>
-    opt.label.toLowerCase().includes(search.toLowerCase()),
+  const filtered = options.filter((o) =>
+    o.label.toLowerCase().includes(search.toLowerCase()),
   );
 
-  const toggleItem = (item) => {
-    if (selectedItems.some((i) => i.value === item.value)) {
-      setSelectedItems(selectedItems.filter((i) => i.value !== item.value));
-    } else {
-      setSelectedItems([...selectedItems, item]);
-    }
+  const toggle = (item) => {
+    setSelectedItems((prev) =>
+      prev.some((i) => i.value === item.value)
+        ? prev.filter((i) => i.value !== item.value)
+        : [...prev, item],
+    );
   };
 
-  const removeItem = (e, valToRemove) => {
+  const remove = (e, val) => {
     e.stopPropagation();
-    setSelectedItems(selectedItems.filter((i) => i.value !== valToRemove));
+    setSelectedItems((prev) => prev.filter((i) => i.value !== val));
   };
 
   return (
@@ -37,7 +170,7 @@ const SearchableMultiSelect = ({
       ))}
       <div
         onClick={() => setIsOpen(true)}
-        className="w-full min-h-[44px] px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm cursor-pointer flex flex-wrap gap-2 items-center"
+        className="w-full min-h-[44px] px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm cursor-pointer flex flex-wrap gap-2 items-center outline-none focus-within:border-[#2e004f]"
       >
         {selectedItems.length === 0 && (
           <span className="text-gray-400">{placeholder}</span>
@@ -50,10 +183,10 @@ const SearchableMultiSelect = ({
             {item.label}
             <button
               type="button"
-              onClick={(e) => removeItem(e, item.value)}
-              className="hover:text-red-500 font-bold ml-1"
+              onClick={(e) => remove(e, item.value)}
+              className="hover:text-red-500 ml-1"
             >
-              ✕
+              <XMarkIcon />
             </button>
           </span>
         ))}
@@ -74,19 +207,19 @@ const SearchableMultiSelect = ({
               className="w-full px-4 py-3 bg-gray-50 border-b border-gray-100 text-sm focus:outline-none"
             />
             <div className="max-h-48 overflow-y-auto">
-              {filteredOptions.length > 0 ? (
-                filteredOptions.map((opt) => {
-                  const isSelected = selectedItems.some(
+              {filtered.length > 0 ? (
+                filtered.map((opt) => {
+                  const isSel = selectedItems.some(
                     (i) => i.value === opt.value,
                   );
                   return (
                     <div
                       key={opt.value}
-                      onClick={() => toggleItem(opt)}
-                      className={`px-4 py-2.5 text-sm cursor-pointer flex justify-between items-center ${isSelected ? "bg-[#2e004f]/10 font-bold text-[#2e004f]" : "hover:bg-gray-50"}`}
+                      onClick={() => toggle(opt)}
+                      className={`px-4 py-2.5 text-sm cursor-pointer flex justify-between items-center ${isSel ? "bg-[#2e004f]/10 font-bold text-[#2e004f]" : "hover:bg-gray-50"}`}
                     >
                       <span>{opt.label}</span>
-                      {isSelected && <span className="text-[#2e004f]">✓</span>}
+                      {isSel && <CheckIcon />}
                     </div>
                   );
                 })
@@ -103,6 +236,7 @@ const SearchableMultiSelect = ({
   );
 };
 
+/* ====================== SEARCHABLE SINGLE SELECT ====================== */
 const SearchableSelect = ({
   options,
   placeholder,
@@ -115,9 +249,8 @@ const SearchableSelect = ({
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [selectedItem, setSelectedItem] = useState(initialOpt);
-
-  const filteredOptions = options.filter((opt) =>
-    opt.label.toLowerCase().includes(search.toLowerCase()),
+  const filtered = options.filter((o) =>
+    o.label.toLowerCase().includes(search.toLowerCase()),
   );
 
   const selectItem = (item) => {
@@ -130,14 +263,17 @@ const SearchableSelect = ({
   return (
     <div className="relative w-full">
       <input
-        type="hidden"
+        type="text"
         name={name}
         value={selectedItem?.value || ""}
         required={required}
+        onChange={() => {}}
+        tabIndex={-1}
+        className="absolute opacity-0 w-0 h-0 -z-10"
       />
       <div
         onClick={() => setIsOpen(true)}
-        className="w-full min-h-[44px] px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm cursor-pointer flex justify-between items-center"
+        className="w-full min-h-[44px] px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm cursor-pointer flex justify-between items-center outline-none focus-within:border-[#2e004f]"
       >
         <span
           className={
@@ -164,8 +300,8 @@ const SearchableSelect = ({
               className="w-full px-4 py-3 bg-gray-50 border-b border-gray-100 text-sm focus:outline-none"
             />
             <div className="max-h-48 overflow-y-auto">
-              {filteredOptions.length > 0 ? (
-                filteredOptions.map((opt) => (
+              {filtered.length > 0 ? (
+                filtered.map((opt) => (
                   <div
                     key={opt.value}
                     onClick={() => selectItem(opt)}
@@ -187,6 +323,7 @@ const SearchableSelect = ({
   );
 };
 
+/* ====================== HELPER TANGGAL ====================== */
 const toInputDate = (dateString) => {
   if (!dateString) return "";
   const d = new Date(dateString);
@@ -203,10 +340,28 @@ const toInputDateTime = (dateString) => {
     .slice(0, 16);
 };
 
+/* ====================== KOMPONEN UTAMA ====================== */
 export default function EditDockingForm({ detailData, masterData }) {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
+  // Harga & biaya
+  const [hargaPenawaran, setHargaPenawaran] = useState(
+    detailData.harga_penawaran || 0,
+  );
+  const [hargaKontrak, setHargaKontrak] = useState(
+    detailData.harga_kontrak || 0,
+  );
+  const [hargaRekalbea, setHargaRekalbea] = useState(
+    detailData.harga_rekalbea || 0,
+  );
+  const [hargaConfirm, setHargaConfirm] = useState(
+    detailData.harga_confirm || 0,
+  );
+  const [biayaJasa, setBiayaJasa] = useState(detailData.biaya_jasa || 0);
+  const [budgetCost, setBudgetCost] = useState(detailData.budget_cost || 0);
+
+  // Tempat & mode
   const [selectedTempat, setSelectedTempat] = useState(
     detailData.id_tempat || "",
   );
@@ -217,6 +372,87 @@ export default function EditDockingForm({ detailData, masterData }) {
   const isDPL = tempatTerpilih?.nama_tempat === "PT. DPL";
   const isUmum = !isSMI && !isDPL;
 
+  // State perhitungan
+  const adaDataGenerate = !!detailData.nominal_bayar_1;
+  const [isCalculated, setIsCalculated] = useState(adaDataGenerate);
+  const [isConfirmedPay, setIsConfirmedPay] = useState(
+    !!(detailData.nominal_bayar_1 && detailData.tanggal_bayar_1),
+  );
+  const [calcPembayaran, setCalcPembayaran] = useState({
+    nominal_bayar_1: detailData.nominal_bayar_1 || 0,
+    nominal_bayar_1_bkk: detailData.nominal_bayar_1_bkk || 0,
+    nominal_bayar_1_bkm: detailData.nominal_bayar_1_bkm || 0,
+  });
+  const [tanggalBayar1, setTanggalBayar1] = useState(
+    detailData.tanggal_bayar_1
+      ? toInputDate(detailData.tanggal_bayar_1)
+      : toInputDate(new Date()),
+  );
+
+  // Visible fields mode umum
+  const getInitialFieldsCount = () => {
+    if (detailData.nominal_bayar_4) return 4;
+    if (detailData.nominal_bayar_3) return 3;
+    if (detailData.nominal_bayar_2) return 2;
+    return 1;
+  };
+  const [visibleFields, setVisibleFields] = useState(getInitialFieldsCount());
+
+  // Upload file lampiran umum
+  const [selectedFiles, setSelectedFiles] = useState([]);
+  const fileInputRef = useRef(null);
+  const existingLampiranCount = detailData.lampiran_dokumen?.length || 0;
+
+  // State untuk menyimpan URL existing setiap lampiran
+  const [urlHargaPenawaran, setUrlHargaPenawaran] = useState(
+    detailData.url_harga_penawaran || "",
+  );
+  const [urlHargaKontrak, setUrlHargaKontrak] = useState(
+    detailData.url_harga_kontrak || "",
+  );
+  const [urlHargaRekalbea, setUrlHargaRekalbea] = useState(
+    detailData.url_harga_rekalbea || "",
+  );
+  const [urlHargaConfirm, setUrlHargaConfirm] = useState(
+    detailData.url_harga_confirm || "",
+  );
+  const [urlBudgetCost, setUrlBudgetCost] = useState(
+    detailData.url_budget_cost || "",
+  );
+  const [urlPembayaran1, setUrlPembayaran1] = useState(
+    detailData.url_pembayaran_1 || "",
+  );
+  const [urlPembayaran2, setUrlPembayaran2] = useState(
+    detailData.url_pembayaran_2 || "",
+  );
+  const [urlPembayaran3, setUrlPembayaran3] = useState(
+    detailData.url_pembayaran_3 || "",
+  );
+  const [urlPembayaran4, setUrlPembayaran4] = useState(
+    detailData.url_pembayaran_4 || "",
+  );
+
+  const handleFileChange = (e) => {
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
+    const newFiles = Array.from(files);
+    const totalAfterAdd =
+      selectedFiles.length + newFiles.length + existingLampiranCount;
+    if (totalAfterAdd > 5) {
+      alert(
+        `Maksimal total lampiran 5 file. Saat ini sudah ada ${existingLampiranCount + selectedFiles.length} file (lama + baru).`,
+      );
+      e.target.value = "";
+      return;
+    }
+    setSelectedFiles((prev) => [...prev, ...newFiles]);
+    e.target.value = "";
+  };
+
+  const removeSelectedFile = (index) =>
+    setSelectedFiles((prev) => prev.filter((_, i) => i !== index));
+
+  // Opsi dropdown
   const supOptions = masterData.superintendent.map((s) => ({
     value: s.id_superintendent,
     label: `${s.nama_superintendent} (${s.jabatan || "-"})`,
@@ -237,23 +473,153 @@ export default function EditDockingForm({ detailData, masterData }) {
     value: s.id_status,
     label: s.nama_status,
   }));
-
   const initialSupSelected =
     detailData.superintendents?.map((s) => ({
       value: s.id_superintendent,
       label: `${s.nama_superintendent} (${s.jabatan || "-"})`,
     })) || [];
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    setIsLoading(true);
+  // Validasi generate
+  const canGenerate = () => {
+    if (isUmum) return false;
+    const basic =
+      hargaPenawaran > 0 &&
+      hargaKontrak > 0 &&
+      hargaRekalbea > 0 &&
+      hargaConfirm > 0;
+    if (isSMI) return basic && biayaJasa > 0;
+    if (isDPL) return basic;
+    return false;
+  };
 
-    const formData = new FormData(event.target);
+  // Generate perhitungan
+  const handleGeneratePerhitungan = () => {
+    if (!canGenerate()) return;
+    if (isSMI) {
+      const pph23 = 0.02 * biayaJasa;
+      const bayar1 = hargaConfirm - pph23;
+      setCalcPembayaran({
+        nominal_bayar_1: bayar1,
+        nominal_bayar_1_bkk: 0,
+        nominal_bayar_1_bkm: pph23,
+      });
+    } else if (isDPL) {
+      const bkk = 0.5 * hargaKontrak;
+      const bkm = 0.02 * 0.3 * bkk;
+      const bayar1 = bkk - bkm;
+      setCalcPembayaran({
+        nominal_bayar_1: bayar1,
+        nominal_bayar_1_bkk: bkk,
+        nominal_bayar_1_bkm: bkm,
+      });
+    }
+    setIsCalculated(true);
+    setIsConfirmedPay(false);
+  };
+
+  // Konfirmasi
+  const handleConfirmPay = async () => {
+    setIsLoading(true);
+    const formData = new FormData();
+    formData.set("nominal_bayar_1", calcPembayaran.nominal_bayar_1);
+    formData.set("nominal_bayar_1_bkk", calcPembayaran.nominal_bayar_1_bkk);
+    formData.set("nominal_bayar_1_bkm", calcPembayaran.nominal_bayar_1_bkm);
+    formData.set("tanggal_bayar_1", tanggalBayar1);
     const res = await updateMaintenanceDetail(
       detailData.id_perbaikan,
       formData,
     );
+    setIsLoading(false);
+    if (!res.success) {
+      alert("Gagal menyimpan konfirmasi: " + res.message);
+      return;
+    }
+    setIsConfirmedPay(true);
+  };
 
+  // Batal konfirmasi
+  const handleBatalKonfirmasi = async () => {
+    setIsLoading(true);
+    const formData = new FormData();
+    formData.set("nominal_bayar_1", "");
+    formData.set("nominal_bayar_1_bkk", "");
+    formData.set("nominal_bayar_1_bkm", "");
+    formData.set("tanggal_bayar_1", "");
+    const res = await updateMaintenanceDetail(
+      detailData.id_perbaikan,
+      formData,
+    );
+    setIsLoading(false);
+    if (!res.success) {
+      alert("Gagal membatalkan konfirmasi: " + res.message);
+      return;
+    }
+    setIsConfirmedPay(false);
+    setIsCalculated(false);
+    setCalcPembayaran({
+      nominal_bayar_1: 0,
+      nominal_bayar_1_bkk: 0,
+      nominal_bayar_1_bkm: 0,
+    });
+  };
+
+  // Submit
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setIsLoading(true);
+    const formData = new FormData(event.target);
+
+    formData.set("harga_penawaran", hargaPenawaran);
+    formData.set("harga_kontrak", hargaKontrak);
+    formData.set("harga_rekalbea", hargaRekalbea);
+    formData.set("harga_confirm", hargaConfirm);
+    formData.set("biaya_jasa", biayaJasa);
+    formData.set("budget_cost", budgetCost);
+
+    // Set semua URL existing dari state agar tidak hilang
+    formData.set("existing_url_harga_penawaran", urlHargaPenawaran);
+    formData.set("existing_url_harga_kontrak", urlHargaKontrak);
+    formData.set("existing_url_harga_rekalbea", urlHargaRekalbea);
+    formData.set("existing_url_harga_confirm", urlHargaConfirm);
+    formData.set("existing_url_budget_cost", urlBudgetCost);
+    formData.set("existing_url_pembayaran_1", urlPembayaran1);
+    formData.set("existing_url_pembayaran_2", urlPembayaran2);
+    formData.set("existing_url_pembayaran_3", urlPembayaran3);
+    formData.set("existing_url_pembayaran_4", urlPembayaran4);
+
+    // 🔥 status_perbaikan dan status_pembayaran otomatis terbawa dari form (tidak perlu di-set manual)
+
+    if (isSMI || isDPL) {
+      if (isConfirmedPay) {
+        formData.set("nominal_bayar_1", calcPembayaran.nominal_bayar_1);
+        formData.set("nominal_bayar_1_bkk", calcPembayaran.nominal_bayar_1_bkk);
+        formData.set("nominal_bayar_1_bkm", calcPembayaran.nominal_bayar_1_bkm);
+        formData.set("tanggal_bayar_1", tanggalBayar1);
+      } else if (isCalculated) {
+        formData.set("nominal_bayar_1", calcPembayaran.nominal_bayar_1);
+        formData.set("nominal_bayar_1_bkk", calcPembayaran.nominal_bayar_1_bkk);
+        formData.set("nominal_bayar_1_bkm", calcPembayaran.nominal_bayar_1_bkm);
+        formData.set("tanggal_bayar_1", "");
+      } else {
+        formData.set("nominal_bayar_1", "");
+        formData.set("nominal_bayar_1_bkk", "");
+        formData.set("nominal_bayar_1_bkm", "");
+        formData.set("tanggal_bayar_1", "");
+      }
+    }
+
+    if (detailData.lampiran_dokumen && detailData.lampiran_dokumen.length > 0) {
+      formData.append(
+        "existing_lampiran",
+        JSON.stringify(detailData.lampiran_dokumen),
+      );
+    }
+    selectedFiles.forEach((file) => formData.append("lampiran", file));
+
+    const res = await updateMaintenanceDetail(
+      detailData.id_perbaikan,
+      formData,
+    );
     setIsLoading(false);
     if (res.success) {
       alert("Data berhasil diubah!");
@@ -268,13 +634,16 @@ export default function EditDockingForm({ detailData, masterData }) {
       onSubmit={handleSubmit}
       className="grid grid-cols-1 xl:grid-cols-3 gap-6"
     >
+      {/* ---------- KOLOM KIRI ---------- */}
       <div className="xl:col-span-2 flex flex-col gap-6">
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        {/* INFORMASI PEKERJAAN */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
           <h2 className="text-lg font-bold text-[#1a113c] mb-6 border-b border-gray-100 pb-4">
             Informasi Pekerjaan
           </h2>
-          <div className="grid grid-cols-2 gap-6">
-            <div className="col-span-2 flex flex-col gap-1.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Penanggung Jawab - full width */}
+            <div className="sm:col-span-2 flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 Penanggung Jawab
               </label>
@@ -285,6 +654,8 @@ export default function EditDockingForm({ detailData, masterData }) {
                 initialSelected={initialSupSelected}
               />
             </div>
+
+            {/* Kapal */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 Kapal
@@ -297,6 +668,8 @@ export default function EditDockingForm({ detailData, masterData }) {
                 required={true}
               />
             </div>
+
+            {/* Lokasi Docking */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 Lokasi Docking
@@ -310,6 +683,8 @@ export default function EditDockingForm({ detailData, masterData }) {
                 onChangeCallback={setSelectedTempat}
               />
             </div>
+
+            {/* Kategori Cat */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 Kategori Cat
@@ -322,6 +697,8 @@ export default function EditDockingForm({ detailData, masterData }) {
                 required={true}
               />
             </div>
+
+            {/* Status & Detail */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 Status
@@ -333,15 +710,53 @@ export default function EditDockingForm({ detailData, masterData }) {
                 defaultValue={detailData.id_status}
                 required={true}
               />
+              <input
+                type="text"
+                name="status_detail"
+                defaultValue={detailData.status_detail || ""}
+                placeholder="Detail status opsional..."
+                className="p-2 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
+              />
+            </div>
+
+            {/* Status Perbaikan */}
+            <div className="flex flex-col gap-1.5">
+              <label className="text-xs font-bold text-gray-500 uppercase">
+                Status Perbaikan
+              </label>
+              <select
+                name="status_perbaikan"
+                defaultValue={detailData.status_perbaikan || "ongoing"}
+                className="p-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
+              >
+                <option value="ongoing">Ongoing</option>
+                <option value="selesai">Selesai</option>
+              </select>
+            </div>
+
+            {/* Keterangan Umum - full width */}
+            <div className="sm:col-span-2 flex flex-col gap-1.5">
+              <label className="text-xs font-bold text-gray-500 uppercase">
+                Keterangan Umum Nota
+              </label>
+              <textarea
+                name="keterangan"
+                rows="3"
+                defaultValue={detailData.keterangan || ""}
+                placeholder="Catatan general docking..."
+                className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f] resize-none"
+              ></textarea>
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        {/* TIMELINE */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
           <h2 className="text-lg font-bold text-[#1a113c] mb-6 border-b border-gray-100 pb-4">
             Timeline Perbaikan
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Setiap item timeline dibungkus dengan tinggi seragam */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 1. Off Operasi
@@ -353,6 +768,7 @@ export default function EditDockingForm({ detailData, masterData }) {
                 className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
               />
             </div>
+
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 2. Masuk Dok
@@ -364,7 +780,15 @@ export default function EditDockingForm({ detailData, masterData }) {
                 required
                 className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
               />
+              <input
+                type="text"
+                name="waktu_masuk_detail"
+                defaultValue={detailData.waktu_masuk_detail || ""}
+                placeholder="Catatan Masuk opsional..."
+                className="p-2 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
+              />
             </div>
+
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 3a. Naik (Wajib Jam)
@@ -375,7 +799,15 @@ export default function EditDockingForm({ detailData, masterData }) {
                 defaultValue={toInputDateTime(detailData.waktu_naik)}
                 className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
               />
+              <input
+                type="text"
+                name="waktu_naik_detail"
+                defaultValue={detailData.waktu_naik_detail || ""}
+                placeholder="Catatan Naik opsional..."
+                className="p-2 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
+              />
             </div>
+
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 3b. Turun (Wajib Jam)
@@ -386,7 +818,15 @@ export default function EditDockingForm({ detailData, masterData }) {
                 defaultValue={toInputDateTime(detailData.waktu_turun)}
                 className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
               />
+              <input
+                type="text"
+                name="waktu_turun_detail"
+                defaultValue={detailData.waktu_turun_detail || ""}
+                placeholder="Catatan Turun opsional..."
+                className="p-2 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
+              />
             </div>
+
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 4. Keluar Dok
@@ -397,7 +837,15 @@ export default function EditDockingForm({ detailData, masterData }) {
                 defaultValue={toInputDate(detailData.waktu_keluar)}
                 className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
               />
+              <input
+                type="text"
+                name="waktu_keluar_detail"
+                defaultValue={detailData.waktu_keluar_detail || ""}
+                placeholder="Catatan Keluar opsional..."
+                className="p-2 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
+              />
             </div>
+
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-gray-500 uppercase">
                 5. Mulai Operasi
@@ -408,19 +856,27 @@ export default function EditDockingForm({ detailData, masterData }) {
                 defaultValue={toInputDate(detailData.waktu_mulai_operasi)}
                 className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm border-l-4 border-l-green-500 outline-none focus:border-[#2e004f]"
               />
+              <input
+                type="text"
+                name="waktu_mulai_detail"
+                defaultValue={detailData.waktu_mulai_detail || ""}
+                placeholder="Catatan Operasi opsional..."
+                className="p-2 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      {/* KOLOM KANAN (Keuangan & Action) */}
+      {/* ---------- KOLOM KANAN ---------- */}
       <div className="xl:col-span-1 flex flex-col gap-6">
-        {/* HARGA KONTRAK */}
-        <div className="bg-[#2e004f] rounded-2xl shadow-md p-8 text-white">
+        {/* BIAYA & KONTRAK */}
+        <div className="bg-[#2e004f] rounded-2xl shadow-md p-6 md:p-8 text-white">
           <h2 className="text-sm font-bold text-white/70 uppercase tracking-wider mb-6 border-b border-white/20 pb-4">
             Biaya & Kontrak
           </h2>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
+            {/* Target Waktu */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs text-white/80">
                 Target Waktu (Hari)
@@ -429,203 +885,451 @@ export default function EditDockingForm({ detailData, masterData }) {
                 type="number"
                 name="budget_time"
                 defaultValue={detailData.budget_time}
-                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none"
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none w-full"
               />
             </div>
+
+            {/* Budget Cost */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs text-white/80">Budget Cost Awal</label>
-              <input
-                type="number"
+              <CurrencyInput
                 name="budget_cost"
-                defaultValue={detailData.budget_cost}
-                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none"
+                value={budgetCost}
+                onChange={setBudgetCost}
+                placeholder="Rp"
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none w-full"
+              />
+              <FileInputWithExisting
+                label="Lampiran Budget Cost"
+                fileName="file_budget_cost"
+                accept="image/*,.pdf"
+                existingUrl={urlBudgetCost}
               />
             </div>
+
+            {/* Harga Penawaran */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs text-white/80">Harga Penawaran</label>
-              <input
-                type="number"
+              <CurrencyInput
                 name="harga_penawaran"
-                defaultValue={detailData.harga_penawaran}
-                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none"
+                value={hargaPenawaran}
+                onChange={setHargaPenawaran}
+                placeholder="Rp"
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none w-full"
+              />
+              <input
+                type="date"
+                name="tanggal_penawaran"
+                defaultValue={toInputDate(detailData.tanggal_penawaran)}
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-xs text-white/90 focus:outline-none"
+              />
+              <FileInputWithExisting
+                label="Lampiran Penawaran"
+                fileName="file_harga_penawaran"
+                accept="image/*,.pdf"
+                existingUrl={urlHargaPenawaran}
               />
             </div>
+
+            {/* Harga Kontrak */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs text-white/80">Harga Kontrak</label>
-              <input
-                type="number"
+              <CurrencyInput
                 name="harga_kontrak"
-                defaultValue={detailData.harga_kontrak}
-                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none"
+                value={hargaKontrak}
+                onChange={setHargaKontrak}
+                placeholder="Rp"
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none w-full"
+              />
+              <input
+                type="date"
+                name="tanggal_kontrak"
+                defaultValue={toInputDate(detailData.tanggal_kontrak)}
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-xs text-white/90 focus:outline-none"
+              />
+              <FileInputWithExisting
+                label="Lampiran Kontrak"
+                fileName="file_harga_kontrak"
+                accept="image/*,.pdf"
+                existingUrl={urlHargaKontrak}
               />
             </div>
+
+            {/* Harga Rekalbea */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs text-white/80">Harga Rekalbea</label>
-              <input
-                type="number"
+              <CurrencyInput
                 name="harga_rekalbea"
-                defaultValue={detailData.harga_rekalbea}
-                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none"
+                value={hargaRekalbea}
+                onChange={setHargaRekalbea}
+                placeholder="Rp"
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-sm text-white focus:outline-none w-full"
+              />
+              <input
+                type="date"
+                name="tanggal_rekalbea"
+                defaultValue={toInputDate(detailData.tanggal_rekalbea)}
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-xs text-white/90 focus:outline-none"
+              />
+              <FileInputWithExisting
+                label="Lampiran Rekalbea"
+                fileName="file_harga_rekalbea"
+                accept="image/*,.pdf"
+                existingUrl={urlHargaRekalbea}
               />
             </div>
+
+            {/* Harga Confirm */}
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-bold text-white uppercase">
                 Harga Confirm (Final)
               </label>
-              <input
-                type="number"
+              <CurrencyInput
                 name="harga_confirm"
-                defaultValue={detailData.harga_confirm}
-                className="p-2.5 bg-white text-[#1a113c] font-bold border-none rounded-lg text-sm focus:outline-none"
+                value={hargaConfirm}
+                onChange={setHargaConfirm}
+                placeholder="Rp"
+                className="p-2.5 bg-white text-[#1a113c] font-bold border-none rounded-lg text-sm focus:outline-none w-full"
+              />
+              <input
+                type="date"
+                name="tanggal_confirm"
+                defaultValue={toInputDate(detailData.tanggal_confirm)}
+                className="p-2.5 bg-white/10 border border-white/20 rounded-lg text-xs text-white/90 focus:outline-none"
+              />
+              <FileInputWithExisting
+                label="Lampiran Confirm"
+                fileName="file_harga_confirm"
+                accept="image/*,.pdf"
+                existingUrl={urlHargaConfirm}
               />
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-          <div className="flex justify-between items-center mb-6 border-b border-gray-100 pb-4">
+        {/* PEMBAYARAN */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8 flex flex-col gap-5">
+          <div className="flex justify-between items-center mb-1 border-b border-gray-100 pb-4">
             <h2 className="text-lg font-bold text-[#1a113c]">Pembayaran</h2>
-           
+            <span className="text-[10px] font-bold px-2 py-1 rounded uppercase bg-gray-100 text-gray-700">
+              {isSMI ? "PT. SMI" : isDPL ? "PT. DPL" : "Mode Umum"}
+            </span>
           </div>
 
-          <div className="flex flex-col gap-4">
-            {(isSMI || isDPL) && (
-              <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl flex flex-col gap-3">
-                <h3 className="text-xs font-bold text-gray-500 uppercase">
-                  Tahap 1
-                </h3>
-                <div className="flex gap-2">
-                  <input
-                    type="number"
-                    name="nominal_bayar_1_bkk"
-                    defaultValue={detailData.nominal_bayar_1_bkk}
-                    placeholder="Nominal BKK"
-                    className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
-                  />
-                  <input
-                    type="date"
-                    name="tanggal_bayar_1_bkk"
-                    defaultValue={toInputDate(detailData.tanggal_bayar_1_bkk)}
-                    className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm text-gray-500 outline-none focus:border-[#2e004f]"
+          {/* Status Pembayaran */}
+          <div className="flex flex-col gap-1.5">
+            <label className="text-xs font-bold text-gray-600 uppercase">
+              Status Pembayaran
+            </label>
+            <select
+              name="status_pembayaran"
+              defaultValue={detailData.status_pembayaran || "belum lunas"}
+              className="p-2.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
+            >
+              <option value="belum lunas">Belum Lunas</option>
+              <option value="lunas">Lunas</option>
+            </select>
+          </div>
+
+          {/* PT. SMI / DPL */}
+          {(isSMI || isDPL) && (
+            <div className="flex flex-col gap-4">
+              {isSMI && (
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold text-gray-600">
+                    Masukkan Biaya Jasa *
+                  </label>
+                  <CurrencyInput
+                    name="biaya_jasa"
+                    value={biayaJasa}
+                    onChange={setBiayaJasa}
+                    placeholder="Rp"
+                    className="p-2.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f] w-full"
                   />
                 </div>
-                <div className="flex gap-2">
-                  <input
-                    type="number"
-                    name="nominal_bayar_1_bkm"
-                    defaultValue={detailData.nominal_bayar_1_bkm}
-                    placeholder="Nominal BKM"
-                    className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
-                  />
-                  <input
-                    type="date"
-                    name="tanggal_bayar_1_bkm"
-                    defaultValue={toInputDate(detailData.tanggal_bayar_1_bkm)}
-                    className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm text-gray-500 outline-none focus:border-[#2e004f]"
+              )}
+
+              <button
+                type="button"
+                onClick={handleGeneratePerhitungan}
+                disabled={!canGenerate()}
+                className={`w-full py-2.5 font-bold text-xs rounded-xl transition-all ${
+                  canGenerate()
+                    ? "bg-[#2e004f]/10 text-[#2e004f] hover:bg-[#2e004f] hover:text-white"
+                    : "bg-gray-100 text-gray-400 cursor-not-allowed"
+                }`}
+              >
+                ⚙️ Generate Perhitungan
+              </button>
+
+              {isCalculated && (
+                <div className="p-4 bg-gray-50 border border-gray-200 rounded-2xl flex flex-col gap-3 text-xs">
+                  <h4 className="font-bold text-[#1a113c] uppercase text-[10px] tracking-wider text-gray-500">
+                    Rincian Sistem
+                  </h4>
+                  {isSMI && (
+                    <>
+                      <div className="flex justify-between">
+                        <span>Confirm:</span>
+                        <span className="font-semibold">
+                          {formatRupiah(hargaConfirm)}
+                        </span>
+                      </div>
+                      <div className="flex justify-between text-red-600">
+                        <span>Pot. PPH (2%):</span>
+                        <span className="font-semibold">
+                          -{formatRupiah(calcPembayaran.nominal_bayar_1_bkm)}
+                        </span>
+                      </div>
+                    </>
+                  )}
+                  {isDPL && (
+                    <>
+                      <div className="flex justify-between">
+                        <span>BKK (50%):</span>
+                        <span className="font-semibold">
+                          {formatRupiah(calcPembayaran.nominal_bayar_1_bkk)}
+                        </span>
+                      </div>
+                      <div className="flex justify-between text-red-600">
+                        <span>BKM (2%x30%):</span>
+                        <span className="font-semibold">
+                          -{formatRupiah(calcPembayaran.nominal_bayar_1_bkm)}
+                        </span>
+                      </div>
+                    </>
+                  )}
+                  <div className="border-t border-gray-200 pt-2 flex justify-between font-bold text-sm text-[#2e004f]">
+                    <span>Hasil Bayar 1:</span>
+                    <span>{formatRupiah(calcPembayaran.nominal_bayar_1)}</span>
+                  </div>
+
+                  <div className="mt-2 flex gap-2">
+                    {!isConfirmedPay ? (
+                      <button
+                        type="button"
+                        onClick={handleConfirmPay}
+                        disabled={isLoading}
+                        className="flex-1 py-2 rounded-lg text-[11px] font-bold text-white bg-gray-700 hover:bg-green-600 transition-all disabled:opacity-50"
+                      >
+                        {isLoading ? "Loading..." : "Konfirmasi Cepat"}
+                      </button>
+                    ) : (
+                      <>
+                        <span className="flex-1 py-2 rounded-lg text-[11px] font-bold text-white bg-green-600 text-center flex items-center justify-center gap-1">
+                          <CheckIcon /> Terkonfirmasi
+                        </span>
+                        <button
+                          type="button"
+                          onClick={handleBatalKonfirmasi}
+                          disabled={isLoading}
+                          className="px-3 py-2 bg-red-100 text-red-600 rounded-lg text-[11px] font-bold"
+                        >
+                          Batal
+                        </button>
+                      </>
+                    )}
+                  </div>
+
+                  {isConfirmedPay && (
+                    <div className="flex flex-col gap-1.5 mt-2">
+                      <label className="text-[10px] font-bold text-gray-600 uppercase">
+                        Tanggal Bayar 1
+                      </label>
+                      <input
+                        type="date"
+                        name="tanggal_bayar_1"
+                        value={tanggalBayar1}
+                        onChange={(e) => setTanggalBayar1(e.target.value)}
+                        className="p-2.5 bg-white border border-gray-200 rounded-lg text-sm outline-none"
+                      />
+                    </div>
+                  )}
+
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-[10px] font-bold text-gray-600 uppercase">
+                      Deskripsi Bayar 1
+                    </label>
+                    <input
+                      type="text"
+                      name="deskripsi_1"
+                      defaultValue={detailData.deskripsi_bayar_1 || ""}
+                      placeholder="Opsional"
+                      className="w-full p-2.5 bg-white border border-gray-200 rounded-lg text-xs italic outline-none"
+                    />
+                  </div>
+
+                  <FileInputWithExisting
+                    label="Lampiran Bayar 1"
+                    fileName="file_pembayaran_1"
+                    accept="image/*,.pdf"
+                    existingUrl={urlPembayaran1}
                   />
                 </div>
-              </div>
-            )}
+              )}
 
-            {isSMI && (
-              <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl flex flex-col gap-3 animate-in fade-in zoom-in duration-300">
-                <h3 className="text-xs font-bold text-blue-700 uppercase">
-                  Biaya Jasa (SMI)
-                </h3>
-                <input
-                  type="number"
-                  name="biaya_jasa"
-                  defaultValue={detailData.biaya_jasa}
-                  placeholder="Nominal Biaya Jasa"
-                  className="w-full p-2.5 border border-blue-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
-                />
-              </div>
-            )}
-
-            {isDPL && (
-              <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl flex flex-col gap-3 animate-in fade-in zoom-in duration-300">
-                <h3 className="text-xs font-bold text-gray-500 uppercase">
-                  Tahap 2 (Pelunasan)
-                </h3>
-                <div className="flex gap-2">
+              {/* Field Pembayaran ke-2 Khusus DPL */}
+              {isDPL && (
+                <div className="p-4 border border-gray-100 rounded-2xl flex flex-col gap-2.5">
+                  <h4 className="text-xs font-bold text-gray-700 uppercase">
+                    Tahap 2 (Pelunasan DPL)
+                  </h4>
                   <input
                     type="number"
                     name="nominal_bayar_2"
                     defaultValue={detailData.nominal_bayar_2}
                     placeholder="Nominal Bayar 2"
-                    className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
+                    className="p-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none"
                   />
                   <input
                     type="date"
                     name="tanggal_bayar_2"
                     defaultValue={toInputDate(detailData.tanggal_bayar_2)}
-                    className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm text-gray-500 outline-none focus:border-[#2e004f]"
+                    className="p-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-500 outline-none"
                   />
-                </div>
-              </div>
-            )}
-
-            {isUmum && (
-              <div className="flex flex-col gap-3 animate-in fade-in zoom-in duration-300">
-                <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl flex flex-col gap-2">
-                  <h3 className="text-xs font-bold text-gray-500 uppercase mb-1">
-                    Pembayaran 1
-                  </h3>
-                  <div className="flex gap-2">
-                    <input
-                      type="number"
-                      name="nominal_bayar_1_bkm"
-                      defaultValue={detailData.nominal_bayar_1_bkm}
-                      placeholder="Nominal Bayar 1"
-                      className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
-                    />
-                    <input
-                      type="date"
-                      name="tanggal_bayar_1_bkm"
-                      defaultValue={toInputDate(detailData.tanggal_bayar_1_bkm)}
-                      className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm text-gray-500 outline-none focus:border-[#2e004f]"
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    name="deskripsi_1"
-                    defaultValue={detailData.deskripsi_1 || ""}
-                    placeholder="Deskripsi / Keterangan (Opsional)"
-                    className="w-full p-2.5 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
-                  />
-                </div>
-
-                <div className="p-4 bg-gray-50 border border-gray-200 rounded-xl flex flex-col gap-2">
-                  <h3 className="text-xs font-bold text-gray-500 uppercase mb-1">
-                    Pembayaran 2
-                  </h3>
-                  <div className="flex gap-2">
-                    <input
-                      type="number"
-                      name="nominal_bayar_2"
-                      defaultValue={detailData.nominal_bayar_2}
-                      placeholder="Nominal Bayar 2"
-                      className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#2e004f]"
-                    />
-                    <input
-                      type="date"
-                      name="tanggal_bayar_2"
-                      defaultValue={toInputDate(detailData.tanggal_bayar_2)}
-                      className="w-1/2 p-2.5 border border-gray-200 rounded-lg text-sm text-gray-500 outline-none focus:border-[#2e004f]"
-                    />
-                  </div>
                   <input
                     type="text"
                     name="deskripsi_2"
                     defaultValue={detailData.deskripsi_2 || ""}
-                    placeholder="Deskripsi / Keterangan (Opsional)"
-                    className="w-full p-2.5 bg-white border border-gray-200 rounded-lg text-xs italic outline-none focus:border-[#2e004f]"
+                    placeholder="Deskripsi Bayar 2 (Opsional)"
+                    className="w-full p-2.5 bg-white border border-gray-200 rounded-lg text-xs italic outline-none"
+                  />
+                  <FileInputWithExisting
+                    label="Lampiran Bayar 2"
+                    fileName="file_pembayaran_2"
+                    accept="image/*,.pdf"
+                    existingUrl={urlPembayaran2}
                   />
                 </div>
+              )}
+            </div>
+          )}
+
+          {/* MODE UMUM */}
+          {isUmum && (
+            <div className="flex flex-col gap-3">
+              {[1, 2, 3, 4].map((num) => {
+                if (num > visibleFields) return null;
+                return (
+                  <div
+                    key={num}
+                    className="p-4 bg-gray-50 border border-gray-200 rounded-xl flex flex-col gap-2"
+                  >
+                    <h3 className="text-xs font-bold text-gray-600 uppercase">
+                      Pembayaran {num}
+                    </h3>
+                    <div className="flex gap-2">
+                      <input
+                        type="number"
+                        name={`nominal_bayar_${num}`}
+                        defaultValue={detailData[`nominal_bayar_${num}`] || ""}
+                        placeholder="Nominal"
+                        className="w-1/2 p-2.5 bg-white border border-gray-200 rounded-lg text-sm outline-none"
+                      />
+                      <input
+                        type="date"
+                        name={`tanggal_bayar_${num}`}
+                        defaultValue={toInputDate(
+                          detailData[`tanggal_bayar_${num}`],
+                        )}
+                        className="w-1/2 p-2.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-500 outline-none"
+                      />
+                    </div>
+                    <input
+                      type="text"
+                      name={`deskripsi_${num}`}
+                      defaultValue={detailData[`deskripsi_bayar_${num}`] || ""}
+                      placeholder="Deskripsi (Opsional)"
+                      className="w-full p-2.5 bg-white border border-gray-200 rounded-lg text-xs italic outline-none"
+                    />
+                    <FileInputWithExisting
+                      label={`Lampiran Bayar ${num}`}
+                      fileName={`file_pembayaran_${num}`}
+                      accept="image/*,.pdf"
+                      existingUrl={detailData[`url_pembayaran_${num}`] || ""}
+                    />
+                  </div>
+                );
+              })}
+              {visibleFields < 4 && (
+                <button
+                  type="button"
+                  onClick={() => setVisibleFields((prev) => prev + 1)}
+                  className="w-full py-2 border-2 border-dashed border-gray-200 rounded-xl text-gray-400 font-bold text-sm hover:border-[#2e004f] hover:text-[#2e004f] transition-all flex items-center justify-center gap-1"
+                >
+                  <PlusIcon /> Tambah Tahap
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* UPLOAD LAMPIRAN */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8 flex flex-col gap-5">
+          <div className="flex justify-between items-center border-b border-gray-100 pb-4">
+            <h2 className="text-lg font-bold text-[#1a113c]">
+              Lampiran Dokumen
+            </h2>
+          </div>
+          <div className="flex flex-col gap-3">
+            <input
+              type="file"
+              name="lampiran"
+              multiple
+              accept="image/*,.pdf"
+              onChange={handleFileChange}
+              ref={fileInputRef}
+              className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#2e004f]/10 file:text-[#2e004f] hover:file:bg-[#2e004f]/20 cursor-pointer"
+            />
+            <span className="text-[11px] text-gray-400">
+              Maksimal total lampiran 5 file (Gambar/PDF). Terunggah saat klik
+              Simpan Perubahan Nota.
+            </span>
+
+            {detailData.lampiran_dokumen?.length > 0 && (
+              <div className="mt-2 flex flex-col gap-2 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                <p className="text-[11px] font-bold text-gray-500">
+                  File Tersimpan:
+                </p>
+                {detailData.lampiran_dokumen.map((link, idx) => (
+                  <a
+                    key={idx}
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[11px] text-blue-600 hover:underline truncate"
+                  >
+                    🔗 Lihat Dokumen {idx + 1}
+                  </a>
+                ))}
+              </div>
+            )}
+
+            {selectedFiles.length > 0 && (
+              <div className="mt-2 flex flex-col gap-2 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                <p className="text-[11px] font-bold text-gray-500">
+                  File Baru Dipilih:
+                </p>
+                {selectedFiles.map((file, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center justify-between text-xs"
+                  >
+                    <span className="truncate">{file.name}</span>
+                    <button
+                      type="button"
+                      onClick={() => removeSelectedFile(idx)}
+                      className="text-red-500 hover:text-red-700 ml-2 flex-shrink-0"
+                    >
+                      <XMarkIcon />
+                    </button>
+                  </div>
+                ))}
               </div>
             )}
           </div>
         </div>
+
         <button
           type="submit"
           disabled={isLoading}

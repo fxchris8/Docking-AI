@@ -1,0 +1,1209 @@
+{
+  "harga_layanan": [
+    {
+      "kategori": "GENERAL SERVICES",
+      "total_kategori": 161611228,
+      "items": [
+        {
+          "nomor": "00.01",
+          "nama": "Tali – Temali",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 0,
+          "harga_total": 0,
+          "catatan": [
+            "Diberikan asistensi tali temali saat kapal diujung slipway",
+            "Diberikan asistensi tali temali selama proses docking/undocking"
+          ],
+          "metadata": {
+            "original_row": 32
+          }
+        },
+        {
+          "nomor": "00.02",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 0,
+          "harga_total": 0,
+          "catatan": [
+            "Kapal diposisikan diujung slipway sebelum dan sesudah docking"
+          ],
+          "metadata": {
+            "original_row": 36
+          }
+        },
+        {
+          "nomor": "00.02.01.01",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking - Sebelum docking",
+          "volume": 1,
+          "satuan": "Hari",
+          "harga_satuan": 864300,
+          "harga_total": 864300,
+          "catatan": [],
+          "metadata": {
+            "original_row": 39
+          }
+        },
+        {
+          "nomor": "00.02.01.02",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking - Sesudah docking",
+          "volume": 2,
+          "satuan": "Hari",
+          "harga_satuan": 864300,
+          "harga_total": 1728600,
+          "catatan": [],
+          "metadata": {
+            "original_row": 41
+          }
+        },
+        {
+          "nomor": "00.03.01",
+          "nama": "Asistensi Tug Boat Untuk Docking Undocking - Asistensi Tug Boat untuk docking",
+          "volume": 4,
+          "satuan": "Jam",
+          "harga_satuan": 7566000,
+          "harga_total": 30264000,
+          "catatan": [
+            "Tugboat Alfa",
+            "Tugboat Gamma"
+          ],
+          "metadata": {
+            "original_row": 44
+          }
+        },
+        {
+          "nomor": "00.03.02",
+          "nama": "Asistensi Tug Boat Untuk Docking Undocking - Asistensi Tug Boat untuk undocking",
+          "volume": 4,
+          "satuan": "Jam",
+          "harga_satuan": 7566000,
+          "harga_total": 30264000,
+          "catatan": [
+            "Tugboat Alfa",
+            "Tugboat Gamma"
+          ],
+          "metadata": {
+            "original_row": 47
+          }
+        },
+        {
+          "nomor": "00.04",
+          "nama": "Asistensi Pilotage Untuk Docking Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 0,
+          "harga_total": 0,
+          "catatan": [
+            "Asistensi pilot untuk memposisikan kapal diujung slipway sebelum docking",
+            "Asistensi pilot untuk memposisikan kapal diujung slipway setelah docking"
+          ],
+          "metadata": {
+            "original_row": 51
+          }
+        },
+        {
+          "nomor": "00.05.01",
+          "nama": "Asistensi Naik atau Turun Dock - Asistensi Docking/Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 6800000,
+          "harga_total": 6800000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 56
+          }
+        },
+        {
+          "nomor": "00.06.01",
+          "nama": "Docking dan Undocking - Docking dan Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 19203000,
+          "harga_total": 19203000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 59
+          }
+        },
+        {
+          "nomor": "00.07.01",
+          "nama": "Pengaturan Dock Block - Pengaturan balok lunas (keel block dan side block) saat kapal diatas dock",
+          "volume": 105,
+          "satuan": "Balok",
+          "harga_satuan": 42000,
+          "harga_total": 4410000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 62
+          }
+        },
+        {
+          "nomor": "00.08.01",
+          "nama": "Docking per hari - Docking per hari",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 2881000,
+          "harga_total": 46096000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 66
+          }
+        },
+        {
+          "nomor": "00.09",
+          "nama": "Docking Report",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 4001000,
+          "harga_total": 4001000,
+          "catatan": [
+            "Dibuatkan docking report"
+          ],
+          "metadata": {
+            "original_row": 68
+          }
+        },
+        {
+          "nomor": "00.10.01.01",
+          "nama": "Bak Sampah - Fasilitas pembuangan sampah per hari - Diatas Dock",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 201000,
+          "harga_total": 3216000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 77
+          }
+        },
+        {
+          "nomor": "00.11",
+          "nama": "Aliran Listrik",
+          "volume": 1,
+          "satuan": "Kali",
+          "harga_satuan": 288000,
+          "harga_total": 288000,
+          "catatan": [
+            "Penyambungan dan pelepasan aliran listrik",
+            "Supply aliran listrik selama kapal diatas dock (380v, 10.37 Amp, 50 Hz)",
+            "Diatas Dock"
+          ],
+          "metadata": {
+            "original_row": 79
+          }
+        },
+        {
+          "nomor": "00.11.01.01",
+          "nama": "Aliran Listrik - Supply aliran listrik selama kapal diatas dock (380v, 10.37 Amp, 50 Hz) - Diatas Dock",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 692208,
+          "harga_total": 11075328,
+          "catatan": [],
+          "metadata": {
+            "original_row": 83
+          }
+        },
+        {
+          "nomor": "00.12.02.02",
+          "nama": "Pemadam Kebakaran - Diberikan fasilitas fire line selama kapal docking - Penyambungan dan pelepasan selang pemadam",
+          "volume": 1,
+          "satuan": "Kali",
+          "harga_satuan": 201000,
+          "harga_total": 201000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 91
+          }
+        },
+        {
+          "nomor": "00.13.01.01",
+          "nama": "Fasilitas MCK - Diberikan fasilitas MCK selama docking",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 200000,
+          "harga_total": 3200000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 95
+          }
+        },
+        {
+          "nomor": "00.14",
+          "nama": "Fasilitas Labuh",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 0,
+          "harga_total": 0,
+          "catatan": [
+            "Kapal berlabuh diperairan DPL sebelum dan sesudah docking",
+            "Kapal GT 2501 – 3500",
+            "Sebelum docking",
+            "Sesudah docking"
+          ],
+          "metadata": {
+            "original_row": 97
+          }
+        }
+      ]
+    },
+    {
+      "kategori": "PIPING",
+      "total_kategori": 34836512,
+      "items": [
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa pendingin kompresor (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 555500,
+          "catatan": [
+            "Dilakukan pekerjaan ganti baru pipa-pipa di area engine room dengan di supply material dari galangan dan owner,",
+            "dengan detail sebagai berikut :"
+          ],
+          "metadata": {
+            "original_row": 14
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa pendingin kompresor (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 555500,
+          "catatan": [],
+          "metadata": {
+            "original_row": 15
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa pendingin kompresor (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 2166450,
+          "catatan": [],
+          "metadata": {
+            "original_row": 16
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa pendingin kompresor (P) di engine room",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 484000,
+          "harga_total": 968000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 17
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa pendingin kompresor (P) di engine room",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 89760,
+          "harga_total": 179520,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 18
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa pendingin kompresor (P) di engine room",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 90000,
+          "harga_total": 180000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 19
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa pendingin kompresor (P) di engine room",
+          "volume": 8,
+          "satuan": "Pcs",
+          "harga_satuan": 25000,
+          "harga_total": 200000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 20
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 555500,
+          "catatan": [],
+          "metadata": {
+            "original_row": 26
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 1699830,
+          "catatan": [],
+          "metadata": {
+            "original_row": 27
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 555500,
+          "catatan": [],
+          "metadata": {
+            "original_row": 28
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 555500,
+          "catatan": [],
+          "metadata": {
+            "original_row": 29
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 1526800,
+          "catatan": [],
+          "metadata": {
+            "original_row": 30
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 763400,
+          "catatan": [],
+          "metadata": {
+            "original_row": 31
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 3328424,
+          "catatan": [],
+          "metadata": {
+            "original_row": 32
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 2,
+          "satuan": "Pcs",
+          "harga_satuan": 484000,
+          "harga_total": 968000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 33
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 790000,
+          "harga_total": 790000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 34
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 3,
+          "satuan": "Pcs",
+          "harga_satuan": 89760,
+          "harga_total": 269280,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 35
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 4,
+          "satuan": "Pcs",
+          "harga_satuan": 127680,
+          "harga_total": 510720,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 36
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 3,
+          "satuan": "Pcs",
+          "harga_satuan": 90000,
+          "harga_total": 270000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 37
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 3,
+          "satuan": "Pcs",
+          "harga_satuan": 120000,
+          "harga_total": 360000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 38
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 24,
+          "satuan": "Pcs",
+          "harga_satuan": 25000,
+          "harga_total": 600000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 39
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 1587872,
+          "catatan": [],
+          "metadata": {
+            "original_row": 43
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 763400,
+          "catatan": [],
+          "metadata": {
+            "original_row": 44
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 1832160,
+          "catatan": [],
+          "metadata": {
+            "original_row": 45
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 763400,
+          "catatan": [],
+          "metadata": {
+            "original_row": 46
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 1939036,
+          "catatan": [],
+          "metadata": {
+            "original_row": 47
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 1526800,
+          "catatan": [],
+          "metadata": {
+            "original_row": 48
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 763400,
+          "catatan": [],
+          "metadata": {
+            "original_row": 49
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1526800,
+          "harga_total": 763400,
+          "catatan": [],
+          "metadata": {
+            "original_row": 50
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 5,
+          "satuan": "Pcs",
+          "harga_satuan": 790000,
+          "harga_total": 3950000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 51
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 9,
+          "satuan": "Pcs",
+          "harga_satuan": 127680,
+          "harga_total": 1149120,
+          "catatan": [
+            "Material lama"
+          ],
+          "metadata": {
+            "original_row": 52
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 7,
+          "satuan": "Pcs",
+          "harga_satuan": 120000,
+          "harga_total": 840000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 53
+          }
+        },
+        {
+          "nomor": "04.01",
+          "nama": "Ganti Baru Pipa di Area Engine Room - Ganti baru pipa Generator A/E (P) di engine room",
+          "volume": 56,
+          "satuan": "Pcs",
+          "harga_satuan": 25000,
+          "harga_total": 1400000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 54
+          }
+        }
+      ]
+    },
+    {
+      "kategori": "VALVE",
+      "total_kategori": 51573400,
+      "items": [
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve Ø 12 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 14
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Strainer Ø 24 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 6512400,
+          "harga_total": 6512400,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 15
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve Ø 12 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 16
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1851000,
+          "harga_total": 1851000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 17
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1308000,
+          "harga_total": 1308000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 18
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1308000,
+          "harga_total": 1308000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 19
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 2.5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 494000,
+          "harga_total": 494000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)"
+          ],
+          "metadata": {
+            "original_row": 20
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)"
+          ],
+          "metadata": {
+            "original_row": 21
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)"
+          ],
+          "metadata": {
+            "original_row": 22
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)"
+          ],
+          "metadata": {
+            "original_row": 23
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Angle valve Ø 8 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1481000,
+          "harga_total": 1481000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)"
+          ],
+          "metadata": {
+            "original_row": 24
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Angle valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 872000,
+          "harga_total": 872000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)"
+          ],
+          "metadata": {
+            "original_row": 25
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 5 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1308000,
+          "harga_total": 1308000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 26
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 3 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 741000,
+          "harga_total": 741000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (S)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 27
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 8 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1481000,
+          "harga_total": 1481000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 28
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 3 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 494000,
+          "harga_total": 494000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 29
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 2 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 30
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 2 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 31
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve Ø 8 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1727000,
+          "harga_total": 1727000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 32
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve Ø 8 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 1727000,
+          "harga_total": 1727000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 33
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 2 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 34
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 2 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 395000,
+          "harga_total": 395000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 35
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 4 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 36
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 4 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 37
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Globe valve Ø 4 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 625000,
+          "harga_total": 625000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)"
+          ],
+          "metadata": {
+            "original_row": 38
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve Ø 12 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 39
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Strainer Ø 24 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 6512400,
+          "harga_total": 6512400,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 40
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Engine Room - Gate valve Ø 12 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 3700500,
+          "harga_total": 3700500,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Engine Room (P)",
+            "Keterangan: Overhaul"
+          ],
+          "metadata": {
+            "original_row": 41
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve Ø 3 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 592800,
+          "harga_total": 592800,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack"
+          ],
+          "metadata": {
+            "original_row": 46
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve Ø 3 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 592800,
+          "harga_total": 592800,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack"
+          ],
+          "metadata": {
+            "original_row": 47
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve Ø 2 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 474000,
+          "harga_total": 474000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack"
+          ],
+          "metadata": {
+            "original_row": 48
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve Ø 2 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 474000,
+          "harga_total": 474000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Forepeack"
+          ],
+          "metadata": {
+            "original_row": 49
+          }
+        },
+        {
+          "nomor": "05.01.01",
+          "nama": "Valve Sistem di Forepeack - Globe valve Ø 4 inch",
+          "volume": 1,
+          "satuan": "Unit",
+          "harga_satuan": 750000,
+          "harga_total": 750000,
+          "catatan": [
+            "Servis Valve",
+            "Telah dibuka, dibersihkan, melancarkan as ulir, buka stut remes, sekur, chiping, painting, buka handle, ganti packing dan baut, diperiksakan class dan dipasang kembali.",
+            "Lokasi: Bow trhruster"
+          ],
+          "metadata": {
+            "original_row": 50
+          }
+        }
+      ]
+    }
+  ]
+}

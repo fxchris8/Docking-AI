@@ -1,0 +1,849 @@
+[
+  { "item": "Periksa bebas gas per tangki", "satuan": "Tank", "harga": 577200 },
+  {
+    "item": "Penyediaan Bak Sampah dan Pembuangan Sampah Domestik kapal per hari",
+    "satuan": "Hari",
+    "harga": 241200
+  },
+  { "item": "Penjaga kebakaran per hari", "satuan": "Hari", "harga": 396000 },
+  {
+    "item": "Penyediaan fire line per hari",
+    "satuan": "Hari",
+    "harga": 231000
+  },
+  {
+    "item": "Sambung & lepas line (Pemadam kebakaran)",
+    "satuan": "Kali",
+    "harga": 241200
+  },
+  {
+    "item": "Supply air tawar dari darat / kade per ton",
+    "satuan": "Ton",
+    "harga": 55000
+  },
+  {
+    "item": "Sambung & lepas line per 1 x pelaksanaan (Air)",
+    "satuan": "Kali",
+    "harga": 241200
+  },
+  {
+    "item": "Sambung & lepas line per 1 x pelaksanaan (Listrik)",
+    "satuan": "Kali",
+    "harga": 345600
+  },
+  {
+    "item": "Penyediaan Cooling Line per line per Hari",
+    "satuan": "Line / Hari",
+    "harga": 1200000
+  },
+  {
+    "item": "Sambung & lepas line per 1 x pelaksanaan (Cooling Line)",
+    "satuan": "Kali",
+    "harga": 691200
+  },
+  {
+    "item": "Penjagaan Keamanan Selama kapal docking / floating",
+    "satuan": "Hari",
+    "harga": 384000
+  },
+  {
+    "item": "Pelayanan Saluran Ventilasi per unit per hari",
+    "satuan": "Unit / Hari",
+    "harga": 450000
+  },
+  {
+    "item": "Sambung & lepas line per 1 x pelaksanaan (Saluran Ventilasi)",
+    "satuan": "Kali",
+    "harga": 698400
+  },
+  {
+    "item": "Peranca, pemasangan dan pembongkaran staging di posisi luar tangki per M3",
+    "satuan": "M3",
+    "harga": 54000
+  },
+  {
+    "item": "Peranca, pemasangan dan pembongkaran staging di posisi dalam tangki per M3",
+    "satuan": "M3",
+    "harga": 81000
+  },
+  {
+    "item": "Derek apung (floating crane) Kapasitas 35 ton",
+    "satuan": "Jam",
+    "harga": 8258400
+  },
+  {
+    "item": "Mobile Forklift Kapasitas s/d 10 ton",
+    "satuan": "Jam",
+    "harga": 327600
+  },
+  {
+    "item": "Mobile Crane Kapasitas s/d 50 ton",
+    "satuan": "Jam",
+    "harga": 1816800
+  },
+  {
+    "item": "Mobile Crane Kapasitas s/d 100 ton",
+    "satuan": "Jam",
+    "harga": 2724000
+  },
+  {
+    "item": "Mobile Crane Kapasitas s/d 200 ton",
+    "satuan": "Jam",
+    "harga": 5448000
+  },
+  {
+    "item": "Penundaan Kapal di daerah Perairan Galangan (GRT s/d 500 GT)",
+    "satuan": "Jam",
+    "harga": 1920600
+  },
+  {
+    "item": "Penundaan Kapal (GRT 501 - 1500 GT)",
+    "satuan": "Jam",
+    "harga": 2240700
+  },
+  {
+    "item": "Penundaan Kapal (GRT 1501 - 3500 GT)",
+    "satuan": "Jam",
+    "harga": 2880900
+  },
+  {
+    "item": "Penundaan Kapal (GRT 3501 - 8000 GT)",
+    "satuan": "Jam",
+    "harga": 4161300
+  },
+  {
+    "item": "Penundaan Kapal (GRT 8001 - 14000 GT)",
+    "satuan": "Jam",
+    "harga": 6085200
+  },
+  {
+    "item": "Penundaan Kapal (GRT 14001 - 20000 GT)",
+    "satuan": "Jam",
+    "harga": 9761400
+  },
+  {
+    "item": "Penundaan Kapal (GRT 20001 - 30000 GT)",
+    "satuan": "Jam",
+    "harga": 13762100
+  },
+  {
+    "item": "Pelayanan PANDU per gerakan di daerah Galangan (GRT s/d 500 GT)",
+    "satuan": "Jam",
+    "harga": 297000
+  },
+  {
+    "item": "Pelayanan PANDU (GRT 501 - 1500 GT)",
+    "satuan": "Jam",
+    "harga": 400400
+  },
+  {
+    "item": "Pelayanan PANDU (Lebih dari 1000 GT dan setiap kelebihan s/d 500 GT)",
+    "satuan": "Jam",
+    "harga": 52800
+  },
+  {
+    "item": "Tarif Pengedokan - Assistensi Naik/Turun Dock (GT s/d 500)",
+    "satuan": "",
+    "harga": 3865000
+  },
+  {
+    "item": "Tarif Pengedokan - Docking / Undocking (GT s/d 500)",
+    "satuan": "",
+    "harga": 10082000
+  },
+  {
+    "item": "Tarif Pengedokan - Docking per Hari (GT s/d 500)",
+    "satuan": "Hari",
+    "harga": 1532000
+  },
+  {
+    "item": "Tarif Pengedokan - Docking Report (GT s/d 500)",
+    "satuan": "",
+    "harga": 2881000
+  },
+  { "item": "Water jetting", "satuan": "M²", "harga": 23400 },
+  { "item": "Spot blasting", "satuan": "M²", "harga": 69400 },
+  { "item": "Sand blasting", "satuan": "M²", "harga": 62900 },
+  { "item": "Sweep blasting", "satuan": "M²", "harga": 52100 },
+  { "item": "Scrapping", "satuan": "M²", "harga": 13000 },
+  { "item": "Wire brushing", "satuan": "M²", "harga": 34800 },
+  { "item": "Ultrasonic test", "satuan": "Titik", "harga": 26000 },
+  { "item": "Amplashing", "satuan": "M²", "harga": 38100 },
+  { "item": "Cuci air tawar pada lambung", "satuan": "M²", "harga": 10400 },
+  { "item": "Chipping", "satuan": "M²", "harga": 26000 },
+  {
+    "item": "Pengecatan per lapis (Lambung)",
+    "satuan": "M²/layer",
+    "harga": 7500
+  },
+  {
+    "item": "Pengecatan per Touch Up (Lambung)",
+    "satuan": "M²/layer touch up",
+    "harga": 13100
+  },
+  {
+    "item": "Pengecatan Tanda syarat dan garis air (PAINTING OF DRAFT & PLIMSOL MARK GT s/d 300)",
+    "satuan": "",
+    "harga": 668300
+  },
+  {
+    "item": "Pengecatan Tanda syarat dan garis air (PAINTING OF WATER LINE GT s/d 300)",
+    "satuan": "",
+    "harga": 1050300
+  },
+  {
+    "item": "Pengecatan Tanda syarat dan garis air (PAINTING OF SHIP NAME + REGISTER PORT GT s/d 300)",
+    "satuan": "",
+    "harga": 381000
+  },
+  {
+    "item": "Penggantian plat baru baja (s/d 14\" / 6 mm)",
+    "satuan": "Kg",
+    "harga": 36750
+  },
+  {
+    "item": "Penggantian plat baru baja (8 mm s/d 12 mm)",
+    "satuan": "Kg",
+    "harga": 35000
+  },
+  {
+    "item": "Penggantian plat baru baja (lebih besar 12 mm)",
+    "satuan": "Kg",
+    "harga": 35000
+  },
+  { "item": "Pembersihan Tangki Air Tawar", "satuan": "M3", "harga": 28000 },
+  { "item": "Pembersihan Tangki Air Ballast", "satuan": "M3", "harga": 34000 },
+  {
+    "item": "Pembersihan Tangki Minyak Heavy Oil Tank",
+    "satuan": "M3",
+    "harga": 58000
+  },
+  {
+    "item": "Pembersihan Tangki Minyak Light Oil Tank",
+    "satuan": "M3",
+    "harga": 45000
+  },
+  { "item": "Pembersihan Sump Tank", "satuan": "M3", "harga": 860000 },
+  { "item": "Pembersihan tangki harian", "satuan": "M3", "harga": 782000 },
+  { "item": "Pembersihan Tangki Void", "satuan": "M3", "harga": 13000 },
+  { "item": "Pembersihan Tangki Sewage", "satuan": "M3", "harga": 2500500 },
+  { "item": "Bongkar pasang manhole cover", "satuan": "buah", "harga": 262000 },
+  { "item": "Penyemenan manhole cover", "satuan": "buah", "harga": 200000 },
+  { "item": "Bongkar pasang bottom plugs", "satuan": "buah", "harga": 524000 },
+  {
+    "item": "Pembuangan lumpur (minimum 1m3)",
+    "satuan": "M3",
+    "harga": 349000
+  },
+  { "item": "HYDRO TEST TANK", "satuan": "M3", "harga": 25000 },
+  { "item": "AIR TEST TANK", "satuan": "M3", "harga": 20000 },
+  {
+    "item": "Hose Test dan Water Test - Side Scutle (min. 5 buah)",
+    "satuan": "buah",
+    "harga": 350000
+  },
+  {
+    "item": "Hose Test dan Water Test - Pintu Kedap",
+    "satuan": "buah",
+    "harga": 350000
+  },
+  {
+    "item": "Hose Test dan Water Test - Hatch Cover",
+    "satuan": "buah",
+    "harga": 1750000
+  },
+  {
+    "item": "Pembersihan Tank Top pada Ruang Muat",
+    "satuan": "M²",
+    "harga": 18000
+  },
+  {
+    "item": "Pengecatan Tank Top pada Ruang Muat",
+    "satuan": "M² per lapis",
+    "harga": 13000
+  },
+  {
+    "item": "Pembersihan Bilge Cargo Hold",
+    "satuan": "area bilge",
+    "harga": 365000
+  },
+  { "item": "Pembersihan Bilge Ruang Mesin", "satuan": "M3", "harga": 275000 },
+  {
+    "item": "Penggantian Zinc Anoda (s/d 8 Kg)",
+    "satuan": "Buah",
+    "harga": 125000
+  },
+  {
+    "item": "Penggantian Zinc Anoda (10 Kg)",
+    "satuan": "Buah",
+    "harga": 146000
+  },
+  {
+    "item": "Penggantian Zinc Anoda (12 Kg)",
+    "satuan": "Buah",
+    "harga": 199000
+  },
+  {
+    "item": "Penggantian Zinc Anoda (16 Kg)",
+    "satuan": "Buah",
+    "harga": 219000
+  },
+  {
+    "item": "Penggantian Zinc Anoda (18 Kg)",
+    "satuan": "Buah",
+    "harga": 252000
+  },
+  {
+    "item": "Penggantian Zinc Anoda (22 Kg)",
+    "satuan": "Buah",
+    "harga": 305000
+  },
+  {
+    "item": "Pembersihan Sea Chest (s/d 6\")",
+    "satuan": "Buah",
+    "harga": 1079000
+  },
+  {
+    "item": "Pembersihan Sea Chest (s/d 12\")",
+    "satuan": "Buah",
+    "harga": 1512000
+  },
+  {
+    "item": "Pembersihan Sea Chest (s/d 20\")",
+    "satuan": "Buah",
+    "harga": 2001000
+  },
+  {
+    "item": "Pembersihan Sea Chest (s/d 40\")",
+    "satuan": "Buah",
+    "harga": 2590000
+  },
+  { "item": "Pengelasan fitting", "satuan": "titik", "harga": 16000 },
+  { "item": "Pengelasan sambungan", "satuan": "M per layer", "harga": 83000 },
+  {
+    "item": "Perbaikan general overhaul mesin kapal (0 s/d 100 HP)",
+    "satuan": "HP",
+    "harga": 220900
+  },
+  {
+    "item": "Perbaikan general overhaul mesin kapal (101 s/d 200 HP)",
+    "satuan": "HP",
+    "harga": 177600
+  },
+  {
+    "item": "Perbaikan general overhaul mesin kapal (201 s/d 500 HP)",
+    "satuan": "HP",
+    "harga": 139700
+  },
+  {
+    "item": "Perbaikan general overhaul mesin kapal (501 s/d 1000 HP)",
+    "satuan": "HP",
+    "harga": 122300
+  },
+  {
+    "item": "Perbaikan general overhaul mesin kapal (1001 s/d 2500 HP)",
+    "satuan": "HP",
+    "harga": 116400
+  },
+  {
+    "item": "Perbaikan general overhaul mesin kapal (2501 s/d 3500 HP)",
+    "satuan": "HP",
+    "harga": 105500
+  },
+  {
+    "item": "Perbaikan general overhaul mesin kapal (3501 s/d 5000 HP)",
+    "satuan": "HP",
+    "harga": 104900
+  },
+  {
+    "item": "Pengetesan Keretakan pada Shaft - Magnaflux Test (Di bengkel)",
+    "satuan": "",
+    "harga": 7208000
+  },
+  {
+    "item": "Pengetesan Keretakan pada Shaft - Colour Test (Di bengkel)",
+    "satuan": "",
+    "harga": 2083200
+  },
+  {
+    "item": "Pengetesan Keretakan pada Shaft - Magnaflux Test (Di kapal / di dock)",
+    "satuan": "",
+    "harga": 7728000
+  },
+  {
+    "item": "Pengetesan Keretakan pada Shaft - Colour Test (Di kapal / di dock)",
+    "satuan": "",
+    "harga": 2602950
+  },
+  {
+    "item": "Megger Test Elmot (0 s/d 1500 GT)",
+    "satuan": "",
+    "harga": 12387000
+  },
+  {
+    "item": "Megger Test Elmot (1501 s/d 3500 GT)",
+    "satuan": "",
+    "harga": 16494000
+  },
+  {
+    "item": "Megger Test Elmot (3501 s/d 8000 GT)",
+    "satuan": "",
+    "harga": 22936000
+  },
+  {
+    "item": "Megger Test Elmot (8001 s/d 14000 GT)",
+    "satuan": "",
+    "harga": 38238000
+  },
+  {
+    "item": "Megger Test Elmot (14001 s/d 20000 GT)",
+    "satuan": "",
+    "harga": 76375000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan untuk pemeriksaan di tempat (Diameter s/d 1 m)",
+    "satuan": "Baling-baling",
+    "harga": 3820000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 1,01 s/d 1,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 4910000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 1,51 s/d 2 m)",
+    "satuan": "Baling-baling",
+    "harga": 6001000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 2,01 s/d 2,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 7092000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 2,51 s/d 3 m)",
+    "satuan": "Baling-baling",
+    "harga": 8729000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 3,01 s/d 3,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 10910000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 3,51 s/d 4 m)",
+    "satuan": "Baling-baling",
+    "harga": 14185000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 4,01 s/d 4,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 17458000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 4,51 s/d 5 m)",
+    "satuan": "Baling-baling",
+    "harga": 21822000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 5,01 s/d 5,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 30551000
+  },
+  {
+    "item": "Bongkar/pasang dan dibersihkan (Diameter 5,51 s/d 6 m)",
+    "satuan": "Baling-baling",
+    "harga": 39278000
+  },
+  {
+    "item": "Daun baling-baling dipolish ditempat dan divernish (Diameter s/d 1 m)",
+    "satuan": "Baling-baling",
+    "harga": 874000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 1,01 s/d 1,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 1092000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 1,51 s/d 2 m)",
+    "satuan": "Baling-baling",
+    "harga": 1637000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 2,01 s/d 2,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 2182000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 2,51 s/d 3 m)",
+    "satuan": "Baling-baling",
+    "harga": 2726000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 3,01 s/d 3,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 3275000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 3,51 s/d 4 m)",
+    "satuan": "Baling-baling",
+    "harga": 3820000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 4,01 s/d 4,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 4364000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 4,51 s/d 5 m)",
+    "satuan": "Baling-baling",
+    "harga": 5456000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 5,01 s/d 5,5 m)",
+    "satuan": "Baling-baling",
+    "harga": 6547000
+  },
+  {
+    "item": "Daun baling-baling dipolish (Diameter 5,51 s/d 6 m)",
+    "satuan": "Baling-baling",
+    "harga": 7638000
+  },
+  {
+    "item": "Melamak surface contact baling-baling terhadap konis poros (Diameter s/d 1 m)",
+    "satuan": "",
+    "harga": 2182000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 1,01 s/d 1,5 m)",
+    "satuan": "",
+    "harga": 2726000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 1,51 s/d 2 m)",
+    "satuan": "",
+    "harga": 4364000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 2,01 s/d 2,5 m)",
+    "satuan": "",
+    "harga": 6547000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 2,51 s/d 3 m)",
+    "satuan": "",
+    "harga": 9274000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 3,01 s/d 3,5 m)",
+    "satuan": "",
+    "harga": 12548000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 3,51 s/d 4 m)",
+    "satuan": "",
+    "harga": 15821000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 4,01 s/d 4,5 m)",
+    "satuan": "",
+    "harga": 20184000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 4,51 s/d 5 m)",
+    "satuan": "",
+    "harga": 24004000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 5,01 s/d 5,5 m)",
+    "satuan": "",
+    "harga": 30551000
+  },
+  {
+    "item": "Melamak surface contact (Diameter 5,51 s/d 6 m)",
+    "satuan": "",
+    "harga": 34914000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter s/d 1 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 1092000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 1,01 s/d 1,5 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 1637000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 1,51 s/d 2 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 2182000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 2,01 s/d 2,5 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 3275000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 2,51 s/d 3 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 4364000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 3,01 s/d 3,5 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 5456000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 3,51 s/d 4 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 6547000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 4,01 s/d 4,5 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 7638000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 4,51 s/d 5 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 8729000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 5,01 s/d 5,5 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 10910000
+  },
+  {
+    "item": "Balanseren Statis baling-baling (Diameter 5,51 s/d 6 m)",
+    "satuan": "Untuk 3 daun",
+    "harga": 13093000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros baling-baling dengan pelumasan air laut (Diameter s/d 100 mm)",
+    "satuan": "",
+    "harga": 996000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (101 s/d 150 mm)",
+    "satuan": "",
+    "harga": 1096000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (151 s/d 200 mm)",
+    "satuan": "",
+    "harga": 1195000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (201 s/d 250 mm)",
+    "satuan": "",
+    "harga": 1294000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (251 s/d 300 mm)",
+    "satuan": "",
+    "harga": 1394000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (301 s/d 350 mm)",
+    "satuan": "",
+    "harga": 1593000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (351 s/d 400 mm)",
+    "satuan": "",
+    "harga": 1792000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (401 s/d 450 mm)",
+    "satuan": "",
+    "harga": 1991000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (451 s/d 500 mm)",
+    "satuan": "",
+    "harga": 2190000
+  },
+  {
+    "item": "Pengukuran kelonggaran poros (501 s/d 550 mm)",
+    "satuan": "",
+    "harga": 2387000
+  },
+  {
+    "item": "Cabut poros baling-baling (Diameter 100 mm, Panjang s/d 5 M)",
+    "satuan": "Batang",
+    "harga": 4776000
+  },
+  {
+    "item": "Cabut poros baling-baling (Diameter 100 mm, Panjang 5.01-7 M)",
+    "satuan": "Batang",
+    "harga": 5970000
+  },
+  {
+    "item": "Cabut poros baling-baling (Diameter 100 mm, Panjang 7.01-10 M)",
+    "satuan": "Batang",
+    "harga": 7960000
+  },
+  {
+    "item": "Ganti gelang pengamanan (Diameter s/d 100 mm)",
+    "satuan": "Poros",
+    "harga": 1357000
+  },
+  {
+    "item": "Ganti gelang pengamanan (Diameter s/d 200 mm)",
+    "satuan": "Poros",
+    "harga": 2036000
+  },
+  {
+    "item": "Bongkar dan pasang stern tube dan bracket per koker bush (Diameter dengan sleeve s/d 50 mm) - Koker Bush",
+    "satuan": "Tabung",
+    "harga": 796000
+  },
+  {
+    "item": "Bongkar dan pasang stern tube (Diameter s/d 75 mm) - Koker Bush",
+    "satuan": "Tabung",
+    "harga": 996000
+  },
+  {
+    "item": "Bantalan dukung poros baling-baling - Plummer Block Bearing (Diameter s/d 100 mm)",
+    "satuan": "",
+    "harga": 866000
+  },
+  {
+    "item": "Bantalan dukung poros baling-baling - Shaft Thrust Bearing (Diameter s/d 100 mm)",
+    "satuan": "",
+    "harga": 1211000
+  },
+  {
+    "item": "Pengukuran kelonggaran dan bongkar/pasang kembali - Pengukuran Clearance (GT s/d 300)",
+    "satuan": "",
+    "harga": 945000
+  },
+  {
+    "item": "Pengukuran kelonggaran (GT 301 s/d 500)",
+    "satuan": "",
+    "harga": 1552000
+  },
+  {
+    "item": "Bongkar/Pasang Kemudi & Poros - pengukuran ditempat (GT s/d 300)",
+    "satuan": "",
+    "harga": 10745000
+  },
+  {
+    "item": "Bongkar/Pasang Kemudi & Poros (GT 301 s/d 500)",
+    "satuan": "",
+    "harga": 13133000
+  },
+  {
+    "item": "Ganti baru pipa lurus SCH 40 (Diameter s/d 0.5 inch)",
+    "satuan": "mtr",
+    "harga": 291900
+  },
+  {
+    "item": "Ganti baru pipa lurus SCH 80 (Diameter s/d 0.5 inch)",
+    "satuan": "mtr",
+    "harga": 437850
+  },
+  {
+    "item": "Ganti baru pipa lurus SCH 40 (Diameter s/d 1\")",
+    "satuan": "mtr",
+    "harga": 382200
+  },
+  {
+    "item": "Ganti baru pipa lurus SCH 80 (Diameter s/d 1\")",
+    "satuan": "mtr",
+    "harga": 573300
+  },
+  {
+    "item": "Penggantian Klem Pipa (Diameter s/d 0.5 inch)",
+    "satuan": "BUAH",
+    "harga": 67000
+  },
+  {
+    "item": "Penggantian Klem Pipa (Diameter 0.55 s/d 1\")",
+    "satuan": "BUAH",
+    "harga": 83000
+  },
+  {
+    "item": "Penggantian Plendes (Diameter s/d 0.5 inch)",
+    "satuan": "BUAH",
+    "harga": 83000
+  },
+  {
+    "item": "Penggantian Plendes (Diameter 0.55 s/d 1\")",
+    "satuan": "BUAH",
+    "harga": 104000
+  },
+  {
+    "item": "Penggantian Elbow Galvanish (Diameter s/d 0.5 inch)",
+    "satuan": "BUAH",
+    "harga": 77000
+  },
+  {
+    "item": "Penggantian Elbow Steel (Diameter s/d 0.5 inch)",
+    "satuan": "BUAH",
+    "harga": 124000
+  },
+  {
+    "item": "Penggantian Elbow Galvanish (Diameter 1\")",
+    "satuan": "BUAH",
+    "harga": 84000
+  },
+  {
+    "item": "Penggantian Elbow Steel (Diameter 1\")",
+    "satuan": "BUAH",
+    "harga": 138000
+  },
+  {
+    "item": "Bengkokan (Bending) per Bengkokan (Diameter s/d 0.5 inch)",
+    "satuan": "BUAH",
+    "harga": 74000
+  },
+  {
+    "item": "Bengkokan (Bending) (Diameter 0.55 s/d 1\")",
+    "satuan": "BUAH",
+    "harga": 112000
+  },
+  {
+    "item": "GLOBE VALVE (Diameter s/d 1\")",
+    "satuan": "BUAH",
+    "harga": 311000
+  },
+  {
+    "item": "GATE VALVE (Diameter s/d 1\")",
+    "satuan": "BUAH",
+    "harga": 519000
+  },
+  {
+    "item": "GLOBE VALVE (Diameter 1.1 s/d 2\")",
+    "satuan": "BUAH",
+    "harga": 415000
+  },
+  {
+    "item": "GATE VALVE (Diameter 1.1 s/d 2\")",
+    "satuan": "BUAH",
+    "harga": 656000
+  },
+  { "item": "Jangkar (GRT s/d 300)", "satuan": "JANGKAR", "harga": 2164000 },
+  {
+    "item": "Jangkar (GRT 301 s/d 500)",
+    "satuan": "JANGKAR",
+    "harga": 2556000
+  },
+  {
+    "item": "Penggantian rantai Jangkar (Rantai ex. pemilik) per segel (Tonase Kapal s/d 300)",
+    "satuan": "",
+    "harga": 1096000
+  },
+  {
+    "item": "Ceruk rantai (Chain Lockers) (Tonase Kapal s/d 300)",
+    "satuan": "Per Ceruk Rantai",
+    "harga": 1394000
+  },
+  {
+    "item": "Ceruk rantai (Chain Lockers) (Tonase Kapal 301 s/d 500)",
+    "satuan": "Per Ceruk Rantai",
+    "harga": 1593000
+  }
+]

@@ -1,0 +1,600 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+================================================================================
+HYBRID EXCEL SCRAPER v11.5 TURBO (GROQ API + MULTITHREADING)
+Fixes:
+- MIGRATING TO GROQ API (Super Fast JSON Generation via Llama-3).
+- 100% Meniru Logika internal Chunking & Overlap Konteks dari v11.1 milik User.
+- Menangkap parameter dinamis dari Node.js (Input Excel & Output JSON).
+- Auto-Detect Sheet & Eksekusi 4 Sheet bersamaan pakai ThreadPoolExecutor.
+================================================================================
+"""
+
+import pandas as pd
+import json
+import re
+import os
+import sys
+import time
+import concurrent.futures
+from groq import Groq  #  FIX: Menggunakan Groq
+import warnings
+
+warnings.filterwarnings("ignore")
+
+# ========== CONFIG ==========
+CONFIG = {
+    "input_excel": "tes1.xlsx",  # Hanya dipake fallback jika dijalankan manual tanpa Next.js
+    "output_json": "pricelist_scraped.json",
+    "output_csv": "pricelist_scraped.csv",
+    #  GANTI DENGAN API KEY GROQ KAMU (Biasanya diawali dengan "gsk_...")
+    "groq_api_key": os.getenv(
+        "GROQ_API_KEY", "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"
+    ),
+    "groq_model": "llama-3.3-70b-versatile",  # Model terbaik Groq untuk JSON parsing
+    "debug": False,
+}
+
+# Inisialisasi Client Groq
+groq_client = Groq(api_key=CONFIG["groq_api_key"])
+
+print("\n" + "=" * 120)
+print(" HYBRID EXCEL SCRAPER v11.5 (GROQ TURBO MULTITHREADING)")
+print("   Logic: 100% Logika User + Ekstrak 4 Sheet Bersamaan via Groq LPU")
+print("=" * 120 + "\n")
+
+
+# ============================================================================
+# STEP 1: CHUNKING (DINAMIS 100 BARIS - 100% KODE USER V11.1)
+# ============================================================================
+def is_category_header(vals):
+    if not vals or vals[0] == "-":
+        return False
+    text = str(vals[0]).strip().upper()
+    if re.match(r"^([A-Z]|\d{1,2}|I{1,3}|IV|V|VI|IX|X|XI|XII)[\.\s]+[A-Z\s]+$", text):
+        return True
+
+    real_vals = [v for v in vals if v != "-"]
+    if len(real_vals) >= 2:
+        v1, v2 = str(real_vals[0]).strip().upper(), str(real_vals[1]).strip().upper()
+        if (
+            re.match(r"^([A-Z]|\d{1,2}|I{1,3}|IV|V|VI|IX|X|XI|XII)[\.\s]*$", v1)
+            and len(v2) > 3
+            and v2.isupper()
+        ):
+            return True
+
+    if len(real_vals) == 1 and len(text) > 5 and text.isupper() and "TOTAL" not in text:
+        return True
+    return False
+
+
+def is_main_item(vals):
+    """
+    Sensor pendeteksi Induk/Item Utama yang aman dari Bug Pandas Float.
+    Mendeteksi angka (1, 10), desimal (04.01), atau Abjad (A, B, IV).
+    """
+    for v in vals[:2]:
+        if v == "-":
+            continue
+        val_str = str(v).strip()
+
+        if val_str.endswith(".0"):
+            val_str = val_str[:-2]
+        if val_str.endswith("."):
+            val_str = val_str[:-1]
+
+        if re.match(r"^\d+$", val_str):
+            return True
+        if re.match(r"^\d+\.\d+$", val_str):
+            return True
+        if re.match(r"^([a-zA-Z]|I{1,3}|IV|V|VI|IX|X|XI|XII)$", val_str, re.IGNORECASE):
+            return True
+        return False
+    return False
+
+
+def parse_excel_to_chunks(filepath, sheet_idx):
+    print(f" READING EXCEL [{sheet_idx}] & MENGABAIKAN KOP SURAT...\n")
+    try:
+        df = pd.read_excel(filepath, sheet_name=sheet_idx, header=None)
+    except Exception as e:
+        raise SystemExit(f" ERROR: Gagal baca {filepath}. {e}")
+
+    all_rows = []
+    #  FIX: 1 Sheet = 1 Kategori (Default ambil dari nama sheet)
+    current_category = str(sheet_idx).strip().upper()
+    total_rows = 0
+    table_started = False
+
+    for idx, row in df.iterrows():
+        vals = [
+            (
+                str(x).strip()
+                if pd.notna(x) and str(x).strip() not in ["", "NaT", "nan", "NaN"]
+                else "-"
+            )
+            for x in row
+        ]
+        if all(v == "-" for v in vals):
+            continue
+        while vals and vals[-1] == "-":
+            vals.pop()
+        if not vals:
+            continue
+
+        row_str_lower = " ".join([v for v in vals if v != "-"]).lower()
+
+        if not table_started:
+            if (
+                "no." in row_str_lower
+                or "no " in row_str_lower
+                or "job" in row_str_lower
+                or "rincian" in row_str_lower
+                or "deskripsi" in row_str_lower
+            ):
+                table_started = True
+                continue
+            else:
+                continue
+
+        if ("no." in row_str_lower or "job" in row_str_lower) and (
+            "harga" in row_str_lower
+            or "price" in row_str_lower
+            or "total" in row_str_lower
+        ):
+            continue
+
+        if is_category_header(vals):
+            current_category = " ".join([v for v in vals if v != "-"])
+            continue
+
+        row_str = " | ".join(vals)
+        all_rows.append(
+            #  Menyelipkan "vals" agar bisa dideteksi oleh is_main_item nantinya
+            {
+                "row_num": idx + 1,
+                "text": row_str,
+                "category": current_category,
+                "vals": vals,
+            }
+        )
+        total_rows += 1
+
+    chunks = []
+    if total_rows == 0:
+        return chunks
+
+    #  LOGIKA POTONG DINAMIS: Target 100 baris, tahan sampai sub-item kelar!
+    if total_rows > 200:
+        target_size = 100
+        current_chunk = []
+        chunk_part = 1
+
+        for i, r in enumerate(all_rows):
+            current_chunk.append(r)
+
+            is_safe_to_cut = False
+            if i + 1 < total_rows:
+                next_r = all_rows[i + 1]
+                # Beda kategori pasti aman dipotong
+                if next_r["category"] != r["category"]:
+                    is_safe_to_cut = True
+                # Jika baris depan adalah INDUK BARU, maka aman dipotong!
+                elif is_main_item(next_r["vals"]):
+                    is_safe_to_cut = True
+            else:
+                is_safe_to_cut = True  # Baris terakhir
+
+            # Rem darurat jika mencapai 220 baris agar AI tidak crash
+            if len(current_chunk) >= 220:
+                is_safe_to_cut = True
+
+            # EKSEKUSI POTONG: Sudah lewat 100 baris DAN sedang di titik potong aman
+            if len(current_chunk) >= target_size and is_safe_to_cut:
+                cat = current_chunk[0]["category"]
+                formatted_rows = [
+                    {"row_num": cr["row_num"], "text": cr["text"]}
+                    for cr in current_chunk
+                ]
+                chunks.append(
+                    {"category": f"{cat} (Part {chunk_part})", "rows": formatted_rows}
+                )
+                current_chunk = []
+                chunk_part += 1
+
+        # Memasukkan sisa baris
+        if current_chunk:
+            cat = current_chunk[0]["category"]
+            formatted_rows = [
+                {"row_num": cr["row_num"], "text": cr["text"]} for cr in current_chunk
+            ]
+            chunks.append(
+                {"category": f"{cat} (Part {chunk_part})", "rows": formatted_rows}
+            )
+
+    elif total_rows > 0:
+        # Jika <= 200 baris, JANGAN DIPOTONG (Langsung 1 Chunk)
+        cat = all_rows[0]["category"]
+        formatted_rows = [
+            {"row_num": r["row_num"], "text": r["text"]} for r in all_rows
+        ]
+        chunks.append({"category": cat, "rows": formatted_rows})
+
+    print(f" [{sheet_idx}] Membagi menjadi {len(chunks)} Blok")
+    return chunks
+
+
+# ============================================================================
+# STEP 2: GROQ PARSING (PENGGANTI GEMINI)
+# ============================================================================
+def parse_chunk_with_groq(chunk_idx, chunk, total_chunks, prev_context=""):
+    category = chunk["category"]
+    rows = chunk["rows"]
+
+    print(
+        f"     Groq Memproses Kategori {chunk_idx}/{total_chunks}: {category} ({len(rows)} baris sekaligus)...",
+        end=" ",
+        flush=True,
+    )
+    chunk_text = "\n".join([f"Baris {r['row_num']}: {r['text']}" for r in rows])
+
+    #  FIX: Menyiapkan blok contekan untuk chunk ke-2 dan seterusnya
+    context_block = ""
+    if prev_context:
+        context_block = f"""
+[REFERENSI KONTEKS DARI CHUNK SEBELUMNYA]
+{prev_context}
+(INFO: Gunakan referensi di atas HANYA untuk mengetahui siapa Induk dari sub-item di bawah ini. DILARANG KERAS mengekstrak ulang referensi ini ke dalam output JSON!)
+--------------------------------------------------
+"""
+
+    system_prompt = """Kamu adalah Data Engineer Jenius.
+TUGAS: Parse seluruh data Excel ini menjadi JSON yang RAPI dan TEPAT, langsung dalam format 1 BARIS (FLAT) untuk setiap tagihan!
+
+ATURAN PENGGABUNGAN ITEM & SUB-ITEM (WAJIB DIIKUTI 100%):
+1. JIKA ITEM UTAMA ADA HARGA TAPI SUB-ITEM KOSONG HARGA:
+   - "nama": Nama Item Utama.
+   - Semua teks dari sub-item/rincian masuk ke array `catatan`.
+2. JIKA ITEM UTAMA KOSONG HARGA TAPI SUB-ITEM ADA HARGA:
+   - "nama": Gabungan "Nama Item Utama - Nama Sub Item".
+   - Teks rincian lain yang tidak ada harganya, lempar ke array `catatan`.
+3. JIKA ADA ITEM TANPA HARGA SAMA SEKALI, TAPI ADA KATA "INCLUDE":
+   - Tulis "include" pada `harga_satuan` dan `harga_total`.
+4. LARANGAN KERAS NAMA ITEM: Jangan pernah menamai item pekerjaan dengan awalan "Start", "Tanggal", "Manpower". Masukkan ke `catatan`.
+
+ATURAN KONTEKS LINTAS-CHUNK (SANGAT FATAL!):
+Jika kamu diberikan [REFERENSI KONTEKS DARI CHUNK SEBELUMNYA], dan baris pertama pada data utamamu adalah sebuah sub-item yang terpotong dari induknya, carilah siapa nama Induk (Item Utama) di dalam Referensi tersebut! GABUNGKAN nama Induk dari Referensi dengan sub-item di datamu saat ini agar konteksnya tidak hilang.
+
+ATURAN ANTI-CRASH JSON (STANDARISASI INCH - SANGAT FATAL!):
+Jika kamu melihat TANDA KUTIP GANDA (") di dalam teks Excel yang merepresentasikan ukuran (Misalnya ukuran pipa/valve seperti Ø 3" atau Ø 12"), KAMU WAJIB MENGUBAH TANDA KUTIP GANDA TERSEBUT MENJADI KATA 'inch' (Contoh hasil yang benar: Ø 3 inch atau Ø 12 inch). JANGAN PERNAH menggunakan kutip ganda (") ataupun kutip tunggal (') untuk lambang ukuran karena akan merusak format JSON dan Database!
+
+ATURAN ANTI-DUPLIKASI / HUMAN ERROR:
+JIKA ADA 1 BARIS YANG TIDAK MEMILIKI HARGA, DAN NAMANYA MENGULANG PERSIS DENGAN BARIS SETELAH ATAU SEBELUMNYA, MAKA ITEM ITU DIJADIKAN 1 BARIS SAJA! 
+
+ATURAN GRAND TOTAL (SANGAT WAJIB):
+Di bagian akhir data baris, cari baris penutup yang menuliskan pentotalan harga kategori (Contoh: "GENERAL SERVICE | 343.374.848").
+Tarik angka tersebut menjadi angka murni tanpa titik (Contoh: 343374848) dan petakan ke field "total_kategori". Jangan masukkan baris ini ke dalam daftar items!
+
+FORMAT JSON YANG DIHARAPKAN:
+{
+  "harga_layanan": [
+    {
+      "kategori": "NAMA KATEGORI",
+      "total_kategori": 343374848, 
+      "items": [
+        {
+          "nomor": "00.01",
+          "nama": "Contoh Pipa - Pipa Sch80 Ø 3 inch x 100 mm",
+          "volume": 1,
+          "satuan": "Pcs",
+          "harga_satuan": 1111000,
+          "harga_total": 1111000,
+          "catatan": ["Material lama"],
+          "metadata": {"original_row": 33}
+        }
+      ]
+    }
+  ]
+}
+
+OUTPUT HANYA JSON VALID. DILARANG MENAMBAH TEKS LAIN."""
+
+    user_prompt = f"""KATEGORI: {category}
+
+{context_block}
+[DATA ROWS CHUNK INI (WAJIB DI-PARSE MENJADI JSON!)]
+{chunk_text}
+
+TUGAS: BACA DATA ROWS DI ATAS! SAMBUNGKAN KONTEKS JIKA ADA REFERENSI! EKSTRAK JUGA TOTAL HARGA KATEGORI KE FIELD total_kategori! OUTPUT: JSON ONLY."""
+
+    try:
+        #  FIX: Panggilan ke Groq API
+        response = groq_client.chat.completions.create(
+            model=CONFIG["groq_model"],
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            temperature=0.0,
+            response_format={
+                "type": "json_object"
+            },  # Memaksa Groq mengeluarkan format JSON Murni
+        )
+
+        raw_output = response.choices[0].message.content.strip()
+
+        match = re.search(r"\{.*\}", raw_output, re.DOTALL)
+        if match:
+            print(f"✓")
+            return json.loads(match.group(0))
+        else:
+            print(f"✓")
+            return json.loads(raw_output)
+
+    except Exception as e:
+        err_msg = str(e).lower()
+        print(f"\n       ERROR PADA GROQ API: {str(e)[:150]}")
+
+        if "raw_output" in locals():
+            with open("error_raw_output.txt", "w", encoding="utf-8") as err_file:
+                err_file.write(raw_output)
+            print(
+                "       Output mentah dari Groq telah disimpan di 'error_raw_output.txt'."
+            )
+        return None
+
+
+# ============================================================================
+# STEP 3: MERGE CHUNKS (Membersihkan (Part X) agar menyatu)
+# ============================================================================
+def merge_chunks(all_chunks):
+    master = {"harga_layanan": []}
+    for chunk_data in all_chunks:
+        if not chunk_data or "harga_layanan" not in chunk_data:
+            continue
+        for kat_data in chunk_data["harga_layanan"]:
+            kat_name = kat_data.get("kategori", "UMUM")
+
+            base_kat_name = re.sub(
+                r"\s*\(part\s*\d+\)\s*", "", kat_name, flags=re.IGNORECASE
+            ).strip()
+
+            existing_kat = next(
+                (k for k in master["harga_layanan"] if k["kategori"] == base_kat_name),
+                None,
+            )
+
+            if existing_kat:
+                existing_kat["items"].extend(kat_data.get("items", []))
+                if kat_data.get("total_kategori"):
+                    existing_kat["total_kategori"] = kat_data["total_kategori"]
+            else:
+                kat_data["kategori"] = base_kat_name
+                master["harga_layanan"].append(kat_data)
+
+    return master
+
+
+# ============================================================================
+# STEP 4: FLATTENING KE CSV (HANYA UNTUK KEBUTUHAN MERGE/DEBUG)
+# ============================================================================
+def format_price(val):
+    if val is None or val == "":
+        return None
+    if isinstance(val, (int, float)):
+        return int(val) if val == int(val) else val
+    val_str = str(val).strip().lower()
+    if "include" in val_str or "termasuk" in val_str or "inc" in val_str:
+        return "Include"
+    if val_str in ["none", "null", "-", ""]:
+        return None
+    try:
+        num = float(val_str)
+        return int(num) if num == int(num) else num
+    except:
+        return val
+
+
+def flatten_to_items(data):
+    items_flat = []
+
+    for kat in data.get("harga_layanan", []):
+        if not isinstance(kat, dict):
+            continue
+        kategori = kat.get("kategori", "")
+
+        for item in kat.get("items", []):
+            if not isinstance(item, dict):
+                continue
+
+            i_nomor = item.get("nomor", "")
+            i_nama = item.get("nama", "")
+            i_satuan = item.get("satuan", "Unit")
+            if i_satuan == "-" or not i_satuan:
+                i_satuan = "Unit"
+
+            i_harga_satuan = format_price(item.get("harga_satuan"))
+            i_harga_total = format_price(item.get("harga_total"))
+            i_volume = item.get("volume", 1) if item.get("volume") else 1
+            i_row = item.get("metadata", {}).get("original_row", "")
+
+            i_catatan = item.get("catatan", [])
+            if isinstance(i_catatan, str):
+                i_catatan = [i_catatan]
+            catatan_str = (
+                " | ".join(i_catatan) if isinstance(i_catatan, list) else str(i_catatan)
+            )
+
+            if (i_harga_total is None) and isinstance(i_harga_satuan, (int, float)):
+                try:
+                    i_harga_total = int(i_harga_satuan * float(i_volume))
+                except:
+                    i_harga_total = i_harga_satuan
+
+            items_flat.append(
+                {
+                    "Baris Excel": i_row,
+                    "Kategori": kategori,
+                    "Nomor": i_nomor,
+                    "Nama Pekerjaan": i_nama,
+                    "Volume": i_volume,
+                    "Satuan": (
+                        i_satuan.title() if isinstance(i_satuan, str) else i_satuan
+                    ),
+                    "Harga Satuan": i_harga_satuan,
+                    "Harga Total": i_harga_total,
+                    "Catatan": catatan_str,
+                }
+            )
+
+        total_kategori = kat.get("total_kategori")
+        if total_kategori:
+            items_flat.append(
+                {
+                    "Baris Excel": "TOTAL",
+                    "Kategori": kategori,
+                    "Nomor": "-",
+                    "Nama Pekerjaan": f"GRAND TOTAL {kategori.upper()}",
+                    "Volume": "-",
+                    "Satuan": "-",
+                    "Harga Satuan": "-",
+                    "Harga Total": format_price(total_kategori),
+                    "Catatan": "Total Kategori Otomatis",
+                }
+            )
+
+    return items_flat
+
+
+def export_to_csv(items, output_path):
+    items = sorted(
+        items,
+        key=lambda x: (
+            int(x["Baris Excel"])
+            if str(x["Baris Excel"]).isdigit()
+            else (999999 if str(x["Baris Excel"]) == "TOTAL" else 99999)
+        ),
+    )
+    df = pd.DataFrame(items)
+    cols = [
+        "Baris Excel",
+        "Kategori",
+        "Nomor",
+        "Nama Pekerjaan",
+        "Volume",
+        "Satuan",
+        "Harga Satuan",
+        "Harga Total",
+        "Catatan",
+    ]
+    df = df[[c for c in cols if c in df.columns]]
+    df.to_csv(output_path, index=False, encoding="utf-8")
+    return df
+
+
+# ============================================================================
+# PROSES 1 SHEET LENGKAP (DIPANGGIL SECARA PARALEL OLEH THREAD)
+# ============================================================================
+def process_single_sheet(filepath, sheet_name):
+    """Wrapper murni untuk memproses 1 sheet dengan mempertahankan 100% logika perulangan v11.1"""
+    chunks = parse_excel_to_chunks(filepath, sheet_name)
+    all_chunks = []
+    prev_context = ""
+
+    for idx, chunk in enumerate(chunks, 1):
+        parsed = parse_chunk_with_groq(idx, chunk, len(chunks), prev_context)
+        if parsed:
+            all_chunks.append(parsed)
+
+        #  KONTEKS NYAMBUNG SAKRAL (MUTLAK -10 BARIS SESUAI KODE USER V11.1)
+        last_10_rows = chunk["rows"][-10:]
+        prev_context = "\n".join(
+            [f"Baris {r['row_num']}: {r['text']}" for r in last_10_rows]
+        )
+        time.sleep(1)  # Jeda ringan buat keamanan rate-limit Groq
+
+    # Bungkus hasil merge di tingkat individual sheet
+    return merge_chunks(all_chunks)
+
+
+# ============================================================================
+# MAIN EXECUTOR (TURBO MULTITHREADING MODE - HUBUNGAN KE NEXT.JS)
+# ============================================================================
+def main():
+    # Tangkap lemparan argumen dinamis dari jembatan API Node.js Next.js
+    input_excel = sys.argv[1] if len(sys.argv) > 1 else CONFIG["input_excel"]
+    output_json = sys.argv[2] if len(sys.argv) > 2 else CONFIG["output_json"]
+
+    print(f" Menerima file input: {input_excel}")
+    try:
+        xl = pd.ExcelFile(input_excel)
+        all_sheets = xl.sheet_names
+    except Exception as e:
+        raise SystemExit(f" ERROR: Tidak bisa membuka file Excel! {e}")
+
+    # Kamus Filter & Detektor Sheet Pintar (GS -> Hull -> Piping -> Valve)
+    TARGET_SHEETS = [
+        (1, ["umum", "general", "gs", "pelayanan"]),
+        (2, ["hull", "konstruksi", "lambung", "construction", "baja"]),
+        (3, ["pipa", "piping"]),
+        (4, ["valve", "katup"]),
+    ]
+
+    sheets_to_process = []
+    for nama_sheet in all_sheets:
+        nama_lower = nama_sheet.lower()
+        for urutan, keywords in TARGET_SHEETS:
+            if any(kw in nama_lower for kw in keywords):
+                sheets_to_process.append({"name": nama_sheet, "order": urutan})
+                break
+
+    if not sheets_to_process:
+        print(" WARNING: Tidak ada sheet target yang cocok!")
+        with open(output_json, "w", encoding="utf-8") as f:
+            json.dump({"harga_layanan": []}, f)
+        return
+
+    print(
+        f"Menemukan {len(sheets_to_process)} sheet target. Memulai Multithreading dengan GROQ..."
+    )
+
+    #  EKSEKUSI MULTITHREADING SERENTAK (MAX 4 WORKERS)
+    thread_results = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+        future_to_sheet = {
+            executor.submit(process_single_sheet, input_excel, sheet["name"]): sheet
+            for sheet in sheets_to_process
+        }
+
+        for future in concurrent.futures.as_completed(future_to_sheet):
+            sheet_info = future_to_sheet[future]
+            try:
+                data_json = future.result()
+                thread_results.append({"order": sheet_info["order"], "data": data_json})
+            except Exception as exc:
+                print(
+                    f" [ERROR THREAD] Gagal memproses sheet {sheet_info['name']}: {exc}"
+                )
+
+    #  PENGURUTAN SAKRAL ABSOLUT (GS -> Hull -> Piping -> Valve)
+    thread_results.sort(key=lambda x: x["order"])
+
+    final_master_json = {"harga_layanan": []}
+    for res in thread_results:
+        if res["data"] and "harga_layanan" in res["data"]:
+            final_master_json["harga_layanan"].extend(res["data"]["harga_layanan"])
+
+    # SIMPAN KE FILE UTAMA UNTUK DITELAN OLEH MASTER_MATCHER.PY
+    with open(output_json, "w", encoding="utf-8") as f:
+        json.dump(final_master_json, f, indent=2, ensure_ascii=False)
+
+    print(f"\nMASTER JSON BERHASIL DISIMPAN DI: {output_json}")
+    print("=" * 120)
+    print("SCRAPING GROQ MULTITHREADING SELESAI")
+    print("=" * 120)
+
+
+if __name__ == "__main__":
+    main()

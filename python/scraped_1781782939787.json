@@ -1,0 +1,178 @@
+{
+  "harga_layanan": [
+    {
+      "kategori": "GENERAL SERVICES",
+      "total_kategori": 343374848,
+      "items": [
+        {
+          "nomor": "00.01",
+          "nama": "Tali – Temali",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Diberikan asistensi tali temali saat kapal diujung slipway",
+            "Diberikan asistensi tali temali selama proses docking/undocking"
+          ],
+          "metadata": {
+            "original_row": 10
+          }
+        },
+        {
+          "nomor": "00.02",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Kapal diposisikan diujung slipway sebelum dan sesudah docking",
+            "Sebelum docking",
+            "Sesudah docking"
+          ],
+          "metadata": {
+            "original_row": 14
+          }
+        },
+        {
+          "nomor": "00.02.01.01",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking - Sebelum docking",
+          "volume": 1,
+          "satuan": "Hari",
+          "harga_satuan": 864300,
+          "harga_total": 864300,
+          "catatan": [
+            "Start 2024-04-21 00:00:00 s/d 2024-04-21 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 17
+          }
+        },
+        {
+          "nomor": "00.02.01.02",
+          "nama": "Kapal diposisikan diujung slipway sebelum dan sesudah docking - Sesudah docking",
+          "volume": 2,
+          "satuan": "Hari",
+          "harga_satuan": 864300,
+          "harga_total": 1728600,
+          "catatan": [
+            "Start 00:00:00 s/d 1900-01-01 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 19
+          }
+        },
+        {
+          "nomor": "00.03",
+          "nama": "Asistensi Tug Boat Untuk Docking Undocking - Asistensi Tug Boat untuk docking",
+          "volume": 4,
+          "satuan": "Jam",
+          "harga_satuan": 7566000,
+          "harga_total": 30264000,
+          "catatan": [
+            "Tugboat Alfa",
+            "Tugboat Gamma"
+          ],
+          "metadata": {
+            "original_row": 22
+          }
+        },
+        {
+          "nomor": "00.03.02",
+          "nama": "Asistensi Tug Boat Untuk Docking Undocking - Asistensi Tug Boat untuk undocking",
+          "volume": 4,
+          "satuan": "Jam",
+          "harga_satuan": 7566000,
+          "harga_total": 30264000,
+          "catatan": [
+            "Tugboat Alfa",
+            "Tugboat Gamma"
+          ],
+          "metadata": {
+            "original_row": 25
+          }
+        },
+        {
+          "nomor": "00.04",
+          "nama": "Asistensi Pilotage Untuk Docking Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": "include",
+          "harga_total": "include",
+          "catatan": [
+            "Asistensi pilot untuk memposisikan kapal diujung slipway sebelum docking",
+            "Asistensi pilot untuk memposisikan kapal diujung slipway setelah docking"
+          ],
+          "metadata": {
+            "original_row": 29
+          }
+        },
+        {
+          "nomor": "00.05.01",
+          "nama": "Asistensi Naik atau Turun Dock - Asistensi Docking/Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 6800000,
+          "harga_total": 6800000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 34
+          }
+        },
+        {
+          "nomor": "00.06.01",
+          "nama": "Docking dan Undocking - Docking dan Undocking",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 19203000,
+          "harga_total": 19203000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 37
+          }
+        },
+        {
+          "nomor": "00.07.01",
+          "nama": "Pengaturan Dock Block - Pengaturan balok lunas (keel block dan side block) saat kapal diatas dock",
+          "volume": 105,
+          "satuan": "Balok",
+          "harga_satuan": 42000,
+          "harga_total": 4410000,
+          "catatan": [],
+          "metadata": {
+            "original_row": 40
+          }
+        },
+        {
+          "nomor": "00.08.01",
+          "nama": "Docking per hari - Docking per hari",
+          "volume": 16,
+          "satuan": "Hari",
+          "harga_satuan": 2881000,
+          "harga_total": 46096000,
+          "catatan": [
+            "Start 2024-04-22 00:00:00 s/d 2024-05-07 00:00:00"
+          ],
+          "metadata": {
+            "original_row": 44
+          }
+        },
+        {
+          "nomor": "00.09",
+          "nama": "Docking Report",
+          "volume": 1,
+          "satuan": "Kapal",
+          "harga_satuan": 4001000,
+          "harga_total": 4001000,
+          "catatan": [
+            "Dibuatkan docking report"
+          ],
+          "metadata": {
+            "original_row": 46
+          }
+        }
+      ]
+    }
+  ]
+}
