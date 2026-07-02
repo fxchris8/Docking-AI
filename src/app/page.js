@@ -17,7 +17,7 @@ export default function Main() {
       if (!user) {
         router.push("/login");
       } else {
-        setLoading(false); // user sudah login, lanjutkan render konten
+        setLoading(false);
       }
     };
     checkUser();
@@ -26,6 +26,6 @@ export default function Main() {
   if (loading) return <div>Memeriksa sesi...</div>;
 
   return (
-    <div>{/* Konten halaman utama untuk pengguna yang sudah login */}</div>
+    <div></div>
   );
 }
